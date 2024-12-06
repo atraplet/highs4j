@@ -2,7 +2,7 @@
 
 # main
 USAGE="\
-Usage: generate_includes path_to_highs_source_package path_to_jextract_binary"
+Usage: generate_includes path_to_highs_built_source_package path_to_jextract_binary"
 
 # read command line arguments
 if [ $# -eq 2 ]; then
@@ -22,10 +22,11 @@ INCLUDES="${HIGHS4J}"/bindings/includes.txt
 rm -f "${TMP_INCLUDES}"
 rm -f "${INCLUDES}"
 ${JEXTRACT} \
-  --include-dir "${HIGHS}"/external/SuiteSparse_config \
+  --include-dir "${HIGHS}"/src \
+  --include-dir "${HIGHS}"/build \
   --dump-includes "${TMP_INCLUDES}" \
-  "${HIGHS}"/include/highs.h
+  "${HIGHS}"/src/interfaces/highs_c_api.h
 
 # select symbols
-grep "highs\|fflush" "${TMP_INCLUDES}" | grep -v "SuiteSparse\|timer\|fflush_nolock\|fflush_unlocked" >"${INCLUDES}"
+grep "highs" "${TMP_INCLUDES}" >"${INCLUDES}"
 rm -f "${TMP_INCLUDES}"

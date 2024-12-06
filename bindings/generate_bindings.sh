@@ -2,7 +2,7 @@
 
 # main
 USAGE="\
-Usage: generate_bindings path_to_highs_source_package path_to_jextract_binary"
+Usage: generate_bindings path_to_highs_built_source_package path_to_jextract_binary"
 
 # read command line arguments
 if [ $# -eq 2 ]; then
@@ -15,16 +15,12 @@ else
 fi
 
 # remove old bindings
-rm -rf "${HIGHS4J}"/src/main/java/com/ustermetrics/HIGHS4J/bindings/
+rm -rf "${HIGHS4J}"/src/main/java/com/ustermetrics/highs4j/bindings/
 
 # generate bindings
 $JEXTRACT \
-  --define-macro DLONG \
-  --define-macro LDL_LONG \
-  --define-macro SuiteSparse_long="long long" \
-  --define-macro SuiteSparse_long_max=9223372036854775801 \
-  --define-macro SuiteSparse_long_idd="lld" \
-  --include-dir "${HIGHS}"/external/SuiteSparse_config \
-  --target-package com.ustermetrics.HIGHS4J.bindings \
+  --include-dir "${HIGHS}"/src \
+  --include-dir "${HIGHS}"/build \
+  --target-package com.ustermetrics.highs4j.bindings \
   --output "${HIGHS4J}"/src/main/java \
-  @"${HIGHS4J}"/bindings/includes.txt "${HIGHS}"/include/highs.h
+  @"${HIGHS4J}"/bindings/includes.txt "${HIGHS}"/src/interfaces/highs_c_api.h
