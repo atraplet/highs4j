@@ -3,7 +3,7 @@
 *Work in progress*
 
 [![Build](https://github.com/atraplet/highs4j/actions/workflows/build.yml/badge.svg)](https://github.com/atraplet/highs4j/actions/workflows/build.yml)
-[![Codecov](https://codecov.io/github/atraplet/highs4j/graph/badge.svg?token=S8TXRQ4UAZ)](https://codecov.io/github/atraplet/highs4j)
+[![Codecov](https://codecov.io/github/atraplet/highs4j/graph/badge.svg?token=H3EN61962F)](https://codecov.io/github/atraplet/highs4j)
 [![Maven Central](https://img.shields.io/maven-central/v/com.ustermetrics/highs4j)](https://central.sonatype.com/artifact/com.ustermetrics/highs4j)
 [![Apache License, Version 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/atraplet/highs4j/blob/master/LICENSE)
 
