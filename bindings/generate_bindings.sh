@@ -2,12 +2,12 @@
 
 # main
 USAGE="\
-Usage: generate_bindings path_to_ecos_source_package path_to_jextract_binary"
+Usage: generate_bindings path_to_highs_source_package path_to_jextract_binary"
 
 # read command line arguments
 if [ $# -eq 2 ]; then
-  ECOS4J=$(dirname "${0}")/../
-  ECOS="${1}"
+  HIGHS4J=$(dirname "${0}")/../
+  HIGHS="${1}"
   JEXTRACT="${2}"
 else
   echo "$USAGE"
@@ -15,7 +15,7 @@ else
 fi
 
 # remove old bindings
-rm -rf "${ECOS4J}"/src/main/java/com/ustermetrics/ecos4j/bindings/
+rm -rf "${HIGHS4J}"/src/main/java/com/ustermetrics/HIGHS4J/bindings/
 
 # generate bindings
 $JEXTRACT \
@@ -24,7 +24,7 @@ $JEXTRACT \
   --define-macro SuiteSparse_long="long long" \
   --define-macro SuiteSparse_long_max=9223372036854775801 \
   --define-macro SuiteSparse_long_idd="lld" \
-  --include-dir "${ECOS}"/external/SuiteSparse_config \
-  --target-package com.ustermetrics.ecos4j.bindings \
-  --output "${ECOS4J}"/src/main/java \
-  @"${ECOS4J}"/bindings/includes.txt "${ECOS}"/include/ecos.h
+  --include-dir "${HIGHS}"/external/SuiteSparse_config \
+  --target-package com.ustermetrics.HIGHS4J.bindings \
+  --output "${HIGHS4J}"/src/main/java \
+  @"${HIGHS4J}"/bindings/includes.txt "${HIGHS}"/include/highs.h

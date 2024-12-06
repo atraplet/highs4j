@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    uses: atraplet/ecos4j/.github/workflows/build.yml@master
+    uses: atraplet/highs4j/.github/workflows/build.yml@master
     secrets:
       codecov_token: ${{ secrets.CODECOV_TOKEN }}
 
