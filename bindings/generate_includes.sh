@@ -22,10 +22,9 @@ INCLUDES="${HIGHS4J}"/bindings/includes.txt
 rm -f "${TMP_INCLUDES}"
 rm -f "${INCLUDES}"
 ${JEXTRACT} \
-  --include-dir "${HIGHS}"/external/SuiteSparse_config \
   --dump-includes "${TMP_INCLUDES}" \
-  "${HIGHS}"/include/highs.h
+  "${HIGHS}"/src/interfaces/highs_c_api.h
 
 # select symbols
-grep "highs\|fflush" "${TMP_INCLUDES}" | grep -v "SuiteSparse\|timer\|fflush_nolock\|fflush_unlocked" >"${INCLUDES}"
+grep "Highs" "${TMP_INCLUDES}" >"${INCLUDES}"
 rm -f "${TMP_INCLUDES}"
