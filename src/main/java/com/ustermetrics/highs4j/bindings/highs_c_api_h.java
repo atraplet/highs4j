@@ -78,10 +78,9 @@ public class highs_c_api_h {
     public static final ValueLayout.OfDouble C_DOUBLE = ValueLayout.JAVA_DOUBLE;
     public static final AddressLayout C_POINTER = ValueLayout.ADDRESS
             .withTargetLayout(MemoryLayout.sequenceLayout(java.lang.Long.MAX_VALUE, JAVA_BYTE));
-    public static final ValueLayout.OfLong C_LONG = ValueLayout.JAVA_LONG;
 
     private static class kHighsMaximumStringLength$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsMaximumStringLength").reinterpret(LAYOUT.byteSize());
     }
 
@@ -91,7 +90,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsMaximumStringLength = 512
      * }
      */
-    public static OfInt kHighsMaximumStringLength$layout() {
+    public static OfLong kHighsMaximumStringLength$layout() {
         return kHighsMaximumStringLength$constants.LAYOUT;
     }
 
@@ -111,7 +110,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsMaximumStringLength = 512
      * }
      */
-    public static int kHighsMaximumStringLength() {
+    public static long kHighsMaximumStringLength() {
         return kHighsMaximumStringLength$constants.SEGMENT.get(kHighsMaximumStringLength$constants.LAYOUT, 0L);
     }
 
@@ -121,12 +120,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsMaximumStringLength = 512
      * }
      */
-    public static void kHighsMaximumStringLength(int varValue) {
+    public static void kHighsMaximumStringLength(long varValue) {
         kHighsMaximumStringLength$constants.SEGMENT.set(kHighsMaximumStringLength$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsStatusError$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsStatusError").reinterpret(LAYOUT.byteSize());
     }
 
@@ -136,7 +135,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsStatusError = -1
      * }
      */
-    public static OfInt kHighsStatusError$layout() {
+    public static OfLong kHighsStatusError$layout() {
         return kHighsStatusError$constants.LAYOUT;
     }
 
@@ -156,7 +155,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsStatusError = -1
      * }
      */
-    public static int kHighsStatusError() {
+    public static long kHighsStatusError() {
         return kHighsStatusError$constants.SEGMENT.get(kHighsStatusError$constants.LAYOUT, 0L);
     }
 
@@ -166,12 +165,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsStatusError = -1
      * }
      */
-    public static void kHighsStatusError(int varValue) {
+    public static void kHighsStatusError(long varValue) {
         kHighsStatusError$constants.SEGMENT.set(kHighsStatusError$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsStatusOk$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsStatusOk").reinterpret(LAYOUT.byteSize());
     }
 
@@ -181,7 +180,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsStatusOk = 0
      * }
      */
-    public static OfInt kHighsStatusOk$layout() {
+    public static OfLong kHighsStatusOk$layout() {
         return kHighsStatusOk$constants.LAYOUT;
     }
 
@@ -201,7 +200,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsStatusOk = 0
      * }
      */
-    public static int kHighsStatusOk() {
+    public static long kHighsStatusOk() {
         return kHighsStatusOk$constants.SEGMENT.get(kHighsStatusOk$constants.LAYOUT, 0L);
     }
 
@@ -211,12 +210,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsStatusOk = 0
      * }
      */
-    public static void kHighsStatusOk(int varValue) {
+    public static void kHighsStatusOk(long varValue) {
         kHighsStatusOk$constants.SEGMENT.set(kHighsStatusOk$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsStatusWarning$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsStatusWarning").reinterpret(LAYOUT.byteSize());
     }
 
@@ -226,7 +225,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsStatusWarning = 1
      * }
      */
-    public static OfInt kHighsStatusWarning$layout() {
+    public static OfLong kHighsStatusWarning$layout() {
         return kHighsStatusWarning$constants.LAYOUT;
     }
 
@@ -246,7 +245,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsStatusWarning = 1
      * }
      */
-    public static int kHighsStatusWarning() {
+    public static long kHighsStatusWarning() {
         return kHighsStatusWarning$constants.SEGMENT.get(kHighsStatusWarning$constants.LAYOUT, 0L);
     }
 
@@ -256,12 +255,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsStatusWarning = 1
      * }
      */
-    public static void kHighsStatusWarning(int varValue) {
+    public static void kHighsStatusWarning(long varValue) {
         kHighsStatusWarning$constants.SEGMENT.set(kHighsStatusWarning$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsVarTypeContinuous$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsVarTypeContinuous").reinterpret(LAYOUT.byteSize());
     }
 
@@ -271,7 +270,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsVarTypeContinuous = 0
      * }
      */
-    public static OfInt kHighsVarTypeContinuous$layout() {
+    public static OfLong kHighsVarTypeContinuous$layout() {
         return kHighsVarTypeContinuous$constants.LAYOUT;
     }
 
@@ -291,7 +290,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsVarTypeContinuous = 0
      * }
      */
-    public static int kHighsVarTypeContinuous() {
+    public static long kHighsVarTypeContinuous() {
         return kHighsVarTypeContinuous$constants.SEGMENT.get(kHighsVarTypeContinuous$constants.LAYOUT, 0L);
     }
 
@@ -301,12 +300,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsVarTypeContinuous = 0
      * }
      */
-    public static void kHighsVarTypeContinuous(int varValue) {
+    public static void kHighsVarTypeContinuous(long varValue) {
         kHighsVarTypeContinuous$constants.SEGMENT.set(kHighsVarTypeContinuous$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsVarTypeInteger$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsVarTypeInteger").reinterpret(LAYOUT.byteSize());
     }
 
@@ -316,7 +315,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsVarTypeInteger = 1
      * }
      */
-    public static OfInt kHighsVarTypeInteger$layout() {
+    public static OfLong kHighsVarTypeInteger$layout() {
         return kHighsVarTypeInteger$constants.LAYOUT;
     }
 
@@ -336,7 +335,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsVarTypeInteger = 1
      * }
      */
-    public static int kHighsVarTypeInteger() {
+    public static long kHighsVarTypeInteger() {
         return kHighsVarTypeInteger$constants.SEGMENT.get(kHighsVarTypeInteger$constants.LAYOUT, 0L);
     }
 
@@ -346,12 +345,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsVarTypeInteger = 1
      * }
      */
-    public static void kHighsVarTypeInteger(int varValue) {
+    public static void kHighsVarTypeInteger(long varValue) {
         kHighsVarTypeInteger$constants.SEGMENT.set(kHighsVarTypeInteger$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsVarTypeSemiContinuous$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsVarTypeSemiContinuous").reinterpret(LAYOUT.byteSize());
     }
 
@@ -361,7 +360,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsVarTypeSemiContinuous = 2
      * }
      */
-    public static OfInt kHighsVarTypeSemiContinuous$layout() {
+    public static OfLong kHighsVarTypeSemiContinuous$layout() {
         return kHighsVarTypeSemiContinuous$constants.LAYOUT;
     }
 
@@ -381,7 +380,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsVarTypeSemiContinuous = 2
      * }
      */
-    public static int kHighsVarTypeSemiContinuous() {
+    public static long kHighsVarTypeSemiContinuous() {
         return kHighsVarTypeSemiContinuous$constants.SEGMENT.get(kHighsVarTypeSemiContinuous$constants.LAYOUT, 0L);
     }
 
@@ -391,12 +390,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsVarTypeSemiContinuous = 2
      * }
      */
-    public static void kHighsVarTypeSemiContinuous(int varValue) {
+    public static void kHighsVarTypeSemiContinuous(long varValue) {
         kHighsVarTypeSemiContinuous$constants.SEGMENT.set(kHighsVarTypeSemiContinuous$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsVarTypeSemiInteger$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsVarTypeSemiInteger").reinterpret(LAYOUT.byteSize());
     }
 
@@ -406,7 +405,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsVarTypeSemiInteger = 3
      * }
      */
-    public static OfInt kHighsVarTypeSemiInteger$layout() {
+    public static OfLong kHighsVarTypeSemiInteger$layout() {
         return kHighsVarTypeSemiInteger$constants.LAYOUT;
     }
 
@@ -426,7 +425,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsVarTypeSemiInteger = 3
      * }
      */
-    public static int kHighsVarTypeSemiInteger() {
+    public static long kHighsVarTypeSemiInteger() {
         return kHighsVarTypeSemiInteger$constants.SEGMENT.get(kHighsVarTypeSemiInteger$constants.LAYOUT, 0L);
     }
 
@@ -436,12 +435,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsVarTypeSemiInteger = 3
      * }
      */
-    public static void kHighsVarTypeSemiInteger(int varValue) {
+    public static void kHighsVarTypeSemiInteger(long varValue) {
         kHighsVarTypeSemiInteger$constants.SEGMENT.set(kHighsVarTypeSemiInteger$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsVarTypeImplicitInteger$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsVarTypeImplicitInteger").reinterpret(LAYOUT.byteSize());
     }
 
@@ -451,7 +450,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsVarTypeImplicitInteger = 4
      * }
      */
-    public static OfInt kHighsVarTypeImplicitInteger$layout() {
+    public static OfLong kHighsVarTypeImplicitInteger$layout() {
         return kHighsVarTypeImplicitInteger$constants.LAYOUT;
     }
 
@@ -471,7 +470,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsVarTypeImplicitInteger = 4
      * }
      */
-    public static int kHighsVarTypeImplicitInteger() {
+    public static long kHighsVarTypeImplicitInteger() {
         return kHighsVarTypeImplicitInteger$constants.SEGMENT.get(kHighsVarTypeImplicitInteger$constants.LAYOUT, 0L);
     }
 
@@ -481,12 +480,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsVarTypeImplicitInteger = 4
      * }
      */
-    public static void kHighsVarTypeImplicitInteger(int varValue) {
+    public static void kHighsVarTypeImplicitInteger(long varValue) {
         kHighsVarTypeImplicitInteger$constants.SEGMENT.set(kHighsVarTypeImplicitInteger$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsOptionTypeBool$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsOptionTypeBool").reinterpret(LAYOUT.byteSize());
     }
 
@@ -496,7 +495,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsOptionTypeBool = 0
      * }
      */
-    public static OfInt kHighsOptionTypeBool$layout() {
+    public static OfLong kHighsOptionTypeBool$layout() {
         return kHighsOptionTypeBool$constants.LAYOUT;
     }
 
@@ -516,7 +515,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsOptionTypeBool = 0
      * }
      */
-    public static int kHighsOptionTypeBool() {
+    public static long kHighsOptionTypeBool() {
         return kHighsOptionTypeBool$constants.SEGMENT.get(kHighsOptionTypeBool$constants.LAYOUT, 0L);
     }
 
@@ -526,12 +525,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsOptionTypeBool = 0
      * }
      */
-    public static void kHighsOptionTypeBool(int varValue) {
+    public static void kHighsOptionTypeBool(long varValue) {
         kHighsOptionTypeBool$constants.SEGMENT.set(kHighsOptionTypeBool$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsOptionTypeInt$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsOptionTypeInt").reinterpret(LAYOUT.byteSize());
     }
 
@@ -541,7 +540,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsOptionTypeInt = 1
      * }
      */
-    public static OfInt kHighsOptionTypeInt$layout() {
+    public static OfLong kHighsOptionTypeInt$layout() {
         return kHighsOptionTypeInt$constants.LAYOUT;
     }
 
@@ -561,7 +560,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsOptionTypeInt = 1
      * }
      */
-    public static int kHighsOptionTypeInt() {
+    public static long kHighsOptionTypeInt() {
         return kHighsOptionTypeInt$constants.SEGMENT.get(kHighsOptionTypeInt$constants.LAYOUT, 0L);
     }
 
@@ -571,12 +570,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsOptionTypeInt = 1
      * }
      */
-    public static void kHighsOptionTypeInt(int varValue) {
+    public static void kHighsOptionTypeInt(long varValue) {
         kHighsOptionTypeInt$constants.SEGMENT.set(kHighsOptionTypeInt$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsOptionTypeDouble$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsOptionTypeDouble").reinterpret(LAYOUT.byteSize());
     }
 
@@ -586,7 +585,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsOptionTypeDouble = 2
      * }
      */
-    public static OfInt kHighsOptionTypeDouble$layout() {
+    public static OfLong kHighsOptionTypeDouble$layout() {
         return kHighsOptionTypeDouble$constants.LAYOUT;
     }
 
@@ -606,7 +605,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsOptionTypeDouble = 2
      * }
      */
-    public static int kHighsOptionTypeDouble() {
+    public static long kHighsOptionTypeDouble() {
         return kHighsOptionTypeDouble$constants.SEGMENT.get(kHighsOptionTypeDouble$constants.LAYOUT, 0L);
     }
 
@@ -616,12 +615,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsOptionTypeDouble = 2
      * }
      */
-    public static void kHighsOptionTypeDouble(int varValue) {
+    public static void kHighsOptionTypeDouble(long varValue) {
         kHighsOptionTypeDouble$constants.SEGMENT.set(kHighsOptionTypeDouble$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsOptionTypeString$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsOptionTypeString").reinterpret(LAYOUT.byteSize());
     }
 
@@ -631,7 +630,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsOptionTypeString = 3
      * }
      */
-    public static OfInt kHighsOptionTypeString$layout() {
+    public static OfLong kHighsOptionTypeString$layout() {
         return kHighsOptionTypeString$constants.LAYOUT;
     }
 
@@ -651,7 +650,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsOptionTypeString = 3
      * }
      */
-    public static int kHighsOptionTypeString() {
+    public static long kHighsOptionTypeString() {
         return kHighsOptionTypeString$constants.SEGMENT.get(kHighsOptionTypeString$constants.LAYOUT, 0L);
     }
 
@@ -661,12 +660,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsOptionTypeString = 3
      * }
      */
-    public static void kHighsOptionTypeString(int varValue) {
+    public static void kHighsOptionTypeString(long varValue) {
         kHighsOptionTypeString$constants.SEGMENT.set(kHighsOptionTypeString$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsInfoTypeInt64$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsInfoTypeInt64").reinterpret(LAYOUT.byteSize());
     }
 
@@ -676,7 +675,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsInfoTypeInt64 = -1
      * }
      */
-    public static OfInt kHighsInfoTypeInt64$layout() {
+    public static OfLong kHighsInfoTypeInt64$layout() {
         return kHighsInfoTypeInt64$constants.LAYOUT;
     }
 
@@ -696,7 +695,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsInfoTypeInt64 = -1
      * }
      */
-    public static int kHighsInfoTypeInt64() {
+    public static long kHighsInfoTypeInt64() {
         return kHighsInfoTypeInt64$constants.SEGMENT.get(kHighsInfoTypeInt64$constants.LAYOUT, 0L);
     }
 
@@ -706,12 +705,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsInfoTypeInt64 = -1
      * }
      */
-    public static void kHighsInfoTypeInt64(int varValue) {
+    public static void kHighsInfoTypeInt64(long varValue) {
         kHighsInfoTypeInt64$constants.SEGMENT.set(kHighsInfoTypeInt64$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsInfoTypeInt$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsInfoTypeInt").reinterpret(LAYOUT.byteSize());
     }
 
@@ -721,7 +720,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsInfoTypeInt = 1
      * }
      */
-    public static OfInt kHighsInfoTypeInt$layout() {
+    public static OfLong kHighsInfoTypeInt$layout() {
         return kHighsInfoTypeInt$constants.LAYOUT;
     }
 
@@ -741,7 +740,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsInfoTypeInt = 1
      * }
      */
-    public static int kHighsInfoTypeInt() {
+    public static long kHighsInfoTypeInt() {
         return kHighsInfoTypeInt$constants.SEGMENT.get(kHighsInfoTypeInt$constants.LAYOUT, 0L);
     }
 
@@ -751,12 +750,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsInfoTypeInt = 1
      * }
      */
-    public static void kHighsInfoTypeInt(int varValue) {
+    public static void kHighsInfoTypeInt(long varValue) {
         kHighsInfoTypeInt$constants.SEGMENT.set(kHighsInfoTypeInt$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsInfoTypeDouble$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsInfoTypeDouble").reinterpret(LAYOUT.byteSize());
     }
 
@@ -766,7 +765,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsInfoTypeDouble = 2
      * }
      */
-    public static OfInt kHighsInfoTypeDouble$layout() {
+    public static OfLong kHighsInfoTypeDouble$layout() {
         return kHighsInfoTypeDouble$constants.LAYOUT;
     }
 
@@ -786,7 +785,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsInfoTypeDouble = 2
      * }
      */
-    public static int kHighsInfoTypeDouble() {
+    public static long kHighsInfoTypeDouble() {
         return kHighsInfoTypeDouble$constants.SEGMENT.get(kHighsInfoTypeDouble$constants.LAYOUT, 0L);
     }
 
@@ -796,12 +795,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsInfoTypeDouble = 2
      * }
      */
-    public static void kHighsInfoTypeDouble(int varValue) {
+    public static void kHighsInfoTypeDouble(long varValue) {
         kHighsInfoTypeDouble$constants.SEGMENT.set(kHighsInfoTypeDouble$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsObjSenseMinimize$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsObjSenseMinimize").reinterpret(LAYOUT.byteSize());
     }
 
@@ -811,7 +810,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsObjSenseMinimize = 1
      * }
      */
-    public static OfInt kHighsObjSenseMinimize$layout() {
+    public static OfLong kHighsObjSenseMinimize$layout() {
         return kHighsObjSenseMinimize$constants.LAYOUT;
     }
 
@@ -831,7 +830,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsObjSenseMinimize = 1
      * }
      */
-    public static int kHighsObjSenseMinimize() {
+    public static long kHighsObjSenseMinimize() {
         return kHighsObjSenseMinimize$constants.SEGMENT.get(kHighsObjSenseMinimize$constants.LAYOUT, 0L);
     }
 
@@ -841,12 +840,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsObjSenseMinimize = 1
      * }
      */
-    public static void kHighsObjSenseMinimize(int varValue) {
+    public static void kHighsObjSenseMinimize(long varValue) {
         kHighsObjSenseMinimize$constants.SEGMENT.set(kHighsObjSenseMinimize$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsObjSenseMaximize$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsObjSenseMaximize").reinterpret(LAYOUT.byteSize());
     }
 
@@ -856,7 +855,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsObjSenseMaximize = -1
      * }
      */
-    public static OfInt kHighsObjSenseMaximize$layout() {
+    public static OfLong kHighsObjSenseMaximize$layout() {
         return kHighsObjSenseMaximize$constants.LAYOUT;
     }
 
@@ -876,7 +875,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsObjSenseMaximize = -1
      * }
      */
-    public static int kHighsObjSenseMaximize() {
+    public static long kHighsObjSenseMaximize() {
         return kHighsObjSenseMaximize$constants.SEGMENT.get(kHighsObjSenseMaximize$constants.LAYOUT, 0L);
     }
 
@@ -886,12 +885,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsObjSenseMaximize = -1
      * }
      */
-    public static void kHighsObjSenseMaximize(int varValue) {
+    public static void kHighsObjSenseMaximize(long varValue) {
         kHighsObjSenseMaximize$constants.SEGMENT.set(kHighsObjSenseMaximize$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsMatrixFormatColwise$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsMatrixFormatColwise").reinterpret(LAYOUT.byteSize());
     }
 
@@ -901,7 +900,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsMatrixFormatColwise = 1
      * }
      */
-    public static OfInt kHighsMatrixFormatColwise$layout() {
+    public static OfLong kHighsMatrixFormatColwise$layout() {
         return kHighsMatrixFormatColwise$constants.LAYOUT;
     }
 
@@ -921,7 +920,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsMatrixFormatColwise = 1
      * }
      */
-    public static int kHighsMatrixFormatColwise() {
+    public static long kHighsMatrixFormatColwise() {
         return kHighsMatrixFormatColwise$constants.SEGMENT.get(kHighsMatrixFormatColwise$constants.LAYOUT, 0L);
     }
 
@@ -931,12 +930,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsMatrixFormatColwise = 1
      * }
      */
-    public static void kHighsMatrixFormatColwise(int varValue) {
+    public static void kHighsMatrixFormatColwise(long varValue) {
         kHighsMatrixFormatColwise$constants.SEGMENT.set(kHighsMatrixFormatColwise$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsMatrixFormatRowwise$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsMatrixFormatRowwise").reinterpret(LAYOUT.byteSize());
     }
 
@@ -946,7 +945,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsMatrixFormatRowwise = 2
      * }
      */
-    public static OfInt kHighsMatrixFormatRowwise$layout() {
+    public static OfLong kHighsMatrixFormatRowwise$layout() {
         return kHighsMatrixFormatRowwise$constants.LAYOUT;
     }
 
@@ -966,7 +965,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsMatrixFormatRowwise = 2
      * }
      */
-    public static int kHighsMatrixFormatRowwise() {
+    public static long kHighsMatrixFormatRowwise() {
         return kHighsMatrixFormatRowwise$constants.SEGMENT.get(kHighsMatrixFormatRowwise$constants.LAYOUT, 0L);
     }
 
@@ -976,12 +975,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsMatrixFormatRowwise = 2
      * }
      */
-    public static void kHighsMatrixFormatRowwise(int varValue) {
+    public static void kHighsMatrixFormatRowwise(long varValue) {
         kHighsMatrixFormatRowwise$constants.SEGMENT.set(kHighsMatrixFormatRowwise$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsHessianFormatTriangular$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsHessianFormatTriangular").reinterpret(LAYOUT.byteSize());
     }
 
@@ -991,7 +990,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsHessianFormatTriangular = 1
      * }
      */
-    public static OfInt kHighsHessianFormatTriangular$layout() {
+    public static OfLong kHighsHessianFormatTriangular$layout() {
         return kHighsHessianFormatTriangular$constants.LAYOUT;
     }
 
@@ -1011,7 +1010,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsHessianFormatTriangular = 1
      * }
      */
-    public static int kHighsHessianFormatTriangular() {
+    public static long kHighsHessianFormatTriangular() {
         return kHighsHessianFormatTriangular$constants.SEGMENT.get(kHighsHessianFormatTriangular$constants.LAYOUT, 0L);
     }
 
@@ -1021,12 +1020,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsHessianFormatTriangular = 1
      * }
      */
-    public static void kHighsHessianFormatTriangular(int varValue) {
+    public static void kHighsHessianFormatTriangular(long varValue) {
         kHighsHessianFormatTriangular$constants.SEGMENT.set(kHighsHessianFormatTriangular$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsHessianFormatSquare$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsHessianFormatSquare").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1036,7 +1035,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsHessianFormatSquare = 2
      * }
      */
-    public static OfInt kHighsHessianFormatSquare$layout() {
+    public static OfLong kHighsHessianFormatSquare$layout() {
         return kHighsHessianFormatSquare$constants.LAYOUT;
     }
 
@@ -1056,7 +1055,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsHessianFormatSquare = 2
      * }
      */
-    public static int kHighsHessianFormatSquare() {
+    public static long kHighsHessianFormatSquare() {
         return kHighsHessianFormatSquare$constants.SEGMENT.get(kHighsHessianFormatSquare$constants.LAYOUT, 0L);
     }
 
@@ -1066,12 +1065,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsHessianFormatSquare = 2
      * }
      */
-    public static void kHighsHessianFormatSquare(int varValue) {
+    public static void kHighsHessianFormatSquare(long varValue) {
         kHighsHessianFormatSquare$constants.SEGMENT.set(kHighsHessianFormatSquare$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsSolutionStatusNone$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsSolutionStatusNone").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1081,7 +1080,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsSolutionStatusNone = 0
      * }
      */
-    public static OfInt kHighsSolutionStatusNone$layout() {
+    public static OfLong kHighsSolutionStatusNone$layout() {
         return kHighsSolutionStatusNone$constants.LAYOUT;
     }
 
@@ -1101,7 +1100,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsSolutionStatusNone = 0
      * }
      */
-    public static int kHighsSolutionStatusNone() {
+    public static long kHighsSolutionStatusNone() {
         return kHighsSolutionStatusNone$constants.SEGMENT.get(kHighsSolutionStatusNone$constants.LAYOUT, 0L);
     }
 
@@ -1111,12 +1110,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsSolutionStatusNone = 0
      * }
      */
-    public static void kHighsSolutionStatusNone(int varValue) {
+    public static void kHighsSolutionStatusNone(long varValue) {
         kHighsSolutionStatusNone$constants.SEGMENT.set(kHighsSolutionStatusNone$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsSolutionStatusInfeasible$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsSolutionStatusInfeasible").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1126,7 +1125,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsSolutionStatusInfeasible = 1
      * }
      */
-    public static OfInt kHighsSolutionStatusInfeasible$layout() {
+    public static OfLong kHighsSolutionStatusInfeasible$layout() {
         return kHighsSolutionStatusInfeasible$constants.LAYOUT;
     }
 
@@ -1146,7 +1145,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsSolutionStatusInfeasible = 1
      * }
      */
-    public static int kHighsSolutionStatusInfeasible() {
+    public static long kHighsSolutionStatusInfeasible() {
         return kHighsSolutionStatusInfeasible$constants.SEGMENT.get(kHighsSolutionStatusInfeasible$constants.LAYOUT, 0L);
     }
 
@@ -1156,12 +1155,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsSolutionStatusInfeasible = 1
      * }
      */
-    public static void kHighsSolutionStatusInfeasible(int varValue) {
+    public static void kHighsSolutionStatusInfeasible(long varValue) {
         kHighsSolutionStatusInfeasible$constants.SEGMENT.set(kHighsSolutionStatusInfeasible$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsSolutionStatusFeasible$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsSolutionStatusFeasible").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1171,7 +1170,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsSolutionStatusFeasible = 2
      * }
      */
-    public static OfInt kHighsSolutionStatusFeasible$layout() {
+    public static OfLong kHighsSolutionStatusFeasible$layout() {
         return kHighsSolutionStatusFeasible$constants.LAYOUT;
     }
 
@@ -1191,7 +1190,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsSolutionStatusFeasible = 2
      * }
      */
-    public static int kHighsSolutionStatusFeasible() {
+    public static long kHighsSolutionStatusFeasible() {
         return kHighsSolutionStatusFeasible$constants.SEGMENT.get(kHighsSolutionStatusFeasible$constants.LAYOUT, 0L);
     }
 
@@ -1201,12 +1200,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsSolutionStatusFeasible = 2
      * }
      */
-    public static void kHighsSolutionStatusFeasible(int varValue) {
+    public static void kHighsSolutionStatusFeasible(long varValue) {
         kHighsSolutionStatusFeasible$constants.SEGMENT.set(kHighsSolutionStatusFeasible$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsBasisValidityInvalid$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsBasisValidityInvalid").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1216,7 +1215,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisValidityInvalid = 0
      * }
      */
-    public static OfInt kHighsBasisValidityInvalid$layout() {
+    public static OfLong kHighsBasisValidityInvalid$layout() {
         return kHighsBasisValidityInvalid$constants.LAYOUT;
     }
 
@@ -1236,7 +1235,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisValidityInvalid = 0
      * }
      */
-    public static int kHighsBasisValidityInvalid() {
+    public static long kHighsBasisValidityInvalid() {
         return kHighsBasisValidityInvalid$constants.SEGMENT.get(kHighsBasisValidityInvalid$constants.LAYOUT, 0L);
     }
 
@@ -1246,12 +1245,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisValidityInvalid = 0
      * }
      */
-    public static void kHighsBasisValidityInvalid(int varValue) {
+    public static void kHighsBasisValidityInvalid(long varValue) {
         kHighsBasisValidityInvalid$constants.SEGMENT.set(kHighsBasisValidityInvalid$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsBasisValidityValid$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsBasisValidityValid").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1261,7 +1260,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisValidityValid = 1
      * }
      */
-    public static OfInt kHighsBasisValidityValid$layout() {
+    public static OfLong kHighsBasisValidityValid$layout() {
         return kHighsBasisValidityValid$constants.LAYOUT;
     }
 
@@ -1281,7 +1280,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisValidityValid = 1
      * }
      */
-    public static int kHighsBasisValidityValid() {
+    public static long kHighsBasisValidityValid() {
         return kHighsBasisValidityValid$constants.SEGMENT.get(kHighsBasisValidityValid$constants.LAYOUT, 0L);
     }
 
@@ -1291,12 +1290,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisValidityValid = 1
      * }
      */
-    public static void kHighsBasisValidityValid(int varValue) {
+    public static void kHighsBasisValidityValid(long varValue) {
         kHighsBasisValidityValid$constants.SEGMENT.set(kHighsBasisValidityValid$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsPresolveStatusNotPresolved$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsPresolveStatusNotPresolved").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1306,7 +1305,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusNotPresolved = -1
      * }
      */
-    public static OfInt kHighsPresolveStatusNotPresolved$layout() {
+    public static OfLong kHighsPresolveStatusNotPresolved$layout() {
         return kHighsPresolveStatusNotPresolved$constants.LAYOUT;
     }
 
@@ -1326,7 +1325,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusNotPresolved = -1
      * }
      */
-    public static int kHighsPresolveStatusNotPresolved() {
+    public static long kHighsPresolveStatusNotPresolved() {
         return kHighsPresolveStatusNotPresolved$constants.SEGMENT.get(kHighsPresolveStatusNotPresolved$constants.LAYOUT, 0L);
     }
 
@@ -1336,12 +1335,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusNotPresolved = -1
      * }
      */
-    public static void kHighsPresolveStatusNotPresolved(int varValue) {
+    public static void kHighsPresolveStatusNotPresolved(long varValue) {
         kHighsPresolveStatusNotPresolved$constants.SEGMENT.set(kHighsPresolveStatusNotPresolved$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsPresolveStatusNotReduced$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsPresolveStatusNotReduced").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1351,7 +1350,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusNotReduced = 0
      * }
      */
-    public static OfInt kHighsPresolveStatusNotReduced$layout() {
+    public static OfLong kHighsPresolveStatusNotReduced$layout() {
         return kHighsPresolveStatusNotReduced$constants.LAYOUT;
     }
 
@@ -1371,7 +1370,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusNotReduced = 0
      * }
      */
-    public static int kHighsPresolveStatusNotReduced() {
+    public static long kHighsPresolveStatusNotReduced() {
         return kHighsPresolveStatusNotReduced$constants.SEGMENT.get(kHighsPresolveStatusNotReduced$constants.LAYOUT, 0L);
     }
 
@@ -1381,12 +1380,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusNotReduced = 0
      * }
      */
-    public static void kHighsPresolveStatusNotReduced(int varValue) {
+    public static void kHighsPresolveStatusNotReduced(long varValue) {
         kHighsPresolveStatusNotReduced$constants.SEGMENT.set(kHighsPresolveStatusNotReduced$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsPresolveStatusInfeasible$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsPresolveStatusInfeasible").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1396,7 +1395,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusInfeasible = 1
      * }
      */
-    public static OfInt kHighsPresolveStatusInfeasible$layout() {
+    public static OfLong kHighsPresolveStatusInfeasible$layout() {
         return kHighsPresolveStatusInfeasible$constants.LAYOUT;
     }
 
@@ -1416,7 +1415,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusInfeasible = 1
      * }
      */
-    public static int kHighsPresolveStatusInfeasible() {
+    public static long kHighsPresolveStatusInfeasible() {
         return kHighsPresolveStatusInfeasible$constants.SEGMENT.get(kHighsPresolveStatusInfeasible$constants.LAYOUT, 0L);
     }
 
@@ -1426,12 +1425,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusInfeasible = 1
      * }
      */
-    public static void kHighsPresolveStatusInfeasible(int varValue) {
+    public static void kHighsPresolveStatusInfeasible(long varValue) {
         kHighsPresolveStatusInfeasible$constants.SEGMENT.set(kHighsPresolveStatusInfeasible$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsPresolveStatusUnboundedOrInfeasible$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsPresolveStatusUnboundedOrInfeasible").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1441,7 +1440,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusUnboundedOrInfeasible = 2
      * }
      */
-    public static OfInt kHighsPresolveStatusUnboundedOrInfeasible$layout() {
+    public static OfLong kHighsPresolveStatusUnboundedOrInfeasible$layout() {
         return kHighsPresolveStatusUnboundedOrInfeasible$constants.LAYOUT;
     }
 
@@ -1461,7 +1460,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusUnboundedOrInfeasible = 2
      * }
      */
-    public static int kHighsPresolveStatusUnboundedOrInfeasible() {
+    public static long kHighsPresolveStatusUnboundedOrInfeasible() {
         return kHighsPresolveStatusUnboundedOrInfeasible$constants.SEGMENT.get(kHighsPresolveStatusUnboundedOrInfeasible$constants.LAYOUT, 0L);
     }
 
@@ -1471,12 +1470,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusUnboundedOrInfeasible = 2
      * }
      */
-    public static void kHighsPresolveStatusUnboundedOrInfeasible(int varValue) {
+    public static void kHighsPresolveStatusUnboundedOrInfeasible(long varValue) {
         kHighsPresolveStatusUnboundedOrInfeasible$constants.SEGMENT.set(kHighsPresolveStatusUnboundedOrInfeasible$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsPresolveStatusReduced$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsPresolveStatusReduced").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1486,7 +1485,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusReduced = 3
      * }
      */
-    public static OfInt kHighsPresolveStatusReduced$layout() {
+    public static OfLong kHighsPresolveStatusReduced$layout() {
         return kHighsPresolveStatusReduced$constants.LAYOUT;
     }
 
@@ -1506,7 +1505,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusReduced = 3
      * }
      */
-    public static int kHighsPresolveStatusReduced() {
+    public static long kHighsPresolveStatusReduced() {
         return kHighsPresolveStatusReduced$constants.SEGMENT.get(kHighsPresolveStatusReduced$constants.LAYOUT, 0L);
     }
 
@@ -1516,12 +1515,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusReduced = 3
      * }
      */
-    public static void kHighsPresolveStatusReduced(int varValue) {
+    public static void kHighsPresolveStatusReduced(long varValue) {
         kHighsPresolveStatusReduced$constants.SEGMENT.set(kHighsPresolveStatusReduced$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsPresolveStatusReducedToEmpty$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsPresolveStatusReducedToEmpty").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1531,7 +1530,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusReducedToEmpty = 4
      * }
      */
-    public static OfInt kHighsPresolveStatusReducedToEmpty$layout() {
+    public static OfLong kHighsPresolveStatusReducedToEmpty$layout() {
         return kHighsPresolveStatusReducedToEmpty$constants.LAYOUT;
     }
 
@@ -1551,7 +1550,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusReducedToEmpty = 4
      * }
      */
-    public static int kHighsPresolveStatusReducedToEmpty() {
+    public static long kHighsPresolveStatusReducedToEmpty() {
         return kHighsPresolveStatusReducedToEmpty$constants.SEGMENT.get(kHighsPresolveStatusReducedToEmpty$constants.LAYOUT, 0L);
     }
 
@@ -1561,12 +1560,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusReducedToEmpty = 4
      * }
      */
-    public static void kHighsPresolveStatusReducedToEmpty(int varValue) {
+    public static void kHighsPresolveStatusReducedToEmpty(long varValue) {
         kHighsPresolveStatusReducedToEmpty$constants.SEGMENT.set(kHighsPresolveStatusReducedToEmpty$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsPresolveStatusTimeout$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsPresolveStatusTimeout").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1576,7 +1575,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusTimeout = 5
      * }
      */
-    public static OfInt kHighsPresolveStatusTimeout$layout() {
+    public static OfLong kHighsPresolveStatusTimeout$layout() {
         return kHighsPresolveStatusTimeout$constants.LAYOUT;
     }
 
@@ -1596,7 +1595,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusTimeout = 5
      * }
      */
-    public static int kHighsPresolveStatusTimeout() {
+    public static long kHighsPresolveStatusTimeout() {
         return kHighsPresolveStatusTimeout$constants.SEGMENT.get(kHighsPresolveStatusTimeout$constants.LAYOUT, 0L);
     }
 
@@ -1606,12 +1605,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusTimeout = 5
      * }
      */
-    public static void kHighsPresolveStatusTimeout(int varValue) {
+    public static void kHighsPresolveStatusTimeout(long varValue) {
         kHighsPresolveStatusTimeout$constants.SEGMENT.set(kHighsPresolveStatusTimeout$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsPresolveStatusNullError$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsPresolveStatusNullError").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1621,7 +1620,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusNullError = 6
      * }
      */
-    public static OfInt kHighsPresolveStatusNullError$layout() {
+    public static OfLong kHighsPresolveStatusNullError$layout() {
         return kHighsPresolveStatusNullError$constants.LAYOUT;
     }
 
@@ -1641,7 +1640,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusNullError = 6
      * }
      */
-    public static int kHighsPresolveStatusNullError() {
+    public static long kHighsPresolveStatusNullError() {
         return kHighsPresolveStatusNullError$constants.SEGMENT.get(kHighsPresolveStatusNullError$constants.LAYOUT, 0L);
     }
 
@@ -1651,12 +1650,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusNullError = 6
      * }
      */
-    public static void kHighsPresolveStatusNullError(int varValue) {
+    public static void kHighsPresolveStatusNullError(long varValue) {
         kHighsPresolveStatusNullError$constants.SEGMENT.set(kHighsPresolveStatusNullError$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsPresolveStatusOptionsError$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsPresolveStatusOptionsError").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1666,7 +1665,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusOptionsError = 7
      * }
      */
-    public static OfInt kHighsPresolveStatusOptionsError$layout() {
+    public static OfLong kHighsPresolveStatusOptionsError$layout() {
         return kHighsPresolveStatusOptionsError$constants.LAYOUT;
     }
 
@@ -1686,7 +1685,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusOptionsError = 7
      * }
      */
-    public static int kHighsPresolveStatusOptionsError() {
+    public static long kHighsPresolveStatusOptionsError() {
         return kHighsPresolveStatusOptionsError$constants.SEGMENT.get(kHighsPresolveStatusOptionsError$constants.LAYOUT, 0L);
     }
 
@@ -1696,12 +1695,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusOptionsError = 7
      * }
      */
-    public static void kHighsPresolveStatusOptionsError(int varValue) {
+    public static void kHighsPresolveStatusOptionsError(long varValue) {
         kHighsPresolveStatusOptionsError$constants.SEGMENT.set(kHighsPresolveStatusOptionsError$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsPresolveStatusOutOfMemory$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsPresolveStatusOutOfMemory").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1711,7 +1710,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusOutOfMemory = 8
      * }
      */
-    public static OfInt kHighsPresolveStatusOutOfMemory$layout() {
+    public static OfLong kHighsPresolveStatusOutOfMemory$layout() {
         return kHighsPresolveStatusOutOfMemory$constants.LAYOUT;
     }
 
@@ -1731,7 +1730,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusOutOfMemory = 8
      * }
      */
-    public static int kHighsPresolveStatusOutOfMemory() {
+    public static long kHighsPresolveStatusOutOfMemory() {
         return kHighsPresolveStatusOutOfMemory$constants.SEGMENT.get(kHighsPresolveStatusOutOfMemory$constants.LAYOUT, 0L);
     }
 
@@ -1741,12 +1740,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsPresolveStatusOutOfMemory = 8
      * }
      */
-    public static void kHighsPresolveStatusOutOfMemory(int varValue) {
+    public static void kHighsPresolveStatusOutOfMemory(long varValue) {
         kHighsPresolveStatusOutOfMemory$constants.SEGMENT.set(kHighsPresolveStatusOutOfMemory$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusNotset$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusNotset").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1756,7 +1755,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusNotset = 0
      * }
      */
-    public static OfInt kHighsModelStatusNotset$layout() {
+    public static OfLong kHighsModelStatusNotset$layout() {
         return kHighsModelStatusNotset$constants.LAYOUT;
     }
 
@@ -1776,7 +1775,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusNotset = 0
      * }
      */
-    public static int kHighsModelStatusNotset() {
+    public static long kHighsModelStatusNotset() {
         return kHighsModelStatusNotset$constants.SEGMENT.get(kHighsModelStatusNotset$constants.LAYOUT, 0L);
     }
 
@@ -1786,12 +1785,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusNotset = 0
      * }
      */
-    public static void kHighsModelStatusNotset(int varValue) {
+    public static void kHighsModelStatusNotset(long varValue) {
         kHighsModelStatusNotset$constants.SEGMENT.set(kHighsModelStatusNotset$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusLoadError$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusLoadError").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1801,7 +1800,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusLoadError = 1
      * }
      */
-    public static OfInt kHighsModelStatusLoadError$layout() {
+    public static OfLong kHighsModelStatusLoadError$layout() {
         return kHighsModelStatusLoadError$constants.LAYOUT;
     }
 
@@ -1821,7 +1820,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusLoadError = 1
      * }
      */
-    public static int kHighsModelStatusLoadError() {
+    public static long kHighsModelStatusLoadError() {
         return kHighsModelStatusLoadError$constants.SEGMENT.get(kHighsModelStatusLoadError$constants.LAYOUT, 0L);
     }
 
@@ -1831,12 +1830,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusLoadError = 1
      * }
      */
-    public static void kHighsModelStatusLoadError(int varValue) {
+    public static void kHighsModelStatusLoadError(long varValue) {
         kHighsModelStatusLoadError$constants.SEGMENT.set(kHighsModelStatusLoadError$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusModelError$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusModelError").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1846,7 +1845,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusModelError = 2
      * }
      */
-    public static OfInt kHighsModelStatusModelError$layout() {
+    public static OfLong kHighsModelStatusModelError$layout() {
         return kHighsModelStatusModelError$constants.LAYOUT;
     }
 
@@ -1866,7 +1865,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusModelError = 2
      * }
      */
-    public static int kHighsModelStatusModelError() {
+    public static long kHighsModelStatusModelError() {
         return kHighsModelStatusModelError$constants.SEGMENT.get(kHighsModelStatusModelError$constants.LAYOUT, 0L);
     }
 
@@ -1876,12 +1875,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusModelError = 2
      * }
      */
-    public static void kHighsModelStatusModelError(int varValue) {
+    public static void kHighsModelStatusModelError(long varValue) {
         kHighsModelStatusModelError$constants.SEGMENT.set(kHighsModelStatusModelError$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusPresolveError$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusPresolveError").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1891,7 +1890,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusPresolveError = 3
      * }
      */
-    public static OfInt kHighsModelStatusPresolveError$layout() {
+    public static OfLong kHighsModelStatusPresolveError$layout() {
         return kHighsModelStatusPresolveError$constants.LAYOUT;
     }
 
@@ -1911,7 +1910,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusPresolveError = 3
      * }
      */
-    public static int kHighsModelStatusPresolveError() {
+    public static long kHighsModelStatusPresolveError() {
         return kHighsModelStatusPresolveError$constants.SEGMENT.get(kHighsModelStatusPresolveError$constants.LAYOUT, 0L);
     }
 
@@ -1921,12 +1920,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusPresolveError = 3
      * }
      */
-    public static void kHighsModelStatusPresolveError(int varValue) {
+    public static void kHighsModelStatusPresolveError(long varValue) {
         kHighsModelStatusPresolveError$constants.SEGMENT.set(kHighsModelStatusPresolveError$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusSolveError$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusSolveError").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1936,7 +1935,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusSolveError = 4
      * }
      */
-    public static OfInt kHighsModelStatusSolveError$layout() {
+    public static OfLong kHighsModelStatusSolveError$layout() {
         return kHighsModelStatusSolveError$constants.LAYOUT;
     }
 
@@ -1956,7 +1955,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusSolveError = 4
      * }
      */
-    public static int kHighsModelStatusSolveError() {
+    public static long kHighsModelStatusSolveError() {
         return kHighsModelStatusSolveError$constants.SEGMENT.get(kHighsModelStatusSolveError$constants.LAYOUT, 0L);
     }
 
@@ -1966,12 +1965,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusSolveError = 4
      * }
      */
-    public static void kHighsModelStatusSolveError(int varValue) {
+    public static void kHighsModelStatusSolveError(long varValue) {
         kHighsModelStatusSolveError$constants.SEGMENT.set(kHighsModelStatusSolveError$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusPostsolveError$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusPostsolveError").reinterpret(LAYOUT.byteSize());
     }
 
@@ -1981,7 +1980,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusPostsolveError = 5
      * }
      */
-    public static OfInt kHighsModelStatusPostsolveError$layout() {
+    public static OfLong kHighsModelStatusPostsolveError$layout() {
         return kHighsModelStatusPostsolveError$constants.LAYOUT;
     }
 
@@ -2001,7 +2000,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusPostsolveError = 5
      * }
      */
-    public static int kHighsModelStatusPostsolveError() {
+    public static long kHighsModelStatusPostsolveError() {
         return kHighsModelStatusPostsolveError$constants.SEGMENT.get(kHighsModelStatusPostsolveError$constants.LAYOUT, 0L);
     }
 
@@ -2011,12 +2010,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusPostsolveError = 5
      * }
      */
-    public static void kHighsModelStatusPostsolveError(int varValue) {
+    public static void kHighsModelStatusPostsolveError(long varValue) {
         kHighsModelStatusPostsolveError$constants.SEGMENT.set(kHighsModelStatusPostsolveError$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusModelEmpty$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusModelEmpty").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2026,7 +2025,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusModelEmpty = 6
      * }
      */
-    public static OfInt kHighsModelStatusModelEmpty$layout() {
+    public static OfLong kHighsModelStatusModelEmpty$layout() {
         return kHighsModelStatusModelEmpty$constants.LAYOUT;
     }
 
@@ -2046,7 +2045,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusModelEmpty = 6
      * }
      */
-    public static int kHighsModelStatusModelEmpty() {
+    public static long kHighsModelStatusModelEmpty() {
         return kHighsModelStatusModelEmpty$constants.SEGMENT.get(kHighsModelStatusModelEmpty$constants.LAYOUT, 0L);
     }
 
@@ -2056,12 +2055,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusModelEmpty = 6
      * }
      */
-    public static void kHighsModelStatusModelEmpty(int varValue) {
+    public static void kHighsModelStatusModelEmpty(long varValue) {
         kHighsModelStatusModelEmpty$constants.SEGMENT.set(kHighsModelStatusModelEmpty$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusOptimal$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusOptimal").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2071,7 +2070,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusOptimal = 7
      * }
      */
-    public static OfInt kHighsModelStatusOptimal$layout() {
+    public static OfLong kHighsModelStatusOptimal$layout() {
         return kHighsModelStatusOptimal$constants.LAYOUT;
     }
 
@@ -2091,7 +2090,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusOptimal = 7
      * }
      */
-    public static int kHighsModelStatusOptimal() {
+    public static long kHighsModelStatusOptimal() {
         return kHighsModelStatusOptimal$constants.SEGMENT.get(kHighsModelStatusOptimal$constants.LAYOUT, 0L);
     }
 
@@ -2101,12 +2100,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusOptimal = 7
      * }
      */
-    public static void kHighsModelStatusOptimal(int varValue) {
+    public static void kHighsModelStatusOptimal(long varValue) {
         kHighsModelStatusOptimal$constants.SEGMENT.set(kHighsModelStatusOptimal$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusInfeasible$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusInfeasible").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2116,7 +2115,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusInfeasible = 8
      * }
      */
-    public static OfInt kHighsModelStatusInfeasible$layout() {
+    public static OfLong kHighsModelStatusInfeasible$layout() {
         return kHighsModelStatusInfeasible$constants.LAYOUT;
     }
 
@@ -2136,7 +2135,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusInfeasible = 8
      * }
      */
-    public static int kHighsModelStatusInfeasible() {
+    public static long kHighsModelStatusInfeasible() {
         return kHighsModelStatusInfeasible$constants.SEGMENT.get(kHighsModelStatusInfeasible$constants.LAYOUT, 0L);
     }
 
@@ -2146,12 +2145,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusInfeasible = 8
      * }
      */
-    public static void kHighsModelStatusInfeasible(int varValue) {
+    public static void kHighsModelStatusInfeasible(long varValue) {
         kHighsModelStatusInfeasible$constants.SEGMENT.set(kHighsModelStatusInfeasible$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusUnboundedOrInfeasible$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusUnboundedOrInfeasible").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2161,7 +2160,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusUnboundedOrInfeasible = 9
      * }
      */
-    public static OfInt kHighsModelStatusUnboundedOrInfeasible$layout() {
+    public static OfLong kHighsModelStatusUnboundedOrInfeasible$layout() {
         return kHighsModelStatusUnboundedOrInfeasible$constants.LAYOUT;
     }
 
@@ -2181,7 +2180,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusUnboundedOrInfeasible = 9
      * }
      */
-    public static int kHighsModelStatusUnboundedOrInfeasible() {
+    public static long kHighsModelStatusUnboundedOrInfeasible() {
         return kHighsModelStatusUnboundedOrInfeasible$constants.SEGMENT.get(kHighsModelStatusUnboundedOrInfeasible$constants.LAYOUT, 0L);
     }
 
@@ -2191,12 +2190,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusUnboundedOrInfeasible = 9
      * }
      */
-    public static void kHighsModelStatusUnboundedOrInfeasible(int varValue) {
+    public static void kHighsModelStatusUnboundedOrInfeasible(long varValue) {
         kHighsModelStatusUnboundedOrInfeasible$constants.SEGMENT.set(kHighsModelStatusUnboundedOrInfeasible$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusUnbounded$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusUnbounded").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2206,7 +2205,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusUnbounded = 10
      * }
      */
-    public static OfInt kHighsModelStatusUnbounded$layout() {
+    public static OfLong kHighsModelStatusUnbounded$layout() {
         return kHighsModelStatusUnbounded$constants.LAYOUT;
     }
 
@@ -2226,7 +2225,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusUnbounded = 10
      * }
      */
-    public static int kHighsModelStatusUnbounded() {
+    public static long kHighsModelStatusUnbounded() {
         return kHighsModelStatusUnbounded$constants.SEGMENT.get(kHighsModelStatusUnbounded$constants.LAYOUT, 0L);
     }
 
@@ -2236,12 +2235,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusUnbounded = 10
      * }
      */
-    public static void kHighsModelStatusUnbounded(int varValue) {
+    public static void kHighsModelStatusUnbounded(long varValue) {
         kHighsModelStatusUnbounded$constants.SEGMENT.set(kHighsModelStatusUnbounded$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusObjectiveBound$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusObjectiveBound").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2251,7 +2250,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusObjectiveBound = 11
      * }
      */
-    public static OfInt kHighsModelStatusObjectiveBound$layout() {
+    public static OfLong kHighsModelStatusObjectiveBound$layout() {
         return kHighsModelStatusObjectiveBound$constants.LAYOUT;
     }
 
@@ -2271,7 +2270,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusObjectiveBound = 11
      * }
      */
-    public static int kHighsModelStatusObjectiveBound() {
+    public static long kHighsModelStatusObjectiveBound() {
         return kHighsModelStatusObjectiveBound$constants.SEGMENT.get(kHighsModelStatusObjectiveBound$constants.LAYOUT, 0L);
     }
 
@@ -2281,12 +2280,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusObjectiveBound = 11
      * }
      */
-    public static void kHighsModelStatusObjectiveBound(int varValue) {
+    public static void kHighsModelStatusObjectiveBound(long varValue) {
         kHighsModelStatusObjectiveBound$constants.SEGMENT.set(kHighsModelStatusObjectiveBound$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusObjectiveTarget$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusObjectiveTarget").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2296,7 +2295,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusObjectiveTarget = 12
      * }
      */
-    public static OfInt kHighsModelStatusObjectiveTarget$layout() {
+    public static OfLong kHighsModelStatusObjectiveTarget$layout() {
         return kHighsModelStatusObjectiveTarget$constants.LAYOUT;
     }
 
@@ -2316,7 +2315,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusObjectiveTarget = 12
      * }
      */
-    public static int kHighsModelStatusObjectiveTarget() {
+    public static long kHighsModelStatusObjectiveTarget() {
         return kHighsModelStatusObjectiveTarget$constants.SEGMENT.get(kHighsModelStatusObjectiveTarget$constants.LAYOUT, 0L);
     }
 
@@ -2326,12 +2325,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusObjectiveTarget = 12
      * }
      */
-    public static void kHighsModelStatusObjectiveTarget(int varValue) {
+    public static void kHighsModelStatusObjectiveTarget(long varValue) {
         kHighsModelStatusObjectiveTarget$constants.SEGMENT.set(kHighsModelStatusObjectiveTarget$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusTimeLimit$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusTimeLimit").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2341,7 +2340,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusTimeLimit = 13
      * }
      */
-    public static OfInt kHighsModelStatusTimeLimit$layout() {
+    public static OfLong kHighsModelStatusTimeLimit$layout() {
         return kHighsModelStatusTimeLimit$constants.LAYOUT;
     }
 
@@ -2361,7 +2360,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusTimeLimit = 13
      * }
      */
-    public static int kHighsModelStatusTimeLimit() {
+    public static long kHighsModelStatusTimeLimit() {
         return kHighsModelStatusTimeLimit$constants.SEGMENT.get(kHighsModelStatusTimeLimit$constants.LAYOUT, 0L);
     }
 
@@ -2371,12 +2370,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusTimeLimit = 13
      * }
      */
-    public static void kHighsModelStatusTimeLimit(int varValue) {
+    public static void kHighsModelStatusTimeLimit(long varValue) {
         kHighsModelStatusTimeLimit$constants.SEGMENT.set(kHighsModelStatusTimeLimit$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusIterationLimit$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusIterationLimit").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2386,7 +2385,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusIterationLimit = 14
      * }
      */
-    public static OfInt kHighsModelStatusIterationLimit$layout() {
+    public static OfLong kHighsModelStatusIterationLimit$layout() {
         return kHighsModelStatusIterationLimit$constants.LAYOUT;
     }
 
@@ -2406,7 +2405,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusIterationLimit = 14
      * }
      */
-    public static int kHighsModelStatusIterationLimit() {
+    public static long kHighsModelStatusIterationLimit() {
         return kHighsModelStatusIterationLimit$constants.SEGMENT.get(kHighsModelStatusIterationLimit$constants.LAYOUT, 0L);
     }
 
@@ -2416,12 +2415,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusIterationLimit = 14
      * }
      */
-    public static void kHighsModelStatusIterationLimit(int varValue) {
+    public static void kHighsModelStatusIterationLimit(long varValue) {
         kHighsModelStatusIterationLimit$constants.SEGMENT.set(kHighsModelStatusIterationLimit$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusUnknown$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusUnknown").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2431,7 +2430,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusUnknown = 15
      * }
      */
-    public static OfInt kHighsModelStatusUnknown$layout() {
+    public static OfLong kHighsModelStatusUnknown$layout() {
         return kHighsModelStatusUnknown$constants.LAYOUT;
     }
 
@@ -2451,7 +2450,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusUnknown = 15
      * }
      */
-    public static int kHighsModelStatusUnknown() {
+    public static long kHighsModelStatusUnknown() {
         return kHighsModelStatusUnknown$constants.SEGMENT.get(kHighsModelStatusUnknown$constants.LAYOUT, 0L);
     }
 
@@ -2461,12 +2460,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusUnknown = 15
      * }
      */
-    public static void kHighsModelStatusUnknown(int varValue) {
+    public static void kHighsModelStatusUnknown(long varValue) {
         kHighsModelStatusUnknown$constants.SEGMENT.set(kHighsModelStatusUnknown$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusSolutionLimit$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusSolutionLimit").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2476,7 +2475,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusSolutionLimit = 16
      * }
      */
-    public static OfInt kHighsModelStatusSolutionLimit$layout() {
+    public static OfLong kHighsModelStatusSolutionLimit$layout() {
         return kHighsModelStatusSolutionLimit$constants.LAYOUT;
     }
 
@@ -2496,7 +2495,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusSolutionLimit = 16
      * }
      */
-    public static int kHighsModelStatusSolutionLimit() {
+    public static long kHighsModelStatusSolutionLimit() {
         return kHighsModelStatusSolutionLimit$constants.SEGMENT.get(kHighsModelStatusSolutionLimit$constants.LAYOUT, 0L);
     }
 
@@ -2506,12 +2505,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusSolutionLimit = 16
      * }
      */
-    public static void kHighsModelStatusSolutionLimit(int varValue) {
+    public static void kHighsModelStatusSolutionLimit(long varValue) {
         kHighsModelStatusSolutionLimit$constants.SEGMENT.set(kHighsModelStatusSolutionLimit$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsModelStatusInterrupt$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsModelStatusInterrupt").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2521,7 +2520,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusInterrupt = 17
      * }
      */
-    public static OfInt kHighsModelStatusInterrupt$layout() {
+    public static OfLong kHighsModelStatusInterrupt$layout() {
         return kHighsModelStatusInterrupt$constants.LAYOUT;
     }
 
@@ -2541,7 +2540,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusInterrupt = 17
      * }
      */
-    public static int kHighsModelStatusInterrupt() {
+    public static long kHighsModelStatusInterrupt() {
         return kHighsModelStatusInterrupt$constants.SEGMENT.get(kHighsModelStatusInterrupt$constants.LAYOUT, 0L);
     }
 
@@ -2551,12 +2550,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsModelStatusInterrupt = 17
      * }
      */
-    public static void kHighsModelStatusInterrupt(int varValue) {
+    public static void kHighsModelStatusInterrupt(long varValue) {
         kHighsModelStatusInterrupt$constants.SEGMENT.set(kHighsModelStatusInterrupt$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsBasisStatusLower$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsBasisStatusLower").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2566,7 +2565,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisStatusLower = 0
      * }
      */
-    public static OfInt kHighsBasisStatusLower$layout() {
+    public static OfLong kHighsBasisStatusLower$layout() {
         return kHighsBasisStatusLower$constants.LAYOUT;
     }
 
@@ -2586,7 +2585,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisStatusLower = 0
      * }
      */
-    public static int kHighsBasisStatusLower() {
+    public static long kHighsBasisStatusLower() {
         return kHighsBasisStatusLower$constants.SEGMENT.get(kHighsBasisStatusLower$constants.LAYOUT, 0L);
     }
 
@@ -2596,12 +2595,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisStatusLower = 0
      * }
      */
-    public static void kHighsBasisStatusLower(int varValue) {
+    public static void kHighsBasisStatusLower(long varValue) {
         kHighsBasisStatusLower$constants.SEGMENT.set(kHighsBasisStatusLower$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsBasisStatusBasic$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsBasisStatusBasic").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2611,7 +2610,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisStatusBasic = 1
      * }
      */
-    public static OfInt kHighsBasisStatusBasic$layout() {
+    public static OfLong kHighsBasisStatusBasic$layout() {
         return kHighsBasisStatusBasic$constants.LAYOUT;
     }
 
@@ -2631,7 +2630,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisStatusBasic = 1
      * }
      */
-    public static int kHighsBasisStatusBasic() {
+    public static long kHighsBasisStatusBasic() {
         return kHighsBasisStatusBasic$constants.SEGMENT.get(kHighsBasisStatusBasic$constants.LAYOUT, 0L);
     }
 
@@ -2641,12 +2640,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisStatusBasic = 1
      * }
      */
-    public static void kHighsBasisStatusBasic(int varValue) {
+    public static void kHighsBasisStatusBasic(long varValue) {
         kHighsBasisStatusBasic$constants.SEGMENT.set(kHighsBasisStatusBasic$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsBasisStatusUpper$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsBasisStatusUpper").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2656,7 +2655,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisStatusUpper = 2
      * }
      */
-    public static OfInt kHighsBasisStatusUpper$layout() {
+    public static OfLong kHighsBasisStatusUpper$layout() {
         return kHighsBasisStatusUpper$constants.LAYOUT;
     }
 
@@ -2676,7 +2675,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisStatusUpper = 2
      * }
      */
-    public static int kHighsBasisStatusUpper() {
+    public static long kHighsBasisStatusUpper() {
         return kHighsBasisStatusUpper$constants.SEGMENT.get(kHighsBasisStatusUpper$constants.LAYOUT, 0L);
     }
 
@@ -2686,12 +2685,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisStatusUpper = 2
      * }
      */
-    public static void kHighsBasisStatusUpper(int varValue) {
+    public static void kHighsBasisStatusUpper(long varValue) {
         kHighsBasisStatusUpper$constants.SEGMENT.set(kHighsBasisStatusUpper$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsBasisStatusZero$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsBasisStatusZero").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2701,7 +2700,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisStatusZero = 3
      * }
      */
-    public static OfInt kHighsBasisStatusZero$layout() {
+    public static OfLong kHighsBasisStatusZero$layout() {
         return kHighsBasisStatusZero$constants.LAYOUT;
     }
 
@@ -2721,7 +2720,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisStatusZero = 3
      * }
      */
-    public static int kHighsBasisStatusZero() {
+    public static long kHighsBasisStatusZero() {
         return kHighsBasisStatusZero$constants.SEGMENT.get(kHighsBasisStatusZero$constants.LAYOUT, 0L);
     }
 
@@ -2731,12 +2730,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisStatusZero = 3
      * }
      */
-    public static void kHighsBasisStatusZero(int varValue) {
+    public static void kHighsBasisStatusZero(long varValue) {
         kHighsBasisStatusZero$constants.SEGMENT.set(kHighsBasisStatusZero$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsBasisStatusNonbasic$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsBasisStatusNonbasic").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2746,7 +2745,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisStatusNonbasic = 4
      * }
      */
-    public static OfInt kHighsBasisStatusNonbasic$layout() {
+    public static OfLong kHighsBasisStatusNonbasic$layout() {
         return kHighsBasisStatusNonbasic$constants.LAYOUT;
     }
 
@@ -2766,7 +2765,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisStatusNonbasic = 4
      * }
      */
-    public static int kHighsBasisStatusNonbasic() {
+    public static long kHighsBasisStatusNonbasic() {
         return kHighsBasisStatusNonbasic$constants.SEGMENT.get(kHighsBasisStatusNonbasic$constants.LAYOUT, 0L);
     }
 
@@ -2776,12 +2775,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsBasisStatusNonbasic = 4
      * }
      */
-    public static void kHighsBasisStatusNonbasic(int varValue) {
+    public static void kHighsBasisStatusNonbasic(long varValue) {
         kHighsBasisStatusNonbasic$constants.SEGMENT.set(kHighsBasisStatusNonbasic$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsCallbackLogging$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsCallbackLogging").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2791,7 +2790,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackLogging = 0
      * }
      */
-    public static OfInt kHighsCallbackLogging$layout() {
+    public static OfLong kHighsCallbackLogging$layout() {
         return kHighsCallbackLogging$constants.LAYOUT;
     }
 
@@ -2811,7 +2810,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackLogging = 0
      * }
      */
-    public static int kHighsCallbackLogging() {
+    public static long kHighsCallbackLogging() {
         return kHighsCallbackLogging$constants.SEGMENT.get(kHighsCallbackLogging$constants.LAYOUT, 0L);
     }
 
@@ -2821,12 +2820,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackLogging = 0
      * }
      */
-    public static void kHighsCallbackLogging(int varValue) {
+    public static void kHighsCallbackLogging(long varValue) {
         kHighsCallbackLogging$constants.SEGMENT.set(kHighsCallbackLogging$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsCallbackSimplexInterrupt$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsCallbackSimplexInterrupt").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2836,7 +2835,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackSimplexInterrupt = 1
      * }
      */
-    public static OfInt kHighsCallbackSimplexInterrupt$layout() {
+    public static OfLong kHighsCallbackSimplexInterrupt$layout() {
         return kHighsCallbackSimplexInterrupt$constants.LAYOUT;
     }
 
@@ -2856,7 +2855,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackSimplexInterrupt = 1
      * }
      */
-    public static int kHighsCallbackSimplexInterrupt() {
+    public static long kHighsCallbackSimplexInterrupt() {
         return kHighsCallbackSimplexInterrupt$constants.SEGMENT.get(kHighsCallbackSimplexInterrupt$constants.LAYOUT, 0L);
     }
 
@@ -2866,12 +2865,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackSimplexInterrupt = 1
      * }
      */
-    public static void kHighsCallbackSimplexInterrupt(int varValue) {
+    public static void kHighsCallbackSimplexInterrupt(long varValue) {
         kHighsCallbackSimplexInterrupt$constants.SEGMENT.set(kHighsCallbackSimplexInterrupt$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsCallbackIpmInterrupt$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsCallbackIpmInterrupt").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2881,7 +2880,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackIpmInterrupt = 2
      * }
      */
-    public static OfInt kHighsCallbackIpmInterrupt$layout() {
+    public static OfLong kHighsCallbackIpmInterrupt$layout() {
         return kHighsCallbackIpmInterrupt$constants.LAYOUT;
     }
 
@@ -2901,7 +2900,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackIpmInterrupt = 2
      * }
      */
-    public static int kHighsCallbackIpmInterrupt() {
+    public static long kHighsCallbackIpmInterrupt() {
         return kHighsCallbackIpmInterrupt$constants.SEGMENT.get(kHighsCallbackIpmInterrupt$constants.LAYOUT, 0L);
     }
 
@@ -2911,12 +2910,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackIpmInterrupt = 2
      * }
      */
-    public static void kHighsCallbackIpmInterrupt(int varValue) {
+    public static void kHighsCallbackIpmInterrupt(long varValue) {
         kHighsCallbackIpmInterrupt$constants.SEGMENT.set(kHighsCallbackIpmInterrupt$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsCallbackMipSolution$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsCallbackMipSolution").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2926,7 +2925,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipSolution = 3
      * }
      */
-    public static OfInt kHighsCallbackMipSolution$layout() {
+    public static OfLong kHighsCallbackMipSolution$layout() {
         return kHighsCallbackMipSolution$constants.LAYOUT;
     }
 
@@ -2946,7 +2945,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipSolution = 3
      * }
      */
-    public static int kHighsCallbackMipSolution() {
+    public static long kHighsCallbackMipSolution() {
         return kHighsCallbackMipSolution$constants.SEGMENT.get(kHighsCallbackMipSolution$constants.LAYOUT, 0L);
     }
 
@@ -2956,12 +2955,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipSolution = 3
      * }
      */
-    public static void kHighsCallbackMipSolution(int varValue) {
+    public static void kHighsCallbackMipSolution(long varValue) {
         kHighsCallbackMipSolution$constants.SEGMENT.set(kHighsCallbackMipSolution$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsCallbackMipImprovingSolution$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsCallbackMipImprovingSolution").reinterpret(LAYOUT.byteSize());
     }
 
@@ -2971,7 +2970,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipImprovingSolution = 4
      * }
      */
-    public static OfInt kHighsCallbackMipImprovingSolution$layout() {
+    public static OfLong kHighsCallbackMipImprovingSolution$layout() {
         return kHighsCallbackMipImprovingSolution$constants.LAYOUT;
     }
 
@@ -2991,7 +2990,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipImprovingSolution = 4
      * }
      */
-    public static int kHighsCallbackMipImprovingSolution() {
+    public static long kHighsCallbackMipImprovingSolution() {
         return kHighsCallbackMipImprovingSolution$constants.SEGMENT.get(kHighsCallbackMipImprovingSolution$constants.LAYOUT, 0L);
     }
 
@@ -3001,12 +3000,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipImprovingSolution = 4
      * }
      */
-    public static void kHighsCallbackMipImprovingSolution(int varValue) {
+    public static void kHighsCallbackMipImprovingSolution(long varValue) {
         kHighsCallbackMipImprovingSolution$constants.SEGMENT.set(kHighsCallbackMipImprovingSolution$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsCallbackMipLogging$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsCallbackMipLogging").reinterpret(LAYOUT.byteSize());
     }
 
@@ -3016,7 +3015,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipLogging = 5
      * }
      */
-    public static OfInt kHighsCallbackMipLogging$layout() {
+    public static OfLong kHighsCallbackMipLogging$layout() {
         return kHighsCallbackMipLogging$constants.LAYOUT;
     }
 
@@ -3036,7 +3035,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipLogging = 5
      * }
      */
-    public static int kHighsCallbackMipLogging() {
+    public static long kHighsCallbackMipLogging() {
         return kHighsCallbackMipLogging$constants.SEGMENT.get(kHighsCallbackMipLogging$constants.LAYOUT, 0L);
     }
 
@@ -3046,12 +3045,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipLogging = 5
      * }
      */
-    public static void kHighsCallbackMipLogging(int varValue) {
+    public static void kHighsCallbackMipLogging(long varValue) {
         kHighsCallbackMipLogging$constants.SEGMENT.set(kHighsCallbackMipLogging$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsCallbackMipInterrupt$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsCallbackMipInterrupt").reinterpret(LAYOUT.byteSize());
     }
 
@@ -3061,7 +3060,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipInterrupt = 6
      * }
      */
-    public static OfInt kHighsCallbackMipInterrupt$layout() {
+    public static OfLong kHighsCallbackMipInterrupt$layout() {
         return kHighsCallbackMipInterrupt$constants.LAYOUT;
     }
 
@@ -3081,7 +3080,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipInterrupt = 6
      * }
      */
-    public static int kHighsCallbackMipInterrupt() {
+    public static long kHighsCallbackMipInterrupt() {
         return kHighsCallbackMipInterrupt$constants.SEGMENT.get(kHighsCallbackMipInterrupt$constants.LAYOUT, 0L);
     }
 
@@ -3091,12 +3090,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipInterrupt = 6
      * }
      */
-    public static void kHighsCallbackMipInterrupt(int varValue) {
+    public static void kHighsCallbackMipInterrupt(long varValue) {
         kHighsCallbackMipInterrupt$constants.SEGMENT.set(kHighsCallbackMipInterrupt$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsCallbackMipGetCutPool$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsCallbackMipGetCutPool").reinterpret(LAYOUT.byteSize());
     }
 
@@ -3106,7 +3105,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipGetCutPool = 7
      * }
      */
-    public static OfInt kHighsCallbackMipGetCutPool$layout() {
+    public static OfLong kHighsCallbackMipGetCutPool$layout() {
         return kHighsCallbackMipGetCutPool$constants.LAYOUT;
     }
 
@@ -3126,7 +3125,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipGetCutPool = 7
      * }
      */
-    public static int kHighsCallbackMipGetCutPool() {
+    public static long kHighsCallbackMipGetCutPool() {
         return kHighsCallbackMipGetCutPool$constants.SEGMENT.get(kHighsCallbackMipGetCutPool$constants.LAYOUT, 0L);
     }
 
@@ -3136,12 +3135,12 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipGetCutPool = 7
      * }
      */
-    public static void kHighsCallbackMipGetCutPool(int varValue) {
+    public static void kHighsCallbackMipGetCutPool(long varValue) {
         kHighsCallbackMipGetCutPool$constants.SEGMENT.set(kHighsCallbackMipGetCutPool$constants.LAYOUT, 0L, varValue);
     }
 
     private static class kHighsCallbackMipDefineLazyConstraints$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("kHighsCallbackMipDefineLazyConstraints").reinterpret(LAYOUT.byteSize());
     }
 
@@ -3151,7 +3150,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipDefineLazyConstraints = 8
      * }
      */
-    public static OfInt kHighsCallbackMipDefineLazyConstraints$layout() {
+    public static OfLong kHighsCallbackMipDefineLazyConstraints$layout() {
         return kHighsCallbackMipDefineLazyConstraints$constants.LAYOUT;
     }
 
@@ -3171,7 +3170,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipDefineLazyConstraints = 8
      * }
      */
-    public static int kHighsCallbackMipDefineLazyConstraints() {
+    public static long kHighsCallbackMipDefineLazyConstraints() {
         return kHighsCallbackMipDefineLazyConstraints$constants.SEGMENT.get(kHighsCallbackMipDefineLazyConstraints$constants.LAYOUT, 0L);
     }
 
@@ -3181,7 +3180,7 @@ public class highs_c_api_h {
      * const HighsInt kHighsCallbackMipDefineLazyConstraints = 8
      * }
      */
-    public static void kHighsCallbackMipDefineLazyConstraints(int varValue) {
+    public static void kHighsCallbackMipDefineLazyConstraints(long varValue) {
         kHighsCallbackMipDefineLazyConstraints$constants.SEGMENT.set(kHighsCallbackMipDefineLazyConstraints$constants.LAYOUT, 0L, varValue);
     }
 
@@ -4087,12 +4086,12 @@ public class highs_c_api_h {
 
     private static class Highs_lpCall {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_DOUBLE,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -4151,13 +4150,13 @@ public class highs_c_api_h {
      * HighsInt Highs_lpCall(const HighsInt num_col, const HighsInt num_row, const HighsInt num_nz, const HighsInt a_format, const HighsInt sense, const double offset, const double *col_cost, const double *col_lower, const double *col_upper, const double *row_lower, const double *row_upper, const HighsInt *a_start, const HighsInt *a_index, const double *a_value, double *col_value, double *col_dual, double *row_value, double *row_dual, HighsInt *col_basis_status, HighsInt *row_basis_status, HighsInt *model_status)
      * }
      */
-    public static int Highs_lpCall(int num_col, int num_row, int num_nz, int a_format, int sense, double offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment col_value, MemorySegment col_dual, MemorySegment row_value, MemorySegment row_dual, MemorySegment col_basis_status, MemorySegment row_basis_status, MemorySegment model_status) {
+    public static long Highs_lpCall(long num_col, long num_row, long num_nz, long a_format, long sense, double offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment col_value, MemorySegment col_dual, MemorySegment row_value, MemorySegment row_dual, MemorySegment col_basis_status, MemorySegment row_basis_status, MemorySegment model_status) {
         var mh$ = Highs_lpCall.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_lpCall", num_col, num_row, num_nz, a_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, col_value, col_dual, row_value, row_dual, col_basis_status, row_basis_status, model_status);
             }
-            return (int)mh$.invokeExact(num_col, num_row, num_nz, a_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, col_value, col_dual, row_value, row_dual, col_basis_status, row_basis_status, model_status);
+            return (long)mh$.invokeExact(num_col, num_row, num_nz, a_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, col_value, col_dual, row_value, row_dual, col_basis_status, row_basis_status, model_status);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -4165,12 +4164,12 @@ public class highs_c_api_h {
 
     private static class Highs_mipCall {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_DOUBLE,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -4226,13 +4225,13 @@ public class highs_c_api_h {
      * HighsInt Highs_mipCall(const HighsInt num_col, const HighsInt num_row, const HighsInt num_nz, const HighsInt a_format, const HighsInt sense, const double offset, const double *col_cost, const double *col_lower, const double *col_upper, const double *row_lower, const double *row_upper, const HighsInt *a_start, const HighsInt *a_index, const double *a_value, const HighsInt *integrality, double *col_value, double *row_value, HighsInt *model_status)
      * }
      */
-    public static int Highs_mipCall(int num_col, int num_row, int num_nz, int a_format, int sense, double offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment integrality, MemorySegment col_value, MemorySegment row_value, MemorySegment model_status) {
+    public static long Highs_mipCall(long num_col, long num_row, long num_nz, long a_format, long sense, double offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment integrality, MemorySegment col_value, MemorySegment row_value, MemorySegment model_status) {
         var mh$ = Highs_mipCall.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_mipCall", num_col, num_row, num_nz, a_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, integrality, col_value, row_value, model_status);
             }
-            return (int)mh$.invokeExact(num_col, num_row, num_nz, a_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, integrality, col_value, row_value, model_status);
+            return (long)mh$.invokeExact(num_col, num_row, num_nz, a_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, integrality, col_value, row_value, model_status);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -4240,14 +4239,14 @@ public class highs_c_api_h {
 
     private static class Highs_qpCall {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_DOUBLE,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -4309,13 +4308,13 @@ public class highs_c_api_h {
      * HighsInt Highs_qpCall(const HighsInt num_col, const HighsInt num_row, const HighsInt num_nz, const HighsInt q_num_nz, const HighsInt a_format, const HighsInt q_format, const HighsInt sense, const double offset, const double *col_cost, const double *col_lower, const double *col_upper, const double *row_lower, const double *row_upper, const HighsInt *a_start, const HighsInt *a_index, const double *a_value, const HighsInt *q_start, const HighsInt *q_index, const double *q_value, double *col_value, double *col_dual, double *row_value, double *row_dual, HighsInt *col_basis_status, HighsInt *row_basis_status, HighsInt *model_status)
      * }
      */
-    public static int Highs_qpCall(int num_col, int num_row, int num_nz, int q_num_nz, int a_format, int q_format, int sense, double offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment q_start, MemorySegment q_index, MemorySegment q_value, MemorySegment col_value, MemorySegment col_dual, MemorySegment row_value, MemorySegment row_dual, MemorySegment col_basis_status, MemorySegment row_basis_status, MemorySegment model_status) {
+    public static long Highs_qpCall(long num_col, long num_row, long num_nz, long q_num_nz, long a_format, long q_format, long sense, double offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment q_start, MemorySegment q_index, MemorySegment q_value, MemorySegment col_value, MemorySegment col_dual, MemorySegment row_value, MemorySegment row_dual, MemorySegment col_basis_status, MemorySegment row_basis_status, MemorySegment model_status) {
         var mh$ = Highs_qpCall.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_qpCall", num_col, num_row, num_nz, q_num_nz, a_format, q_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, q_start, q_index, q_value, col_value, col_dual, row_value, row_dual, col_basis_status, row_basis_status, model_status);
             }
-            return (int)mh$.invokeExact(num_col, num_row, num_nz, q_num_nz, a_format, q_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, q_start, q_index, q_value, col_value, col_dual, row_value, row_dual, col_basis_status, row_basis_status, model_status);
+            return (long)mh$.invokeExact(num_col, num_row, num_nz, q_num_nz, a_format, q_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, q_start, q_index, q_value, col_value, col_dual, row_value, row_dual, col_basis_status, row_basis_status, model_status);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -4492,7 +4491,7 @@ public class highs_c_api_h {
 
     private static class Highs_versionMajor {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT    );
+            highs_c_api_h.C_LONG_LONG    );
 
         public static final MemorySegment ADDR = highs_c_api_h.findOrThrow("Highs_versionMajor");
 
@@ -4534,13 +4533,13 @@ public class highs_c_api_h {
      * HighsInt Highs_versionMajor()
      * }
      */
-    public static int Highs_versionMajor() {
+    public static long Highs_versionMajor() {
         var mh$ = Highs_versionMajor.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_versionMajor");
             }
-            return (int)mh$.invokeExact();
+            return (long)mh$.invokeExact();
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -4548,7 +4547,7 @@ public class highs_c_api_h {
 
     private static class Highs_versionMinor {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT    );
+            highs_c_api_h.C_LONG_LONG    );
 
         public static final MemorySegment ADDR = highs_c_api_h.findOrThrow("Highs_versionMinor");
 
@@ -4590,13 +4589,13 @@ public class highs_c_api_h {
      * HighsInt Highs_versionMinor()
      * }
      */
-    public static int Highs_versionMinor() {
+    public static long Highs_versionMinor() {
         var mh$ = Highs_versionMinor.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_versionMinor");
             }
-            return (int)mh$.invokeExact();
+            return (long)mh$.invokeExact();
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -4604,7 +4603,7 @@ public class highs_c_api_h {
 
     private static class Highs_versionPatch {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT    );
+            highs_c_api_h.C_LONG_LONG    );
 
         public static final MemorySegment ADDR = highs_c_api_h.findOrThrow("Highs_versionPatch");
 
@@ -4646,13 +4645,13 @@ public class highs_c_api_h {
      * HighsInt Highs_versionPatch()
      * }
      */
-    public static int Highs_versionPatch() {
+    public static long Highs_versionPatch() {
         var mh$ = Highs_versionPatch.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_versionPatch");
             }
-            return (int)mh$.invokeExact();
+            return (long)mh$.invokeExact();
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -4716,7 +4715,7 @@ public class highs_c_api_h {
 
     private static class Highs_readModel {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -4761,13 +4760,13 @@ public class highs_c_api_h {
      * HighsInt Highs_readModel(void *highs, const char *filename)
      * }
      */
-    public static int Highs_readModel(MemorySegment highs, MemorySegment filename) {
+    public static long Highs_readModel(MemorySegment highs, MemorySegment filename) {
         var mh$ = Highs_readModel.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_readModel", highs, filename);
             }
-            return (int)mh$.invokeExact(highs, filename);
+            return (long)mh$.invokeExact(highs, filename);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -4775,7 +4774,7 @@ public class highs_c_api_h {
 
     private static class Highs_writeModel {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -4820,13 +4819,13 @@ public class highs_c_api_h {
      * HighsInt Highs_writeModel(void *highs, const char *filename)
      * }
      */
-    public static int Highs_writeModel(MemorySegment highs, MemorySegment filename) {
+    public static long Highs_writeModel(MemorySegment highs, MemorySegment filename) {
         var mh$ = Highs_writeModel.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_writeModel", highs, filename);
             }
-            return (int)mh$.invokeExact(highs, filename);
+            return (long)mh$.invokeExact(highs, filename);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -4834,7 +4833,7 @@ public class highs_c_api_h {
 
     private static class Highs_writePresolvedModel {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -4879,13 +4878,13 @@ public class highs_c_api_h {
      * HighsInt Highs_writePresolvedModel(void *highs, const char *filename)
      * }
      */
-    public static int Highs_writePresolvedModel(MemorySegment highs, MemorySegment filename) {
+    public static long Highs_writePresolvedModel(MemorySegment highs, MemorySegment filename) {
         var mh$ = Highs_writePresolvedModel.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_writePresolvedModel", highs, filename);
             }
-            return (int)mh$.invokeExact(highs, filename);
+            return (long)mh$.invokeExact(highs, filename);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -4893,7 +4892,7 @@ public class highs_c_api_h {
 
     private static class Highs_clear {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -4937,13 +4936,13 @@ public class highs_c_api_h {
      * HighsInt Highs_clear(void *highs)
      * }
      */
-    public static int Highs_clear(MemorySegment highs) {
+    public static long Highs_clear(MemorySegment highs) {
         var mh$ = Highs_clear.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_clear", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -4951,7 +4950,7 @@ public class highs_c_api_h {
 
     private static class Highs_clearModel {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -4995,13 +4994,13 @@ public class highs_c_api_h {
      * HighsInt Highs_clearModel(void *highs)
      * }
      */
-    public static int Highs_clearModel(MemorySegment highs) {
+    public static long Highs_clearModel(MemorySegment highs) {
         var mh$ = Highs_clearModel.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_clearModel", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -5009,7 +5008,7 @@ public class highs_c_api_h {
 
     private static class Highs_clearSolver {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -5053,13 +5052,13 @@ public class highs_c_api_h {
      * HighsInt Highs_clearSolver(void *highs)
      * }
      */
-    public static int Highs_clearSolver(MemorySegment highs) {
+    public static long Highs_clearSolver(MemorySegment highs) {
         var mh$ = Highs_clearSolver.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_clearSolver", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -5067,7 +5066,7 @@ public class highs_c_api_h {
 
     private static class Highs_presolve {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -5111,13 +5110,13 @@ public class highs_c_api_h {
      * HighsInt Highs_presolve(void *highs)
      * }
      */
-    public static int Highs_presolve(MemorySegment highs) {
+    public static long Highs_presolve(MemorySegment highs) {
         var mh$ = Highs_presolve.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_presolve", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -5125,7 +5124,7 @@ public class highs_c_api_h {
 
     private static class Highs_run {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -5169,13 +5168,13 @@ public class highs_c_api_h {
      * HighsInt Highs_run(void *highs)
      * }
      */
-    public static int Highs_run(MemorySegment highs) {
+    public static long Highs_run(MemorySegment highs) {
         var mh$ = Highs_run.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_run", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -5183,7 +5182,7 @@ public class highs_c_api_h {
 
     private static class Highs_postsolve {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -5230,13 +5229,13 @@ public class highs_c_api_h {
      * HighsInt Highs_postsolve(void *highs, const double *col_value, const double *col_dual, const double *row_dual)
      * }
      */
-    public static int Highs_postsolve(MemorySegment highs, MemorySegment col_value, MemorySegment col_dual, MemorySegment row_dual) {
+    public static long Highs_postsolve(MemorySegment highs, MemorySegment col_value, MemorySegment col_dual, MemorySegment row_dual) {
         var mh$ = Highs_postsolve.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_postsolve", highs, col_value, col_dual, row_dual);
             }
-            return (int)mh$.invokeExact(highs, col_value, col_dual, row_dual);
+            return (long)mh$.invokeExact(highs, col_value, col_dual, row_dual);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -5244,7 +5243,7 @@ public class highs_c_api_h {
 
     private static class Highs_writeSolution {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -5289,13 +5288,13 @@ public class highs_c_api_h {
      * HighsInt Highs_writeSolution(const void *highs, const char *filename)
      * }
      */
-    public static int Highs_writeSolution(MemorySegment highs, MemorySegment filename) {
+    public static long Highs_writeSolution(MemorySegment highs, MemorySegment filename) {
         var mh$ = Highs_writeSolution.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_writeSolution", highs, filename);
             }
-            return (int)mh$.invokeExact(highs, filename);
+            return (long)mh$.invokeExact(highs, filename);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -5303,7 +5302,7 @@ public class highs_c_api_h {
 
     private static class Highs_writeSolutionPretty {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -5348,13 +5347,13 @@ public class highs_c_api_h {
      * HighsInt Highs_writeSolutionPretty(const void *highs, const char *filename)
      * }
      */
-    public static int Highs_writeSolutionPretty(MemorySegment highs, MemorySegment filename) {
+    public static long Highs_writeSolutionPretty(MemorySegment highs, MemorySegment filename) {
         var mh$ = Highs_writeSolutionPretty.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_writeSolutionPretty", highs, filename);
             }
-            return (int)mh$.invokeExact(highs, filename);
+            return (long)mh$.invokeExact(highs, filename);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -5362,13 +5361,13 @@ public class highs_c_api_h {
 
     private static class Highs_passLp {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_DOUBLE,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -5420,13 +5419,13 @@ public class highs_c_api_h {
      * HighsInt Highs_passLp(void *highs, const HighsInt num_col, const HighsInt num_row, const HighsInt num_nz, const HighsInt a_format, const HighsInt sense, const double offset, const double *col_cost, const double *col_lower, const double *col_upper, const double *row_lower, const double *row_upper, const HighsInt *a_start, const HighsInt *a_index, const double *a_value)
      * }
      */
-    public static int Highs_passLp(MemorySegment highs, int num_col, int num_row, int num_nz, int a_format, int sense, double offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value) {
+    public static long Highs_passLp(MemorySegment highs, long num_col, long num_row, long num_nz, long a_format, long sense, double offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value) {
         var mh$ = Highs_passLp.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_passLp", highs, num_col, num_row, num_nz, a_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value);
             }
-            return (int)mh$.invokeExact(highs, num_col, num_row, num_nz, a_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value);
+            return (long)mh$.invokeExact(highs, num_col, num_row, num_nz, a_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -5434,13 +5433,13 @@ public class highs_c_api_h {
 
     private static class Highs_passMip {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_DOUBLE,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -5493,13 +5492,13 @@ public class highs_c_api_h {
      * HighsInt Highs_passMip(void *highs, const HighsInt num_col, const HighsInt num_row, const HighsInt num_nz, const HighsInt a_format, const HighsInt sense, const double offset, const double *col_cost, const double *col_lower, const double *col_upper, const double *row_lower, const double *row_upper, const HighsInt *a_start, const HighsInt *a_index, const double *a_value, const HighsInt *integrality)
      * }
      */
-    public static int Highs_passMip(MemorySegment highs, int num_col, int num_row, int num_nz, int a_format, int sense, double offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment integrality) {
+    public static long Highs_passMip(MemorySegment highs, long num_col, long num_row, long num_nz, long a_format, long sense, double offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment integrality) {
         var mh$ = Highs_passMip.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_passMip", highs, num_col, num_row, num_nz, a_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, integrality);
             }
-            return (int)mh$.invokeExact(highs, num_col, num_row, num_nz, a_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, integrality);
+            return (long)mh$.invokeExact(highs, num_col, num_row, num_nz, a_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, integrality);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -5507,15 +5506,15 @@ public class highs_c_api_h {
 
     private static class Highs_passModel {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_DOUBLE,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -5571,13 +5570,13 @@ public class highs_c_api_h {
      * HighsInt Highs_passModel(void *highs, const HighsInt num_col, const HighsInt num_row, const HighsInt num_nz, const HighsInt q_num_nz, const HighsInt a_format, const HighsInt q_format, const HighsInt sense, const double offset, const double *col_cost, const double *col_lower, const double *col_upper, const double *row_lower, const double *row_upper, const HighsInt *a_start, const HighsInt *a_index, const double *a_value, const HighsInt *q_start, const HighsInt *q_index, const double *q_value, const HighsInt *integrality)
      * }
      */
-    public static int Highs_passModel(MemorySegment highs, int num_col, int num_row, int num_nz, int q_num_nz, int a_format, int q_format, int sense, double offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment q_start, MemorySegment q_index, MemorySegment q_value, MemorySegment integrality) {
+    public static long Highs_passModel(MemorySegment highs, long num_col, long num_row, long num_nz, long q_num_nz, long a_format, long q_format, long sense, double offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment q_start, MemorySegment q_index, MemorySegment q_value, MemorySegment integrality) {
         var mh$ = Highs_passModel.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_passModel", highs, num_col, num_row, num_nz, q_num_nz, a_format, q_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, q_start, q_index, q_value, integrality);
             }
-            return (int)mh$.invokeExact(highs, num_col, num_row, num_nz, q_num_nz, a_format, q_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, q_start, q_index, q_value, integrality);
+            return (long)mh$.invokeExact(highs, num_col, num_row, num_nz, q_num_nz, a_format, q_format, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, q_start, q_index, q_value, integrality);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -5585,11 +5584,11 @@ public class highs_c_api_h {
 
     private static class Highs_passHessian {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -5635,13 +5634,13 @@ public class highs_c_api_h {
      * HighsInt Highs_passHessian(void *highs, const HighsInt dim, const HighsInt num_nz, const HighsInt format, const HighsInt *start, const HighsInt *index, const double *value)
      * }
      */
-    public static int Highs_passHessian(MemorySegment highs, int dim, int num_nz, int format, MemorySegment start, MemorySegment index, MemorySegment value) {
+    public static long Highs_passHessian(MemorySegment highs, long dim, long num_nz, long format, MemorySegment start, MemorySegment index, MemorySegment value) {
         var mh$ = Highs_passHessian.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_passHessian", highs, dim, num_nz, format, start, index, value);
             }
-            return (int)mh$.invokeExact(highs, dim, num_nz, format, start, index, value);
+            return (long)mh$.invokeExact(highs, dim, num_nz, format, start, index, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -5649,9 +5648,9 @@ public class highs_c_api_h {
 
     private static class Highs_passRowName {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -5695,13 +5694,13 @@ public class highs_c_api_h {
      * HighsInt Highs_passRowName(const void *highs, const HighsInt row, const char *name)
      * }
      */
-    public static int Highs_passRowName(MemorySegment highs, int row, MemorySegment name) {
+    public static long Highs_passRowName(MemorySegment highs, long row, MemorySegment name) {
         var mh$ = Highs_passRowName.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_passRowName", highs, row, name);
             }
-            return (int)mh$.invokeExact(highs, row, name);
+            return (long)mh$.invokeExact(highs, row, name);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -5709,9 +5708,9 @@ public class highs_c_api_h {
 
     private static class Highs_passColName {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -5755,13 +5754,13 @@ public class highs_c_api_h {
      * HighsInt Highs_passColName(const void *highs, const HighsInt col, const char *name)
      * }
      */
-    public static int Highs_passColName(MemorySegment highs, int col, MemorySegment name) {
+    public static long Highs_passColName(MemorySegment highs, long col, MemorySegment name) {
         var mh$ = Highs_passColName.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_passColName", highs, col, name);
             }
-            return (int)mh$.invokeExact(highs, col, name);
+            return (long)mh$.invokeExact(highs, col, name);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -5769,7 +5768,7 @@ public class highs_c_api_h {
 
     private static class Highs_passModelName {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -5814,13 +5813,13 @@ public class highs_c_api_h {
      * HighsInt Highs_passModelName(const void *highs, const char *name)
      * }
      */
-    public static int Highs_passModelName(MemorySegment highs, MemorySegment name) {
+    public static long Highs_passModelName(MemorySegment highs, MemorySegment name) {
         var mh$ = Highs_passModelName.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_passModelName", highs, name);
             }
-            return (int)mh$.invokeExact(highs, name);
+            return (long)mh$.invokeExact(highs, name);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -5828,7 +5827,7 @@ public class highs_c_api_h {
 
     private static class Highs_readOptions {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -5873,13 +5872,13 @@ public class highs_c_api_h {
      * HighsInt Highs_readOptions(const void *highs, const char *filename)
      * }
      */
-    public static int Highs_readOptions(MemorySegment highs, MemorySegment filename) {
+    public static long Highs_readOptions(MemorySegment highs, MemorySegment filename) {
         var mh$ = Highs_readOptions.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_readOptions", highs, filename);
             }
-            return (int)mh$.invokeExact(highs, filename);
+            return (long)mh$.invokeExact(highs, filename);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -5887,10 +5886,10 @@ public class highs_c_api_h {
 
     private static class Highs_setBoolOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT
+            highs_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs_c_api_h.findOrThrow("Highs_setBoolOptionValue");
@@ -5933,13 +5932,13 @@ public class highs_c_api_h {
      * HighsInt Highs_setBoolOptionValue(void *highs, const char *option, const HighsInt value)
      * }
      */
-    public static int Highs_setBoolOptionValue(MemorySegment highs, MemorySegment option, int value) {
+    public static long Highs_setBoolOptionValue(MemorySegment highs, MemorySegment option, long value) {
         var mh$ = Highs_setBoolOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_setBoolOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -5947,10 +5946,10 @@ public class highs_c_api_h {
 
     private static class Highs_setIntOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT
+            highs_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs_c_api_h.findOrThrow("Highs_setIntOptionValue");
@@ -5993,13 +5992,13 @@ public class highs_c_api_h {
      * HighsInt Highs_setIntOptionValue(void *highs, const char *option, const HighsInt value)
      * }
      */
-    public static int Highs_setIntOptionValue(MemorySegment highs, MemorySegment option, int value) {
+    public static long Highs_setIntOptionValue(MemorySegment highs, MemorySegment option, long value) {
         var mh$ = Highs_setIntOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_setIntOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -6007,7 +6006,7 @@ public class highs_c_api_h {
 
     private static class Highs_setDoubleOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_DOUBLE
@@ -6053,13 +6052,13 @@ public class highs_c_api_h {
      * HighsInt Highs_setDoubleOptionValue(void *highs, const char *option, const double value)
      * }
      */
-    public static int Highs_setDoubleOptionValue(MemorySegment highs, MemorySegment option, double value) {
+    public static long Highs_setDoubleOptionValue(MemorySegment highs, MemorySegment option, double value) {
         var mh$ = Highs_setDoubleOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_setDoubleOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -6067,7 +6066,7 @@ public class highs_c_api_h {
 
     private static class Highs_setStringOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -6113,13 +6112,13 @@ public class highs_c_api_h {
      * HighsInt Highs_setStringOptionValue(void *highs, const char *option, const char *value)
      * }
      */
-    public static int Highs_setStringOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
+    public static long Highs_setStringOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
         var mh$ = Highs_setStringOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_setStringOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -6127,7 +6126,7 @@ public class highs_c_api_h {
 
     private static class Highs_getBoolOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -6173,13 +6172,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getBoolOptionValue(const void *highs, const char *option, HighsInt *value)
      * }
      */
-    public static int Highs_getBoolOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
+    public static long Highs_getBoolOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
         var mh$ = Highs_getBoolOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getBoolOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -6187,7 +6186,7 @@ public class highs_c_api_h {
 
     private static class Highs_getIntOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -6233,13 +6232,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getIntOptionValue(const void *highs, const char *option, HighsInt *value)
      * }
      */
-    public static int Highs_getIntOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
+    public static long Highs_getIntOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
         var mh$ = Highs_getIntOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getIntOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -6247,7 +6246,7 @@ public class highs_c_api_h {
 
     private static class Highs_getDoubleOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -6293,13 +6292,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getDoubleOptionValue(const void *highs, const char *option, double *value)
      * }
      */
-    public static int Highs_getDoubleOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
+    public static long Highs_getDoubleOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
         var mh$ = Highs_getDoubleOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getDoubleOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -6307,7 +6306,7 @@ public class highs_c_api_h {
 
     private static class Highs_getStringOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -6353,13 +6352,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getStringOptionValue(const void *highs, const char *option, char *value)
      * }
      */
-    public static int Highs_getStringOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
+    public static long Highs_getStringOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
         var mh$ = Highs_getStringOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getStringOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -6367,7 +6366,7 @@ public class highs_c_api_h {
 
     private static class Highs_getOptionType {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -6413,13 +6412,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getOptionType(const void *highs, const char *option, HighsInt *type)
      * }
      */
-    public static int Highs_getOptionType(MemorySegment highs, MemorySegment option, MemorySegment type) {
+    public static long Highs_getOptionType(MemorySegment highs, MemorySegment option, MemorySegment type) {
         var mh$ = Highs_getOptionType.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getOptionType", highs, option, type);
             }
-            return (int)mh$.invokeExact(highs, option, type);
+            return (long)mh$.invokeExact(highs, option, type);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -6427,7 +6426,7 @@ public class highs_c_api_h {
 
     private static class Highs_resetOptions {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -6471,13 +6470,13 @@ public class highs_c_api_h {
      * HighsInt Highs_resetOptions(void *highs)
      * }
      */
-    public static int Highs_resetOptions(MemorySegment highs) {
+    public static long Highs_resetOptions(MemorySegment highs) {
         var mh$ = Highs_resetOptions.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_resetOptions", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -6485,7 +6484,7 @@ public class highs_c_api_h {
 
     private static class Highs_writeOptions {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -6530,13 +6529,13 @@ public class highs_c_api_h {
      * HighsInt Highs_writeOptions(const void *highs, const char *filename)
      * }
      */
-    public static int Highs_writeOptions(MemorySegment highs, MemorySegment filename) {
+    public static long Highs_writeOptions(MemorySegment highs, MemorySegment filename) {
         var mh$ = Highs_writeOptions.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_writeOptions", highs, filename);
             }
-            return (int)mh$.invokeExact(highs, filename);
+            return (long)mh$.invokeExact(highs, filename);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -6544,7 +6543,7 @@ public class highs_c_api_h {
 
     private static class Highs_writeOptionsDeviations {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -6589,13 +6588,13 @@ public class highs_c_api_h {
      * HighsInt Highs_writeOptionsDeviations(const void *highs, const char *filename)
      * }
      */
-    public static int Highs_writeOptionsDeviations(MemorySegment highs, MemorySegment filename) {
+    public static long Highs_writeOptionsDeviations(MemorySegment highs, MemorySegment filename) {
         var mh$ = Highs_writeOptionsDeviations.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_writeOptionsDeviations", highs, filename);
             }
-            return (int)mh$.invokeExact(highs, filename);
+            return (long)mh$.invokeExact(highs, filename);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -6603,7 +6602,7 @@ public class highs_c_api_h {
 
     private static class Highs_getNumOptions {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -6647,13 +6646,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getNumOptions(const void *highs)
      * }
      */
-    public static int Highs_getNumOptions(MemorySegment highs) {
+    public static long Highs_getNumOptions(MemorySegment highs) {
         var mh$ = Highs_getNumOptions.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getNumOptions", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -6661,9 +6660,9 @@ public class highs_c_api_h {
 
     private static class Highs_getOptionName {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -6707,13 +6706,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getOptionName(const void *highs, const HighsInt index, char **name)
      * }
      */
-    public static int Highs_getOptionName(MemorySegment highs, int index, MemorySegment name) {
+    public static long Highs_getOptionName(MemorySegment highs, long index, MemorySegment name) {
         var mh$ = Highs_getOptionName.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getOptionName", highs, index, name);
             }
-            return (int)mh$.invokeExact(highs, index, name);
+            return (long)mh$.invokeExact(highs, index, name);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -6721,7 +6720,7 @@ public class highs_c_api_h {
 
     private static class Highs_getBoolOptionValues {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -6768,13 +6767,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getBoolOptionValues(const void *highs, const char *option, HighsInt *current_value, HighsInt *default_value)
      * }
      */
-    public static int Highs_getBoolOptionValues(MemorySegment highs, MemorySegment option, MemorySegment current_value, MemorySegment default_value) {
+    public static long Highs_getBoolOptionValues(MemorySegment highs, MemorySegment option, MemorySegment current_value, MemorySegment default_value) {
         var mh$ = Highs_getBoolOptionValues.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getBoolOptionValues", highs, option, current_value, default_value);
             }
-            return (int)mh$.invokeExact(highs, option, current_value, default_value);
+            return (long)mh$.invokeExact(highs, option, current_value, default_value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -6782,7 +6781,7 @@ public class highs_c_api_h {
 
     private static class Highs_getIntOptionValues {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -6831,13 +6830,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getIntOptionValues(const void *highs, const char *option, HighsInt *current_value, HighsInt *min_value, HighsInt *max_value, HighsInt *default_value)
      * }
      */
-    public static int Highs_getIntOptionValues(MemorySegment highs, MemorySegment option, MemorySegment current_value, MemorySegment min_value, MemorySegment max_value, MemorySegment default_value) {
+    public static long Highs_getIntOptionValues(MemorySegment highs, MemorySegment option, MemorySegment current_value, MemorySegment min_value, MemorySegment max_value, MemorySegment default_value) {
         var mh$ = Highs_getIntOptionValues.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getIntOptionValues", highs, option, current_value, min_value, max_value, default_value);
             }
-            return (int)mh$.invokeExact(highs, option, current_value, min_value, max_value, default_value);
+            return (long)mh$.invokeExact(highs, option, current_value, min_value, max_value, default_value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -6845,7 +6844,7 @@ public class highs_c_api_h {
 
     private static class Highs_getDoubleOptionValues {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -6894,13 +6893,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getDoubleOptionValues(const void *highs, const char *option, double *current_value, double *min_value, double *max_value, double *default_value)
      * }
      */
-    public static int Highs_getDoubleOptionValues(MemorySegment highs, MemorySegment option, MemorySegment current_value, MemorySegment min_value, MemorySegment max_value, MemorySegment default_value) {
+    public static long Highs_getDoubleOptionValues(MemorySegment highs, MemorySegment option, MemorySegment current_value, MemorySegment min_value, MemorySegment max_value, MemorySegment default_value) {
         var mh$ = Highs_getDoubleOptionValues.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getDoubleOptionValues", highs, option, current_value, min_value, max_value, default_value);
             }
-            return (int)mh$.invokeExact(highs, option, current_value, min_value, max_value, default_value);
+            return (long)mh$.invokeExact(highs, option, current_value, min_value, max_value, default_value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -6908,7 +6907,7 @@ public class highs_c_api_h {
 
     private static class Highs_getStringOptionValues {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -6955,13 +6954,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getStringOptionValues(const void *highs, const char *option, char *current_value, char *default_value)
      * }
      */
-    public static int Highs_getStringOptionValues(MemorySegment highs, MemorySegment option, MemorySegment current_value, MemorySegment default_value) {
+    public static long Highs_getStringOptionValues(MemorySegment highs, MemorySegment option, MemorySegment current_value, MemorySegment default_value) {
         var mh$ = Highs_getStringOptionValues.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getStringOptionValues", highs, option, current_value, default_value);
             }
-            return (int)mh$.invokeExact(highs, option, current_value, default_value);
+            return (long)mh$.invokeExact(highs, option, current_value, default_value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -6969,7 +6968,7 @@ public class highs_c_api_h {
 
     private static class Highs_getIntInfoValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -7015,13 +7014,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getIntInfoValue(const void *highs, const char *info, HighsInt *value)
      * }
      */
-    public static int Highs_getIntInfoValue(MemorySegment highs, MemorySegment info, MemorySegment value) {
+    public static long Highs_getIntInfoValue(MemorySegment highs, MemorySegment info, MemorySegment value) {
         var mh$ = Highs_getIntInfoValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getIntInfoValue", highs, info, value);
             }
-            return (int)mh$.invokeExact(highs, info, value);
+            return (long)mh$.invokeExact(highs, info, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -7029,7 +7028,7 @@ public class highs_c_api_h {
 
     private static class Highs_getDoubleInfoValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -7075,13 +7074,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getDoubleInfoValue(const void *highs, const char *info, double *value)
      * }
      */
-    public static int Highs_getDoubleInfoValue(MemorySegment highs, MemorySegment info, MemorySegment value) {
+    public static long Highs_getDoubleInfoValue(MemorySegment highs, MemorySegment info, MemorySegment value) {
         var mh$ = Highs_getDoubleInfoValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getDoubleInfoValue", highs, info, value);
             }
-            return (int)mh$.invokeExact(highs, info, value);
+            return (long)mh$.invokeExact(highs, info, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -7089,7 +7088,7 @@ public class highs_c_api_h {
 
     private static class Highs_getInt64InfoValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -7135,13 +7134,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getInt64InfoValue(const void *highs, const char *info, int64_t *value)
      * }
      */
-    public static int Highs_getInt64InfoValue(MemorySegment highs, MemorySegment info, MemorySegment value) {
+    public static long Highs_getInt64InfoValue(MemorySegment highs, MemorySegment info, MemorySegment value) {
         var mh$ = Highs_getInt64InfoValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getInt64InfoValue", highs, info, value);
             }
-            return (int)mh$.invokeExact(highs, info, value);
+            return (long)mh$.invokeExact(highs, info, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -7149,7 +7148,7 @@ public class highs_c_api_h {
 
     private static class Highs_getInfoType {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -7195,13 +7194,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getInfoType(const void *highs, const char *info, HighsInt *type)
      * }
      */
-    public static int Highs_getInfoType(MemorySegment highs, MemorySegment info, MemorySegment type) {
+    public static long Highs_getInfoType(MemorySegment highs, MemorySegment info, MemorySegment type) {
         var mh$ = Highs_getInfoType.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getInfoType", highs, info, type);
             }
-            return (int)mh$.invokeExact(highs, info, type);
+            return (long)mh$.invokeExact(highs, info, type);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -7209,7 +7208,7 @@ public class highs_c_api_h {
 
     private static class Highs_getSolution {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -7257,13 +7256,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getSolution(const void *highs, double *col_value, double *col_dual, double *row_value, double *row_dual)
      * }
      */
-    public static int Highs_getSolution(MemorySegment highs, MemorySegment col_value, MemorySegment col_dual, MemorySegment row_value, MemorySegment row_dual) {
+    public static long Highs_getSolution(MemorySegment highs, MemorySegment col_value, MemorySegment col_dual, MemorySegment row_value, MemorySegment row_dual) {
         var mh$ = Highs_getSolution.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getSolution", highs, col_value, col_dual, row_value, row_dual);
             }
-            return (int)mh$.invokeExact(highs, col_value, col_dual, row_value, row_dual);
+            return (long)mh$.invokeExact(highs, col_value, col_dual, row_value, row_dual);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -7271,7 +7270,7 @@ public class highs_c_api_h {
 
     private static class Highs_getBasis {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -7317,13 +7316,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getBasis(const void *highs, HighsInt *col_status, HighsInt *row_status)
      * }
      */
-    public static int Highs_getBasis(MemorySegment highs, MemorySegment col_status, MemorySegment row_status) {
+    public static long Highs_getBasis(MemorySegment highs, MemorySegment col_status, MemorySegment row_status) {
         var mh$ = Highs_getBasis.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getBasis", highs, col_status, row_status);
             }
-            return (int)mh$.invokeExact(highs, col_status, row_status);
+            return (long)mh$.invokeExact(highs, col_status, row_status);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -7331,7 +7330,7 @@ public class highs_c_api_h {
 
     private static class Highs_getModelStatus {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -7375,13 +7374,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getModelStatus(const void *highs)
      * }
      */
-    public static int Highs_getModelStatus(MemorySegment highs) {
+    public static long Highs_getModelStatus(MemorySegment highs) {
         var mh$ = Highs_getModelStatus.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getModelStatus", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -7389,7 +7388,7 @@ public class highs_c_api_h {
 
     private static class Highs_getDualRay {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -7435,13 +7434,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getDualRay(const void *highs, HighsInt *has_dual_ray, double *dual_ray_value)
      * }
      */
-    public static int Highs_getDualRay(MemorySegment highs, MemorySegment has_dual_ray, MemorySegment dual_ray_value) {
+    public static long Highs_getDualRay(MemorySegment highs, MemorySegment has_dual_ray, MemorySegment dual_ray_value) {
         var mh$ = Highs_getDualRay.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getDualRay", highs, has_dual_ray, dual_ray_value);
             }
-            return (int)mh$.invokeExact(highs, has_dual_ray, dual_ray_value);
+            return (long)mh$.invokeExact(highs, has_dual_ray, dual_ray_value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -7449,7 +7448,7 @@ public class highs_c_api_h {
 
     private static class getDualUnboundednessDirection {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -7495,13 +7494,13 @@ public class highs_c_api_h {
      * HighsInt getDualUnboundednessDirection(const void *highs, HighsInt *has_dual_unboundedness_direction, double *dual_unboundedness_direction_value)
      * }
      */
-    public static int getDualUnboundednessDirection(MemorySegment highs, MemorySegment has_dual_unboundedness_direction, MemorySegment dual_unboundedness_direction_value) {
+    public static long getDualUnboundednessDirection(MemorySegment highs, MemorySegment has_dual_unboundedness_direction, MemorySegment dual_unboundedness_direction_value) {
         var mh$ = getDualUnboundednessDirection.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("getDualUnboundednessDirection", highs, has_dual_unboundedness_direction, dual_unboundedness_direction_value);
             }
-            return (int)mh$.invokeExact(highs, has_dual_unboundedness_direction, dual_unboundedness_direction_value);
+            return (long)mh$.invokeExact(highs, has_dual_unboundedness_direction, dual_unboundedness_direction_value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -7509,7 +7508,7 @@ public class highs_c_api_h {
 
     private static class Highs_getPrimalRay {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -7555,13 +7554,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getPrimalRay(const void *highs, HighsInt *has_primal_ray, double *primal_ray_value)
      * }
      */
-    public static int Highs_getPrimalRay(MemorySegment highs, MemorySegment has_primal_ray, MemorySegment primal_ray_value) {
+    public static long Highs_getPrimalRay(MemorySegment highs, MemorySegment has_primal_ray, MemorySegment primal_ray_value) {
         var mh$ = Highs_getPrimalRay.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getPrimalRay", highs, has_primal_ray, primal_ray_value);
             }
-            return (int)mh$.invokeExact(highs, has_primal_ray, primal_ray_value);
+            return (long)mh$.invokeExact(highs, has_primal_ray, primal_ray_value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -7627,7 +7626,7 @@ public class highs_c_api_h {
 
     private static class Highs_getBasicVariables {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -7672,13 +7671,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getBasicVariables(const void *highs, HighsInt *basic_variables)
      * }
      */
-    public static int Highs_getBasicVariables(MemorySegment highs, MemorySegment basic_variables) {
+    public static long Highs_getBasicVariables(MemorySegment highs, MemorySegment basic_variables) {
         var mh$ = Highs_getBasicVariables.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getBasicVariables", highs, basic_variables);
             }
-            return (int)mh$.invokeExact(highs, basic_variables);
+            return (long)mh$.invokeExact(highs, basic_variables);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -7686,9 +7685,9 @@ public class highs_c_api_h {
 
     private static class Highs_getBasisInverseRow {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -7734,13 +7733,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getBasisInverseRow(const void *highs, const HighsInt row, double *row_vector, HighsInt *row_num_nz, HighsInt *row_index)
      * }
      */
-    public static int Highs_getBasisInverseRow(MemorySegment highs, int row, MemorySegment row_vector, MemorySegment row_num_nz, MemorySegment row_index) {
+    public static long Highs_getBasisInverseRow(MemorySegment highs, long row, MemorySegment row_vector, MemorySegment row_num_nz, MemorySegment row_index) {
         var mh$ = Highs_getBasisInverseRow.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getBasisInverseRow", highs, row, row_vector, row_num_nz, row_index);
             }
-            return (int)mh$.invokeExact(highs, row, row_vector, row_num_nz, row_index);
+            return (long)mh$.invokeExact(highs, row, row_vector, row_num_nz, row_index);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -7748,9 +7747,9 @@ public class highs_c_api_h {
 
     private static class Highs_getBasisInverseCol {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -7796,13 +7795,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getBasisInverseCol(const void *highs, const HighsInt col, double *col_vector, HighsInt *col_num_nz, HighsInt *col_index)
      * }
      */
-    public static int Highs_getBasisInverseCol(MemorySegment highs, int col, MemorySegment col_vector, MemorySegment col_num_nz, MemorySegment col_index) {
+    public static long Highs_getBasisInverseCol(MemorySegment highs, long col, MemorySegment col_vector, MemorySegment col_num_nz, MemorySegment col_index) {
         var mh$ = Highs_getBasisInverseCol.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getBasisInverseCol", highs, col, col_vector, col_num_nz, col_index);
             }
-            return (int)mh$.invokeExact(highs, col, col_vector, col_num_nz, col_index);
+            return (long)mh$.invokeExact(highs, col, col_vector, col_num_nz, col_index);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -7810,7 +7809,7 @@ public class highs_c_api_h {
 
     private static class Highs_getBasisSolve {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -7858,13 +7857,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getBasisSolve(const void *highs, const double *rhs, double *solution_vector, HighsInt *solution_num_nz, HighsInt *solution_index)
      * }
      */
-    public static int Highs_getBasisSolve(MemorySegment highs, MemorySegment rhs, MemorySegment solution_vector, MemorySegment solution_num_nz, MemorySegment solution_index) {
+    public static long Highs_getBasisSolve(MemorySegment highs, MemorySegment rhs, MemorySegment solution_vector, MemorySegment solution_num_nz, MemorySegment solution_index) {
         var mh$ = Highs_getBasisSolve.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getBasisSolve", highs, rhs, solution_vector, solution_num_nz, solution_index);
             }
-            return (int)mh$.invokeExact(highs, rhs, solution_vector, solution_num_nz, solution_index);
+            return (long)mh$.invokeExact(highs, rhs, solution_vector, solution_num_nz, solution_index);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -7872,7 +7871,7 @@ public class highs_c_api_h {
 
     private static class Highs_getBasisTransposeSolve {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -7920,13 +7919,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getBasisTransposeSolve(const void *highs, const double *rhs, double *solution_vector, HighsInt *solution_nz, HighsInt *solution_index)
      * }
      */
-    public static int Highs_getBasisTransposeSolve(MemorySegment highs, MemorySegment rhs, MemorySegment solution_vector, MemorySegment solution_nz, MemorySegment solution_index) {
+    public static long Highs_getBasisTransposeSolve(MemorySegment highs, MemorySegment rhs, MemorySegment solution_vector, MemorySegment solution_nz, MemorySegment solution_index) {
         var mh$ = Highs_getBasisTransposeSolve.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getBasisTransposeSolve", highs, rhs, solution_vector, solution_nz, solution_index);
             }
-            return (int)mh$.invokeExact(highs, rhs, solution_vector, solution_nz, solution_index);
+            return (long)mh$.invokeExact(highs, rhs, solution_vector, solution_nz, solution_index);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -7934,9 +7933,9 @@ public class highs_c_api_h {
 
     private static class Highs_getReducedRow {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -7982,13 +7981,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getReducedRow(const void *highs, const HighsInt row, double *row_vector, HighsInt *row_num_nz, HighsInt *row_index)
      * }
      */
-    public static int Highs_getReducedRow(MemorySegment highs, int row, MemorySegment row_vector, MemorySegment row_num_nz, MemorySegment row_index) {
+    public static long Highs_getReducedRow(MemorySegment highs, long row, MemorySegment row_vector, MemorySegment row_num_nz, MemorySegment row_index) {
         var mh$ = Highs_getReducedRow.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getReducedRow", highs, row, row_vector, row_num_nz, row_index);
             }
-            return (int)mh$.invokeExact(highs, row, row_vector, row_num_nz, row_index);
+            return (long)mh$.invokeExact(highs, row, row_vector, row_num_nz, row_index);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -7996,9 +7995,9 @@ public class highs_c_api_h {
 
     private static class Highs_getReducedColumn {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -8044,13 +8043,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getReducedColumn(const void *highs, const HighsInt col, double *col_vector, HighsInt *col_num_nz, HighsInt *col_index)
      * }
      */
-    public static int Highs_getReducedColumn(MemorySegment highs, int col, MemorySegment col_vector, MemorySegment col_num_nz, MemorySegment col_index) {
+    public static long Highs_getReducedColumn(MemorySegment highs, long col, MemorySegment col_vector, MemorySegment col_num_nz, MemorySegment col_index) {
         var mh$ = Highs_getReducedColumn.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getReducedColumn", highs, col, col_vector, col_num_nz, col_index);
             }
-            return (int)mh$.invokeExact(highs, col, col_vector, col_num_nz, col_index);
+            return (long)mh$.invokeExact(highs, col, col_vector, col_num_nz, col_index);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -8058,7 +8057,7 @@ public class highs_c_api_h {
 
     private static class Highs_setBasis {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -8104,13 +8103,13 @@ public class highs_c_api_h {
      * HighsInt Highs_setBasis(void *highs, const HighsInt *col_status, const HighsInt *row_status)
      * }
      */
-    public static int Highs_setBasis(MemorySegment highs, MemorySegment col_status, MemorySegment row_status) {
+    public static long Highs_setBasis(MemorySegment highs, MemorySegment col_status, MemorySegment row_status) {
         var mh$ = Highs_setBasis.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_setBasis", highs, col_status, row_status);
             }
-            return (int)mh$.invokeExact(highs, col_status, row_status);
+            return (long)mh$.invokeExact(highs, col_status, row_status);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -8118,7 +8117,7 @@ public class highs_c_api_h {
 
     private static class Highs_setLogicalBasis {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -8162,13 +8161,13 @@ public class highs_c_api_h {
      * HighsInt Highs_setLogicalBasis(void *highs)
      * }
      */
-    public static int Highs_setLogicalBasis(MemorySegment highs) {
+    public static long Highs_setLogicalBasis(MemorySegment highs) {
         var mh$ = Highs_setLogicalBasis.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_setLogicalBasis", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -8176,7 +8175,7 @@ public class highs_c_api_h {
 
     private static class Highs_setSolution {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -8224,13 +8223,13 @@ public class highs_c_api_h {
      * HighsInt Highs_setSolution(void *highs, const double *col_value, const double *row_value, const double *col_dual, const double *row_dual)
      * }
      */
-    public static int Highs_setSolution(MemorySegment highs, MemorySegment col_value, MemorySegment row_value, MemorySegment col_dual, MemorySegment row_dual) {
+    public static long Highs_setSolution(MemorySegment highs, MemorySegment col_value, MemorySegment row_value, MemorySegment col_dual, MemorySegment row_dual) {
         var mh$ = Highs_setSolution.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_setSolution", highs, col_value, row_value, col_dual, row_dual);
             }
-            return (int)mh$.invokeExact(highs, col_value, row_value, col_dual, row_dual);
+            return (long)mh$.invokeExact(highs, col_value, row_value, col_dual, row_dual);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -8238,9 +8237,9 @@ public class highs_c_api_h {
 
     private static class Highs_setSparseSolution {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -8285,13 +8284,13 @@ public class highs_c_api_h {
      * HighsInt Highs_setSparseSolution(void *highs, const HighsInt num_entries, const HighsInt *index, const double *value)
      * }
      */
-    public static int Highs_setSparseSolution(MemorySegment highs, int num_entries, MemorySegment index, MemorySegment value) {
+    public static long Highs_setSparseSolution(MemorySegment highs, long num_entries, MemorySegment index, MemorySegment value) {
         var mh$ = Highs_setSparseSolution.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_setSparseSolution", highs, num_entries, index, value);
             }
-            return (int)mh$.invokeExact(highs, num_entries, index, value);
+            return (long)mh$.invokeExact(highs, num_entries, index, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -8299,7 +8298,7 @@ public class highs_c_api_h {
 
     private static class Highs_setCallback {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -8345,13 +8344,13 @@ public class highs_c_api_h {
      * HighsInt Highs_setCallback(void *highs, HighsCCallbackType user_callback, void *user_callback_data)
      * }
      */
-    public static int Highs_setCallback(MemorySegment highs, MemorySegment user_callback, MemorySegment user_callback_data) {
+    public static long Highs_setCallback(MemorySegment highs, MemorySegment user_callback, MemorySegment user_callback_data) {
         var mh$ = Highs_setCallback.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_setCallback", highs, user_callback, user_callback_data);
             }
-            return (int)mh$.invokeExact(highs, user_callback, user_callback_data);
+            return (long)mh$.invokeExact(highs, user_callback, user_callback_data);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -8359,7 +8358,7 @@ public class highs_c_api_h {
 
     private static class Highs_startCallback {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_INT
         );
@@ -8404,13 +8403,13 @@ public class highs_c_api_h {
      * HighsInt Highs_startCallback(void *highs, const int callback_type)
      * }
      */
-    public static int Highs_startCallback(MemorySegment highs, int callback_type) {
+    public static long Highs_startCallback(MemorySegment highs, int callback_type) {
         var mh$ = Highs_startCallback.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_startCallback", highs, callback_type);
             }
-            return (int)mh$.invokeExact(highs, callback_type);
+            return (long)mh$.invokeExact(highs, callback_type);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -8418,7 +8417,7 @@ public class highs_c_api_h {
 
     private static class Highs_stopCallback {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_INT
         );
@@ -8463,13 +8462,13 @@ public class highs_c_api_h {
      * HighsInt Highs_stopCallback(void *highs, const int callback_type)
      * }
      */
-    public static int Highs_stopCallback(MemorySegment highs, int callback_type) {
+    public static long Highs_stopCallback(MemorySegment highs, int callback_type) {
         var mh$ = Highs_stopCallback.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_stopCallback", highs, callback_type);
             }
-            return (int)mh$.invokeExact(highs, callback_type);
+            return (long)mh$.invokeExact(highs, callback_type);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -8535,7 +8534,7 @@ public class highs_c_api_h {
 
     private static class Highs_zeroAllClocks {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -8579,13 +8578,13 @@ public class highs_c_api_h {
      * HighsInt Highs_zeroAllClocks(const void *highs)
      * }
      */
-    public static int Highs_zeroAllClocks(MemorySegment highs) {
+    public static long Highs_zeroAllClocks(MemorySegment highs) {
         var mh$ = Highs_zeroAllClocks.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_zeroAllClocks", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -8593,12 +8592,12 @@ public class highs_c_api_h {
 
     private static class Highs_addCol {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_DOUBLE,
             highs_c_api_h.C_DOUBLE,
             highs_c_api_h.C_DOUBLE,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -8643,13 +8642,13 @@ public class highs_c_api_h {
      * HighsInt Highs_addCol(void *highs, const double cost, const double lower, const double upper, const HighsInt num_new_nz, const HighsInt *index, const double *value)
      * }
      */
-    public static int Highs_addCol(MemorySegment highs, double cost, double lower, double upper, int num_new_nz, MemorySegment index, MemorySegment value) {
+    public static long Highs_addCol(MemorySegment highs, double cost, double lower, double upper, long num_new_nz, MemorySegment index, MemorySegment value) {
         var mh$ = Highs_addCol.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_addCol", highs, cost, lower, upper, num_new_nz, index, value);
             }
-            return (int)mh$.invokeExact(highs, cost, lower, upper, num_new_nz, index, value);
+            return (long)mh$.invokeExact(highs, cost, lower, upper, num_new_nz, index, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -8657,13 +8656,13 @@ public class highs_c_api_h {
 
     private static class Highs_addCols {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -8709,13 +8708,13 @@ public class highs_c_api_h {
      * HighsInt Highs_addCols(void *highs, const HighsInt num_new_col, const double *costs, const double *lower, const double *upper, const HighsInt num_new_nz, const HighsInt *starts, const HighsInt *index, const double *value)
      * }
      */
-    public static int Highs_addCols(MemorySegment highs, int num_new_col, MemorySegment costs, MemorySegment lower, MemorySegment upper, int num_new_nz, MemorySegment starts, MemorySegment index, MemorySegment value) {
+    public static long Highs_addCols(MemorySegment highs, long num_new_col, MemorySegment costs, MemorySegment lower, MemorySegment upper, long num_new_nz, MemorySegment starts, MemorySegment index, MemorySegment value) {
         var mh$ = Highs_addCols.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_addCols", highs, num_new_col, costs, lower, upper, num_new_nz, starts, index, value);
             }
-            return (int)mh$.invokeExact(highs, num_new_col, costs, lower, upper, num_new_nz, starts, index, value);
+            return (long)mh$.invokeExact(highs, num_new_col, costs, lower, upper, num_new_nz, starts, index, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -8723,7 +8722,7 @@ public class highs_c_api_h {
 
     private static class Highs_addVar {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_DOUBLE,
             highs_c_api_h.C_DOUBLE
@@ -8769,13 +8768,13 @@ public class highs_c_api_h {
      * HighsInt Highs_addVar(void *highs, const double lower, const double upper)
      * }
      */
-    public static int Highs_addVar(MemorySegment highs, double lower, double upper) {
+    public static long Highs_addVar(MemorySegment highs, double lower, double upper) {
         var mh$ = Highs_addVar.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_addVar", highs, lower, upper);
             }
-            return (int)mh$.invokeExact(highs, lower, upper);
+            return (long)mh$.invokeExact(highs, lower, upper);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -8783,9 +8782,9 @@ public class highs_c_api_h {
 
     private static class Highs_addVars {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -8830,13 +8829,13 @@ public class highs_c_api_h {
      * HighsInt Highs_addVars(void *highs, const HighsInt num_new_var, const double *lower, const double *upper)
      * }
      */
-    public static int Highs_addVars(MemorySegment highs, int num_new_var, MemorySegment lower, MemorySegment upper) {
+    public static long Highs_addVars(MemorySegment highs, long num_new_var, MemorySegment lower, MemorySegment upper) {
         var mh$ = Highs_addVars.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_addVars", highs, num_new_var, lower, upper);
             }
-            return (int)mh$.invokeExact(highs, num_new_var, lower, upper);
+            return (long)mh$.invokeExact(highs, num_new_var, lower, upper);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -8844,11 +8843,11 @@ public class highs_c_api_h {
 
     private static class Highs_addRow {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_DOUBLE,
             highs_c_api_h.C_DOUBLE,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -8893,13 +8892,13 @@ public class highs_c_api_h {
      * HighsInt Highs_addRow(void *highs, const double lower, const double upper, const HighsInt num_new_nz, const HighsInt *index, const double *value)
      * }
      */
-    public static int Highs_addRow(MemorySegment highs, double lower, double upper, int num_new_nz, MemorySegment index, MemorySegment value) {
+    public static long Highs_addRow(MemorySegment highs, double lower, double upper, long num_new_nz, MemorySegment index, MemorySegment value) {
         var mh$ = Highs_addRow.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_addRow", highs, lower, upper, num_new_nz, index, value);
             }
-            return (int)mh$.invokeExact(highs, lower, upper, num_new_nz, index, value);
+            return (long)mh$.invokeExact(highs, lower, upper, num_new_nz, index, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -8907,12 +8906,12 @@ public class highs_c_api_h {
 
     private static class Highs_addRows {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -8958,13 +8957,13 @@ public class highs_c_api_h {
      * HighsInt Highs_addRows(void *highs, const HighsInt num_new_row, const double *lower, const double *upper, const HighsInt num_new_nz, const HighsInt *starts, const HighsInt *index, const double *value)
      * }
      */
-    public static int Highs_addRows(MemorySegment highs, int num_new_row, MemorySegment lower, MemorySegment upper, int num_new_nz, MemorySegment starts, MemorySegment index, MemorySegment value) {
+    public static long Highs_addRows(MemorySegment highs, long num_new_row, MemorySegment lower, MemorySegment upper, long num_new_nz, MemorySegment starts, MemorySegment index, MemorySegment value) {
         var mh$ = Highs_addRows.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_addRows", highs, num_new_row, lower, upper, num_new_nz, starts, index, value);
             }
-            return (int)mh$.invokeExact(highs, num_new_row, lower, upper, num_new_nz, starts, index, value);
+            return (long)mh$.invokeExact(highs, num_new_row, lower, upper, num_new_nz, starts, index, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -8972,9 +8971,9 @@ public class highs_c_api_h {
 
     private static class Highs_changeObjectiveSense {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT
+            highs_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs_c_api_h.findOrThrow("Highs_changeObjectiveSense");
@@ -9017,13 +9016,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeObjectiveSense(void *highs, const HighsInt sense)
      * }
      */
-    public static int Highs_changeObjectiveSense(MemorySegment highs, int sense) {
+    public static long Highs_changeObjectiveSense(MemorySegment highs, long sense) {
         var mh$ = Highs_changeObjectiveSense.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeObjectiveSense", highs, sense);
             }
-            return (int)mh$.invokeExact(highs, sense);
+            return (long)mh$.invokeExact(highs, sense);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -9031,7 +9030,7 @@ public class highs_c_api_h {
 
     private static class Highs_changeObjectiveOffset {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_DOUBLE
         );
@@ -9076,13 +9075,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeObjectiveOffset(void *highs, const double offset)
      * }
      */
-    public static int Highs_changeObjectiveOffset(MemorySegment highs, double offset) {
+    public static long Highs_changeObjectiveOffset(MemorySegment highs, double offset) {
         var mh$ = Highs_changeObjectiveOffset.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeObjectiveOffset", highs, offset);
             }
-            return (int)mh$.invokeExact(highs, offset);
+            return (long)mh$.invokeExact(highs, offset);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -9090,10 +9089,10 @@ public class highs_c_api_h {
 
     private static class Highs_changeColIntegrality {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs_c_api_h.findOrThrow("Highs_changeColIntegrality");
@@ -9136,13 +9135,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeColIntegrality(void *highs, const HighsInt col, const HighsInt integrality)
      * }
      */
-    public static int Highs_changeColIntegrality(MemorySegment highs, int col, int integrality) {
+    public static long Highs_changeColIntegrality(MemorySegment highs, long col, long integrality) {
         var mh$ = Highs_changeColIntegrality.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeColIntegrality", highs, col, integrality);
             }
-            return (int)mh$.invokeExact(highs, col, integrality);
+            return (long)mh$.invokeExact(highs, col, integrality);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -9150,10 +9149,10 @@ public class highs_c_api_h {
 
     private static class Highs_changeColsIntegralityByRange {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -9197,13 +9196,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeColsIntegralityByRange(void *highs, const HighsInt from_col, const HighsInt to_col, const HighsInt *integrality)
      * }
      */
-    public static int Highs_changeColsIntegralityByRange(MemorySegment highs, int from_col, int to_col, MemorySegment integrality) {
+    public static long Highs_changeColsIntegralityByRange(MemorySegment highs, long from_col, long to_col, MemorySegment integrality) {
         var mh$ = Highs_changeColsIntegralityByRange.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeColsIntegralityByRange", highs, from_col, to_col, integrality);
             }
-            return (int)mh$.invokeExact(highs, from_col, to_col, integrality);
+            return (long)mh$.invokeExact(highs, from_col, to_col, integrality);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -9211,9 +9210,9 @@ public class highs_c_api_h {
 
     private static class Highs_changeColsIntegralityBySet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -9258,13 +9257,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeColsIntegralityBySet(void *highs, const HighsInt num_set_entries, const HighsInt *set, const HighsInt *integrality)
      * }
      */
-    public static int Highs_changeColsIntegralityBySet(MemorySegment highs, int num_set_entries, MemorySegment set, MemorySegment integrality) {
+    public static long Highs_changeColsIntegralityBySet(MemorySegment highs, long num_set_entries, MemorySegment set, MemorySegment integrality) {
         var mh$ = Highs_changeColsIntegralityBySet.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeColsIntegralityBySet", highs, num_set_entries, set, integrality);
             }
-            return (int)mh$.invokeExact(highs, num_set_entries, set, integrality);
+            return (long)mh$.invokeExact(highs, num_set_entries, set, integrality);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -9272,7 +9271,7 @@ public class highs_c_api_h {
 
     private static class Highs_changeColsIntegralityByMask {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -9318,13 +9317,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeColsIntegralityByMask(void *highs, const HighsInt *mask, const HighsInt *integrality)
      * }
      */
-    public static int Highs_changeColsIntegralityByMask(MemorySegment highs, MemorySegment mask, MemorySegment integrality) {
+    public static long Highs_changeColsIntegralityByMask(MemorySegment highs, MemorySegment mask, MemorySegment integrality) {
         var mh$ = Highs_changeColsIntegralityByMask.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeColsIntegralityByMask", highs, mask, integrality);
             }
-            return (int)mh$.invokeExact(highs, mask, integrality);
+            return (long)mh$.invokeExact(highs, mask, integrality);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -9332,7 +9331,7 @@ public class highs_c_api_h {
 
     private static class Highs_clearIntegrality {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -9376,13 +9375,13 @@ public class highs_c_api_h {
      * HighsInt Highs_clearIntegrality(void *highs)
      * }
      */
-    public static int Highs_clearIntegrality(MemorySegment highs) {
+    public static long Highs_clearIntegrality(MemorySegment highs) {
         var mh$ = Highs_clearIntegrality.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_clearIntegrality", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -9390,9 +9389,9 @@ public class highs_c_api_h {
 
     private static class Highs_changeColCost {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_DOUBLE
         );
 
@@ -9436,13 +9435,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeColCost(void *highs, const HighsInt col, const double cost)
      * }
      */
-    public static int Highs_changeColCost(MemorySegment highs, int col, double cost) {
+    public static long Highs_changeColCost(MemorySegment highs, long col, double cost) {
         var mh$ = Highs_changeColCost.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeColCost", highs, col, cost);
             }
-            return (int)mh$.invokeExact(highs, col, cost);
+            return (long)mh$.invokeExact(highs, col, cost);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -9450,10 +9449,10 @@ public class highs_c_api_h {
 
     private static class Highs_changeColsCostByRange {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -9497,13 +9496,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeColsCostByRange(void *highs, const HighsInt from_col, const HighsInt to_col, const double *cost)
      * }
      */
-    public static int Highs_changeColsCostByRange(MemorySegment highs, int from_col, int to_col, MemorySegment cost) {
+    public static long Highs_changeColsCostByRange(MemorySegment highs, long from_col, long to_col, MemorySegment cost) {
         var mh$ = Highs_changeColsCostByRange.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeColsCostByRange", highs, from_col, to_col, cost);
             }
-            return (int)mh$.invokeExact(highs, from_col, to_col, cost);
+            return (long)mh$.invokeExact(highs, from_col, to_col, cost);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -9511,9 +9510,9 @@ public class highs_c_api_h {
 
     private static class Highs_changeColsCostBySet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -9558,13 +9557,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeColsCostBySet(void *highs, const HighsInt num_set_entries, const HighsInt *set, const double *cost)
      * }
      */
-    public static int Highs_changeColsCostBySet(MemorySegment highs, int num_set_entries, MemorySegment set, MemorySegment cost) {
+    public static long Highs_changeColsCostBySet(MemorySegment highs, long num_set_entries, MemorySegment set, MemorySegment cost) {
         var mh$ = Highs_changeColsCostBySet.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeColsCostBySet", highs, num_set_entries, set, cost);
             }
-            return (int)mh$.invokeExact(highs, num_set_entries, set, cost);
+            return (long)mh$.invokeExact(highs, num_set_entries, set, cost);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -9572,7 +9571,7 @@ public class highs_c_api_h {
 
     private static class Highs_changeColsCostByMask {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -9618,13 +9617,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeColsCostByMask(void *highs, const HighsInt *mask, const double *cost)
      * }
      */
-    public static int Highs_changeColsCostByMask(MemorySegment highs, MemorySegment mask, MemorySegment cost) {
+    public static long Highs_changeColsCostByMask(MemorySegment highs, MemorySegment mask, MemorySegment cost) {
         var mh$ = Highs_changeColsCostByMask.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeColsCostByMask", highs, mask, cost);
             }
-            return (int)mh$.invokeExact(highs, mask, cost);
+            return (long)mh$.invokeExact(highs, mask, cost);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -9632,9 +9631,9 @@ public class highs_c_api_h {
 
     private static class Highs_changeColBounds {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_DOUBLE,
             highs_c_api_h.C_DOUBLE
         );
@@ -9679,13 +9678,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeColBounds(void *highs, const HighsInt col, const double lower, const double upper)
      * }
      */
-    public static int Highs_changeColBounds(MemorySegment highs, int col, double lower, double upper) {
+    public static long Highs_changeColBounds(MemorySegment highs, long col, double lower, double upper) {
         var mh$ = Highs_changeColBounds.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeColBounds", highs, col, lower, upper);
             }
-            return (int)mh$.invokeExact(highs, col, lower, upper);
+            return (long)mh$.invokeExact(highs, col, lower, upper);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -9693,10 +9692,10 @@ public class highs_c_api_h {
 
     private static class Highs_changeColsBoundsByRange {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -9741,13 +9740,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeColsBoundsByRange(void *highs, const HighsInt from_col, const HighsInt to_col, const double *lower, const double *upper)
      * }
      */
-    public static int Highs_changeColsBoundsByRange(MemorySegment highs, int from_col, int to_col, MemorySegment lower, MemorySegment upper) {
+    public static long Highs_changeColsBoundsByRange(MemorySegment highs, long from_col, long to_col, MemorySegment lower, MemorySegment upper) {
         var mh$ = Highs_changeColsBoundsByRange.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeColsBoundsByRange", highs, from_col, to_col, lower, upper);
             }
-            return (int)mh$.invokeExact(highs, from_col, to_col, lower, upper);
+            return (long)mh$.invokeExact(highs, from_col, to_col, lower, upper);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -9755,9 +9754,9 @@ public class highs_c_api_h {
 
     private static class Highs_changeColsBoundsBySet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -9803,13 +9802,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeColsBoundsBySet(void *highs, const HighsInt num_set_entries, const HighsInt *set, const double *lower, const double *upper)
      * }
      */
-    public static int Highs_changeColsBoundsBySet(MemorySegment highs, int num_set_entries, MemorySegment set, MemorySegment lower, MemorySegment upper) {
+    public static long Highs_changeColsBoundsBySet(MemorySegment highs, long num_set_entries, MemorySegment set, MemorySegment lower, MemorySegment upper) {
         var mh$ = Highs_changeColsBoundsBySet.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeColsBoundsBySet", highs, num_set_entries, set, lower, upper);
             }
-            return (int)mh$.invokeExact(highs, num_set_entries, set, lower, upper);
+            return (long)mh$.invokeExact(highs, num_set_entries, set, lower, upper);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -9817,7 +9816,7 @@ public class highs_c_api_h {
 
     private static class Highs_changeColsBoundsByMask {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -9864,13 +9863,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeColsBoundsByMask(void *highs, const HighsInt *mask, const double *lower, const double *upper)
      * }
      */
-    public static int Highs_changeColsBoundsByMask(MemorySegment highs, MemorySegment mask, MemorySegment lower, MemorySegment upper) {
+    public static long Highs_changeColsBoundsByMask(MemorySegment highs, MemorySegment mask, MemorySegment lower, MemorySegment upper) {
         var mh$ = Highs_changeColsBoundsByMask.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeColsBoundsByMask", highs, mask, lower, upper);
             }
-            return (int)mh$.invokeExact(highs, mask, lower, upper);
+            return (long)mh$.invokeExact(highs, mask, lower, upper);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -9878,9 +9877,9 @@ public class highs_c_api_h {
 
     private static class Highs_changeRowBounds {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_DOUBLE,
             highs_c_api_h.C_DOUBLE
         );
@@ -9925,13 +9924,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeRowBounds(void *highs, const HighsInt row, const double lower, const double upper)
      * }
      */
-    public static int Highs_changeRowBounds(MemorySegment highs, int row, double lower, double upper) {
+    public static long Highs_changeRowBounds(MemorySegment highs, long row, double lower, double upper) {
         var mh$ = Highs_changeRowBounds.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeRowBounds", highs, row, lower, upper);
             }
-            return (int)mh$.invokeExact(highs, row, lower, upper);
+            return (long)mh$.invokeExact(highs, row, lower, upper);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -9939,9 +9938,9 @@ public class highs_c_api_h {
 
     private static class Highs_changeRowsBoundsBySet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -9987,13 +9986,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeRowsBoundsBySet(void *highs, const HighsInt num_set_entries, const HighsInt *set, const double *lower, const double *upper)
      * }
      */
-    public static int Highs_changeRowsBoundsBySet(MemorySegment highs, int num_set_entries, MemorySegment set, MemorySegment lower, MemorySegment upper) {
+    public static long Highs_changeRowsBoundsBySet(MemorySegment highs, long num_set_entries, MemorySegment set, MemorySegment lower, MemorySegment upper) {
         var mh$ = Highs_changeRowsBoundsBySet.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeRowsBoundsBySet", highs, num_set_entries, set, lower, upper);
             }
-            return (int)mh$.invokeExact(highs, num_set_entries, set, lower, upper);
+            return (long)mh$.invokeExact(highs, num_set_entries, set, lower, upper);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -10001,7 +10000,7 @@ public class highs_c_api_h {
 
     private static class Highs_changeRowsBoundsByMask {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -10048,13 +10047,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeRowsBoundsByMask(void *highs, const HighsInt *mask, const double *lower, const double *upper)
      * }
      */
-    public static int Highs_changeRowsBoundsByMask(MemorySegment highs, MemorySegment mask, MemorySegment lower, MemorySegment upper) {
+    public static long Highs_changeRowsBoundsByMask(MemorySegment highs, MemorySegment mask, MemorySegment lower, MemorySegment upper) {
         var mh$ = Highs_changeRowsBoundsByMask.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeRowsBoundsByMask", highs, mask, lower, upper);
             }
-            return (int)mh$.invokeExact(highs, mask, lower, upper);
+            return (long)mh$.invokeExact(highs, mask, lower, upper);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -10062,10 +10061,10 @@ public class highs_c_api_h {
 
     private static class Highs_changeCoeff {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_DOUBLE
         );
 
@@ -10109,13 +10108,13 @@ public class highs_c_api_h {
      * HighsInt Highs_changeCoeff(void *highs, const HighsInt row, const HighsInt col, const double value)
      * }
      */
-    public static int Highs_changeCoeff(MemorySegment highs, int row, int col, double value) {
+    public static long Highs_changeCoeff(MemorySegment highs, long row, long col, double value) {
         var mh$ = Highs_changeCoeff.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_changeCoeff", highs, row, col, value);
             }
-            return (int)mh$.invokeExact(highs, row, col, value);
+            return (long)mh$.invokeExact(highs, row, col, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -10123,7 +10122,7 @@ public class highs_c_api_h {
 
     private static class Highs_getObjectiveSense {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -10168,13 +10167,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getObjectiveSense(const void *highs, HighsInt *sense)
      * }
      */
-    public static int Highs_getObjectiveSense(MemorySegment highs, MemorySegment sense) {
+    public static long Highs_getObjectiveSense(MemorySegment highs, MemorySegment sense) {
         var mh$ = Highs_getObjectiveSense.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getObjectiveSense", highs, sense);
             }
-            return (int)mh$.invokeExact(highs, sense);
+            return (long)mh$.invokeExact(highs, sense);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -10182,7 +10181,7 @@ public class highs_c_api_h {
 
     private static class Highs_getObjectiveOffset {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -10227,13 +10226,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getObjectiveOffset(const void *highs, double *offset)
      * }
      */
-    public static int Highs_getObjectiveOffset(MemorySegment highs, MemorySegment offset) {
+    public static long Highs_getObjectiveOffset(MemorySegment highs, MemorySegment offset) {
         var mh$ = Highs_getObjectiveOffset.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getObjectiveOffset", highs, offset);
             }
-            return (int)mh$.invokeExact(highs, offset);
+            return (long)mh$.invokeExact(highs, offset);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -10241,10 +10240,10 @@ public class highs_c_api_h {
 
     private static class Highs_getColsByRange {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -10295,13 +10294,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getColsByRange(const void *highs, const HighsInt from_col, const HighsInt to_col, HighsInt *num_col, double *costs, double *lower, double *upper, HighsInt *num_nz, HighsInt *matrix_start, HighsInt *matrix_index, double *matrix_value)
      * }
      */
-    public static int Highs_getColsByRange(MemorySegment highs, int from_col, int to_col, MemorySegment num_col, MemorySegment costs, MemorySegment lower, MemorySegment upper, MemorySegment num_nz, MemorySegment matrix_start, MemorySegment matrix_index, MemorySegment matrix_value) {
+    public static long Highs_getColsByRange(MemorySegment highs, long from_col, long to_col, MemorySegment num_col, MemorySegment costs, MemorySegment lower, MemorySegment upper, MemorySegment num_nz, MemorySegment matrix_start, MemorySegment matrix_index, MemorySegment matrix_value) {
         var mh$ = Highs_getColsByRange.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getColsByRange", highs, from_col, to_col, num_col, costs, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
             }
-            return (int)mh$.invokeExact(highs, from_col, to_col, num_col, costs, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
+            return (long)mh$.invokeExact(highs, from_col, to_col, num_col, costs, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -10309,9 +10308,9 @@ public class highs_c_api_h {
 
     private static class Highs_getColsBySet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -10363,13 +10362,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getColsBySet(const void *highs, const HighsInt num_set_entries, const HighsInt *set, HighsInt *num_col, double *costs, double *lower, double *upper, HighsInt *num_nz, HighsInt *matrix_start, HighsInt *matrix_index, double *matrix_value)
      * }
      */
-    public static int Highs_getColsBySet(MemorySegment highs, int num_set_entries, MemorySegment set, MemorySegment num_col, MemorySegment costs, MemorySegment lower, MemorySegment upper, MemorySegment num_nz, MemorySegment matrix_start, MemorySegment matrix_index, MemorySegment matrix_value) {
+    public static long Highs_getColsBySet(MemorySegment highs, long num_set_entries, MemorySegment set, MemorySegment num_col, MemorySegment costs, MemorySegment lower, MemorySegment upper, MemorySegment num_nz, MemorySegment matrix_start, MemorySegment matrix_index, MemorySegment matrix_value) {
         var mh$ = Highs_getColsBySet.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getColsBySet", highs, num_set_entries, set, num_col, costs, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
             }
-            return (int)mh$.invokeExact(highs, num_set_entries, set, num_col, costs, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
+            return (long)mh$.invokeExact(highs, num_set_entries, set, num_col, costs, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -10377,7 +10376,7 @@ public class highs_c_api_h {
 
     private static class Highs_getColsByMask {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -10430,13 +10429,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getColsByMask(const void *highs, const HighsInt *mask, HighsInt *num_col, double *costs, double *lower, double *upper, HighsInt *num_nz, HighsInt *matrix_start, HighsInt *matrix_index, double *matrix_value)
      * }
      */
-    public static int Highs_getColsByMask(MemorySegment highs, MemorySegment mask, MemorySegment num_col, MemorySegment costs, MemorySegment lower, MemorySegment upper, MemorySegment num_nz, MemorySegment matrix_start, MemorySegment matrix_index, MemorySegment matrix_value) {
+    public static long Highs_getColsByMask(MemorySegment highs, MemorySegment mask, MemorySegment num_col, MemorySegment costs, MemorySegment lower, MemorySegment upper, MemorySegment num_nz, MemorySegment matrix_start, MemorySegment matrix_index, MemorySegment matrix_value) {
         var mh$ = Highs_getColsByMask.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getColsByMask", highs, mask, num_col, costs, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
             }
-            return (int)mh$.invokeExact(highs, mask, num_col, costs, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
+            return (long)mh$.invokeExact(highs, mask, num_col, costs, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -10444,10 +10443,10 @@ public class highs_c_api_h {
 
     private static class Highs_getRowsByRange {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -10497,13 +10496,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getRowsByRange(const void *highs, const HighsInt from_row, const HighsInt to_row, HighsInt *num_row, double *lower, double *upper, HighsInt *num_nz, HighsInt *matrix_start, HighsInt *matrix_index, double *matrix_value)
      * }
      */
-    public static int Highs_getRowsByRange(MemorySegment highs, int from_row, int to_row, MemorySegment num_row, MemorySegment lower, MemorySegment upper, MemorySegment num_nz, MemorySegment matrix_start, MemorySegment matrix_index, MemorySegment matrix_value) {
+    public static long Highs_getRowsByRange(MemorySegment highs, long from_row, long to_row, MemorySegment num_row, MemorySegment lower, MemorySegment upper, MemorySegment num_nz, MemorySegment matrix_start, MemorySegment matrix_index, MemorySegment matrix_value) {
         var mh$ = Highs_getRowsByRange.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getRowsByRange", highs, from_row, to_row, num_row, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
             }
-            return (int)mh$.invokeExact(highs, from_row, to_row, num_row, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
+            return (long)mh$.invokeExact(highs, from_row, to_row, num_row, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -10511,9 +10510,9 @@ public class highs_c_api_h {
 
     private static class Highs_getRowsBySet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -10564,13 +10563,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getRowsBySet(const void *highs, const HighsInt num_set_entries, const HighsInt *set, HighsInt *num_row, double *lower, double *upper, HighsInt *num_nz, HighsInt *matrix_start, HighsInt *matrix_index, double *matrix_value)
      * }
      */
-    public static int Highs_getRowsBySet(MemorySegment highs, int num_set_entries, MemorySegment set, MemorySegment num_row, MemorySegment lower, MemorySegment upper, MemorySegment num_nz, MemorySegment matrix_start, MemorySegment matrix_index, MemorySegment matrix_value) {
+    public static long Highs_getRowsBySet(MemorySegment highs, long num_set_entries, MemorySegment set, MemorySegment num_row, MemorySegment lower, MemorySegment upper, MemorySegment num_nz, MemorySegment matrix_start, MemorySegment matrix_index, MemorySegment matrix_value) {
         var mh$ = Highs_getRowsBySet.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getRowsBySet", highs, num_set_entries, set, num_row, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
             }
-            return (int)mh$.invokeExact(highs, num_set_entries, set, num_row, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
+            return (long)mh$.invokeExact(highs, num_set_entries, set, num_row, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -10578,7 +10577,7 @@ public class highs_c_api_h {
 
     private static class Highs_getRowsByMask {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -10630,13 +10629,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getRowsByMask(const void *highs, const HighsInt *mask, HighsInt *num_row, double *lower, double *upper, HighsInt *num_nz, HighsInt *matrix_start, HighsInt *matrix_index, double *matrix_value)
      * }
      */
-    public static int Highs_getRowsByMask(MemorySegment highs, MemorySegment mask, MemorySegment num_row, MemorySegment lower, MemorySegment upper, MemorySegment num_nz, MemorySegment matrix_start, MemorySegment matrix_index, MemorySegment matrix_value) {
+    public static long Highs_getRowsByMask(MemorySegment highs, MemorySegment mask, MemorySegment num_row, MemorySegment lower, MemorySegment upper, MemorySegment num_nz, MemorySegment matrix_start, MemorySegment matrix_index, MemorySegment matrix_value) {
         var mh$ = Highs_getRowsByMask.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getRowsByMask", highs, mask, num_row, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
             }
-            return (int)mh$.invokeExact(highs, mask, num_row, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
+            return (long)mh$.invokeExact(highs, mask, num_row, lower, upper, num_nz, matrix_start, matrix_index, matrix_value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -10644,9 +10643,9 @@ public class highs_c_api_h {
 
     private static class Highs_getRowName {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -10690,13 +10689,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getRowName(const void *highs, const HighsInt row, char *name)
      * }
      */
-    public static int Highs_getRowName(MemorySegment highs, int row, MemorySegment name) {
+    public static long Highs_getRowName(MemorySegment highs, long row, MemorySegment name) {
         var mh$ = Highs_getRowName.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getRowName", highs, row, name);
             }
-            return (int)mh$.invokeExact(highs, row, name);
+            return (long)mh$.invokeExact(highs, row, name);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -10704,7 +10703,7 @@ public class highs_c_api_h {
 
     private static class Highs_getRowByName {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -10750,13 +10749,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getRowByName(const void *highs, const char *name, HighsInt *row)
      * }
      */
-    public static int Highs_getRowByName(MemorySegment highs, MemorySegment name, MemorySegment row) {
+    public static long Highs_getRowByName(MemorySegment highs, MemorySegment name, MemorySegment row) {
         var mh$ = Highs_getRowByName.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getRowByName", highs, name, row);
             }
-            return (int)mh$.invokeExact(highs, name, row);
+            return (long)mh$.invokeExact(highs, name, row);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -10764,9 +10763,9 @@ public class highs_c_api_h {
 
     private static class Highs_getColName {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -10810,13 +10809,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getColName(const void *highs, const HighsInt col, char *name)
      * }
      */
-    public static int Highs_getColName(MemorySegment highs, int col, MemorySegment name) {
+    public static long Highs_getColName(MemorySegment highs, long col, MemorySegment name) {
         var mh$ = Highs_getColName.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getColName", highs, col, name);
             }
-            return (int)mh$.invokeExact(highs, col, name);
+            return (long)mh$.invokeExact(highs, col, name);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -10824,7 +10823,7 @@ public class highs_c_api_h {
 
     private static class Highs_getColByName {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -10870,13 +10869,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getColByName(const void *highs, const char *name, HighsInt *col)
      * }
      */
-    public static int Highs_getColByName(MemorySegment highs, MemorySegment name, MemorySegment col) {
+    public static long Highs_getColByName(MemorySegment highs, MemorySegment name, MemorySegment col) {
         var mh$ = Highs_getColByName.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getColByName", highs, name, col);
             }
-            return (int)mh$.invokeExact(highs, name, col);
+            return (long)mh$.invokeExact(highs, name, col);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -10884,9 +10883,9 @@ public class highs_c_api_h {
 
     private static class Highs_getColIntegrality {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -10930,13 +10929,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getColIntegrality(const void *highs, const HighsInt col, HighsInt *integrality)
      * }
      */
-    public static int Highs_getColIntegrality(MemorySegment highs, int col, MemorySegment integrality) {
+    public static long Highs_getColIntegrality(MemorySegment highs, long col, MemorySegment integrality) {
         var mh$ = Highs_getColIntegrality.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getColIntegrality", highs, col, integrality);
             }
-            return (int)mh$.invokeExact(highs, col, integrality);
+            return (long)mh$.invokeExact(highs, col, integrality);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -10944,10 +10943,10 @@ public class highs_c_api_h {
 
     private static class Highs_deleteColsByRange {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs_c_api_h.findOrThrow("Highs_deleteColsByRange");
@@ -10990,13 +10989,13 @@ public class highs_c_api_h {
      * HighsInt Highs_deleteColsByRange(void *highs, const HighsInt from_col, const HighsInt to_col)
      * }
      */
-    public static int Highs_deleteColsByRange(MemorySegment highs, int from_col, int to_col) {
+    public static long Highs_deleteColsByRange(MemorySegment highs, long from_col, long to_col) {
         var mh$ = Highs_deleteColsByRange.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_deleteColsByRange", highs, from_col, to_col);
             }
-            return (int)mh$.invokeExact(highs, from_col, to_col);
+            return (long)mh$.invokeExact(highs, from_col, to_col);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -11004,9 +11003,9 @@ public class highs_c_api_h {
 
     private static class Highs_deleteColsBySet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -11050,13 +11049,13 @@ public class highs_c_api_h {
      * HighsInt Highs_deleteColsBySet(void *highs, const HighsInt num_set_entries, const HighsInt *set)
      * }
      */
-    public static int Highs_deleteColsBySet(MemorySegment highs, int num_set_entries, MemorySegment set) {
+    public static long Highs_deleteColsBySet(MemorySegment highs, long num_set_entries, MemorySegment set) {
         var mh$ = Highs_deleteColsBySet.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_deleteColsBySet", highs, num_set_entries, set);
             }
-            return (int)mh$.invokeExact(highs, num_set_entries, set);
+            return (long)mh$.invokeExact(highs, num_set_entries, set);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -11064,7 +11063,7 @@ public class highs_c_api_h {
 
     private static class Highs_deleteColsByMask {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -11109,13 +11108,13 @@ public class highs_c_api_h {
      * HighsInt Highs_deleteColsByMask(void *highs, HighsInt *mask)
      * }
      */
-    public static int Highs_deleteColsByMask(MemorySegment highs, MemorySegment mask) {
+    public static long Highs_deleteColsByMask(MemorySegment highs, MemorySegment mask) {
         var mh$ = Highs_deleteColsByMask.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_deleteColsByMask", highs, mask);
             }
-            return (int)mh$.invokeExact(highs, mask);
+            return (long)mh$.invokeExact(highs, mask);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -11123,10 +11122,10 @@ public class highs_c_api_h {
 
     private static class Highs_deleteRowsByRange {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT
+            highs_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs_c_api_h.findOrThrow("Highs_deleteRowsByRange");
@@ -11169,13 +11168,13 @@ public class highs_c_api_h {
      * HighsInt Highs_deleteRowsByRange(void *highs, const int from_row, const HighsInt to_row)
      * }
      */
-    public static int Highs_deleteRowsByRange(MemorySegment highs, int from_row, int to_row) {
+    public static long Highs_deleteRowsByRange(MemorySegment highs, int from_row, long to_row) {
         var mh$ = Highs_deleteRowsByRange.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_deleteRowsByRange", highs, from_row, to_row);
             }
-            return (int)mh$.invokeExact(highs, from_row, to_row);
+            return (long)mh$.invokeExact(highs, from_row, to_row);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -11183,9 +11182,9 @@ public class highs_c_api_h {
 
     private static class Highs_deleteRowsBySet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -11229,13 +11228,13 @@ public class highs_c_api_h {
      * HighsInt Highs_deleteRowsBySet(void *highs, const HighsInt num_set_entries, const HighsInt *set)
      * }
      */
-    public static int Highs_deleteRowsBySet(MemorySegment highs, int num_set_entries, MemorySegment set) {
+    public static long Highs_deleteRowsBySet(MemorySegment highs, long num_set_entries, MemorySegment set) {
         var mh$ = Highs_deleteRowsBySet.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_deleteRowsBySet", highs, num_set_entries, set);
             }
-            return (int)mh$.invokeExact(highs, num_set_entries, set);
+            return (long)mh$.invokeExact(highs, num_set_entries, set);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -11243,7 +11242,7 @@ public class highs_c_api_h {
 
     private static class Highs_deleteRowsByMask {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -11288,13 +11287,13 @@ public class highs_c_api_h {
      * HighsInt Highs_deleteRowsByMask(void *highs, HighsInt *mask)
      * }
      */
-    public static int Highs_deleteRowsByMask(MemorySegment highs, MemorySegment mask) {
+    public static long Highs_deleteRowsByMask(MemorySegment highs, MemorySegment mask) {
         var mh$ = Highs_deleteRowsByMask.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_deleteRowsByMask", highs, mask);
             }
-            return (int)mh$.invokeExact(highs, mask);
+            return (long)mh$.invokeExact(highs, mask);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -11302,9 +11301,9 @@ public class highs_c_api_h {
 
     private static class Highs_scaleCol {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_DOUBLE
         );
 
@@ -11348,13 +11347,13 @@ public class highs_c_api_h {
      * HighsInt Highs_scaleCol(void *highs, const HighsInt col, const double scaleval)
      * }
      */
-    public static int Highs_scaleCol(MemorySegment highs, int col, double scaleval) {
+    public static long Highs_scaleCol(MemorySegment highs, long col, double scaleval) {
         var mh$ = Highs_scaleCol.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_scaleCol", highs, col, scaleval);
             }
-            return (int)mh$.invokeExact(highs, col, scaleval);
+            return (long)mh$.invokeExact(highs, col, scaleval);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -11362,9 +11361,9 @@ public class highs_c_api_h {
 
     private static class Highs_scaleRow {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_DOUBLE
         );
 
@@ -11408,13 +11407,13 @@ public class highs_c_api_h {
      * HighsInt Highs_scaleRow(void *highs, const HighsInt row, const double scaleval)
      * }
      */
-    public static int Highs_scaleRow(MemorySegment highs, int row, double scaleval) {
+    public static long Highs_scaleRow(MemorySegment highs, long row, double scaleval) {
         var mh$ = Highs_scaleRow.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_scaleRow", highs, row, scaleval);
             }
-            return (int)mh$.invokeExact(highs, row, scaleval);
+            return (long)mh$.invokeExact(highs, row, scaleval);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -11480,7 +11479,7 @@ public class highs_c_api_h {
 
     private static class Highs_getSizeofHighsInt {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -11524,13 +11523,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getSizeofHighsInt(const void *highs)
      * }
      */
-    public static int Highs_getSizeofHighsInt(MemorySegment highs) {
+    public static long Highs_getSizeofHighsInt(MemorySegment highs) {
         var mh$ = Highs_getSizeofHighsInt.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getSizeofHighsInt", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -11538,7 +11537,7 @@ public class highs_c_api_h {
 
     private static class Highs_getNumCol {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -11582,13 +11581,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getNumCol(const void *highs)
      * }
      */
-    public static int Highs_getNumCol(MemorySegment highs) {
+    public static long Highs_getNumCol(MemorySegment highs) {
         var mh$ = Highs_getNumCol.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getNumCol", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -11596,7 +11595,7 @@ public class highs_c_api_h {
 
     private static class Highs_getNumRow {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -11640,13 +11639,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getNumRow(const void *highs)
      * }
      */
-    public static int Highs_getNumRow(MemorySegment highs) {
+    public static long Highs_getNumRow(MemorySegment highs) {
         var mh$ = Highs_getNumRow.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getNumRow", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -11654,7 +11653,7 @@ public class highs_c_api_h {
 
     private static class Highs_getNumNz {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -11698,13 +11697,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getNumNz(const void *highs)
      * }
      */
-    public static int Highs_getNumNz(MemorySegment highs) {
+    public static long Highs_getNumNz(MemorySegment highs) {
         var mh$ = Highs_getNumNz.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getNumNz", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -11712,7 +11711,7 @@ public class highs_c_api_h {
 
     private static class Highs_getHessianNumNz {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -11756,13 +11755,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getHessianNumNz(const void *highs)
      * }
      */
-    public static int Highs_getHessianNumNz(MemorySegment highs) {
+    public static long Highs_getHessianNumNz(MemorySegment highs) {
         var mh$ = Highs_getHessianNumNz.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getHessianNumNz", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -11770,7 +11769,7 @@ public class highs_c_api_h {
 
     private static class Highs_getPresolvedNumCol {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -11814,13 +11813,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getPresolvedNumCol(const void *highs)
      * }
      */
-    public static int Highs_getPresolvedNumCol(MemorySegment highs) {
+    public static long Highs_getPresolvedNumCol(MemorySegment highs) {
         var mh$ = Highs_getPresolvedNumCol.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getPresolvedNumCol", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -11828,7 +11827,7 @@ public class highs_c_api_h {
 
     private static class Highs_getPresolvedNumRow {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -11872,13 +11871,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getPresolvedNumRow(const void *highs)
      * }
      */
-    public static int Highs_getPresolvedNumRow(MemorySegment highs) {
+    public static long Highs_getPresolvedNumRow(MemorySegment highs) {
         var mh$ = Highs_getPresolvedNumRow.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getPresolvedNumRow", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -11886,7 +11885,7 @@ public class highs_c_api_h {
 
     private static class Highs_getPresolvedNumNz {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -11930,13 +11929,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getPresolvedNumNz(const void *highs)
      * }
      */
-    public static int Highs_getPresolvedNumNz(MemorySegment highs) {
+    public static long Highs_getPresolvedNumNz(MemorySegment highs) {
         var mh$ = Highs_getPresolvedNumNz.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getPresolvedNumNz", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -11944,10 +11943,10 @@ public class highs_c_api_h {
 
     private static class Highs_getModel {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -12008,13 +12007,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getModel(const void *highs, const HighsInt a_format, const HighsInt q_format, HighsInt *num_col, HighsInt *num_row, HighsInt *num_nz, HighsInt *hessian_num_nz, HighsInt *sense, double *offset, double *col_cost, double *col_lower, double *col_upper, double *row_lower, double *row_upper, HighsInt *a_start, HighsInt *a_index, double *a_value, HighsInt *q_start, HighsInt *q_index, double *q_value, HighsInt *integrality)
      * }
      */
-    public static int Highs_getModel(MemorySegment highs, int a_format, int q_format, MemorySegment num_col, MemorySegment num_row, MemorySegment num_nz, MemorySegment hessian_num_nz, MemorySegment sense, MemorySegment offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment q_start, MemorySegment q_index, MemorySegment q_value, MemorySegment integrality) {
+    public static long Highs_getModel(MemorySegment highs, long a_format, long q_format, MemorySegment num_col, MemorySegment num_row, MemorySegment num_nz, MemorySegment hessian_num_nz, MemorySegment sense, MemorySegment offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment q_start, MemorySegment q_index, MemorySegment q_value, MemorySegment integrality) {
         var mh$ = Highs_getModel.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getModel", highs, a_format, q_format, num_col, num_row, num_nz, hessian_num_nz, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, q_start, q_index, q_value, integrality);
             }
-            return (int)mh$.invokeExact(highs, a_format, q_format, num_col, num_row, num_nz, hessian_num_nz, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, q_start, q_index, q_value, integrality);
+            return (long)mh$.invokeExact(highs, a_format, q_format, num_col, num_row, num_nz, hessian_num_nz, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, q_start, q_index, q_value, integrality);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -12022,9 +12021,9 @@ public class highs_c_api_h {
 
     private static class Highs_getLp {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -12081,13 +12080,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getLp(const void *highs, const HighsInt a_format, HighsInt *num_col, HighsInt *num_row, HighsInt *num_nz, HighsInt *sense, double *offset, double *col_cost, double *col_lower, double *col_upper, double *row_lower, double *row_upper, HighsInt *a_start, HighsInt *a_index, double *a_value, HighsInt *integrality)
      * }
      */
-    public static int Highs_getLp(MemorySegment highs, int a_format, MemorySegment num_col, MemorySegment num_row, MemorySegment num_nz, MemorySegment sense, MemorySegment offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment integrality) {
+    public static long Highs_getLp(MemorySegment highs, long a_format, MemorySegment num_col, MemorySegment num_row, MemorySegment num_nz, MemorySegment sense, MemorySegment offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment integrality) {
         var mh$ = Highs_getLp.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getLp", highs, a_format, num_col, num_row, num_nz, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, integrality);
             }
-            return (int)mh$.invokeExact(highs, a_format, num_col, num_row, num_nz, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, integrality);
+            return (long)mh$.invokeExact(highs, a_format, num_col, num_row, num_nz, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, integrality);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -12095,9 +12094,9 @@ public class highs_c_api_h {
 
     private static class Highs_getPresolvedLp {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -12154,13 +12153,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getPresolvedLp(const void *highs, const HighsInt a_format, HighsInt *num_col, HighsInt *num_row, HighsInt *num_nz, HighsInt *sense, double *offset, double *col_cost, double *col_lower, double *col_upper, double *row_lower, double *row_upper, HighsInt *a_start, HighsInt *a_index, double *a_value, HighsInt *integrality)
      * }
      */
-    public static int Highs_getPresolvedLp(MemorySegment highs, int a_format, MemorySegment num_col, MemorySegment num_row, MemorySegment num_nz, MemorySegment sense, MemorySegment offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment integrality) {
+    public static long Highs_getPresolvedLp(MemorySegment highs, long a_format, MemorySegment num_col, MemorySegment num_row, MemorySegment num_nz, MemorySegment sense, MemorySegment offset, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment integrality) {
         var mh$ = Highs_getPresolvedLp.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getPresolvedLp", highs, a_format, num_col, num_row, num_nz, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, integrality);
             }
-            return (int)mh$.invokeExact(highs, a_format, num_col, num_row, num_nz, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, integrality);
+            return (long)mh$.invokeExact(highs, a_format, num_col, num_row, num_nz, sense, offset, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, integrality);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -12168,7 +12167,7 @@ public class highs_c_api_h {
 
     private static class Highs_crossover {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_INT,
             highs_c_api_h.C_INT,
@@ -12217,13 +12216,13 @@ public class highs_c_api_h {
      * HighsInt Highs_crossover(void *highs, const int num_col, const int num_row, const double *col_value, const double *col_dual, const double *row_dual)
      * }
      */
-    public static int Highs_crossover(MemorySegment highs, int num_col, int num_row, MemorySegment col_value, MemorySegment col_dual, MemorySegment row_dual) {
+    public static long Highs_crossover(MemorySegment highs, int num_col, int num_row, MemorySegment col_value, MemorySegment col_dual, MemorySegment row_dual) {
         var mh$ = Highs_crossover.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_crossover", highs, num_col, num_row, col_value, col_dual, row_dual);
             }
-            return (int)mh$.invokeExact(highs, num_col, num_row, col_value, col_dual, row_dual);
+            return (long)mh$.invokeExact(highs, num_col, num_row, col_value, col_dual, row_dual);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -12231,7 +12230,7 @@ public class highs_c_api_h {
 
     private static class Highs_getRanging {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -12299,13 +12298,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getRanging(void *highs, double *col_cost_up_value, double *col_cost_up_objective, HighsInt *col_cost_up_in_var, HighsInt *col_cost_up_ou_var, double *col_cost_dn_value, double *col_cost_dn_objective, HighsInt *col_cost_dn_in_var, HighsInt *col_cost_dn_ou_var, double *col_bound_up_value, double *col_bound_up_objective, HighsInt *col_bound_up_in_var, HighsInt *col_bound_up_ou_var, double *col_bound_dn_value, double *col_bound_dn_objective, HighsInt *col_bound_dn_in_var, HighsInt *col_bound_dn_ou_var, double *row_bound_up_value, double *row_bound_up_objective, HighsInt *row_bound_up_in_var, HighsInt *row_bound_up_ou_var, double *row_bound_dn_value, double *row_bound_dn_objective, HighsInt *row_bound_dn_in_var, HighsInt *row_bound_dn_ou_var)
      * }
      */
-    public static int Highs_getRanging(MemorySegment highs, MemorySegment col_cost_up_value, MemorySegment col_cost_up_objective, MemorySegment col_cost_up_in_var, MemorySegment col_cost_up_ou_var, MemorySegment col_cost_dn_value, MemorySegment col_cost_dn_objective, MemorySegment col_cost_dn_in_var, MemorySegment col_cost_dn_ou_var, MemorySegment col_bound_up_value, MemorySegment col_bound_up_objective, MemorySegment col_bound_up_in_var, MemorySegment col_bound_up_ou_var, MemorySegment col_bound_dn_value, MemorySegment col_bound_dn_objective, MemorySegment col_bound_dn_in_var, MemorySegment col_bound_dn_ou_var, MemorySegment row_bound_up_value, MemorySegment row_bound_up_objective, MemorySegment row_bound_up_in_var, MemorySegment row_bound_up_ou_var, MemorySegment row_bound_dn_value, MemorySegment row_bound_dn_objective, MemorySegment row_bound_dn_in_var, MemorySegment row_bound_dn_ou_var) {
+    public static long Highs_getRanging(MemorySegment highs, MemorySegment col_cost_up_value, MemorySegment col_cost_up_objective, MemorySegment col_cost_up_in_var, MemorySegment col_cost_up_ou_var, MemorySegment col_cost_dn_value, MemorySegment col_cost_dn_objective, MemorySegment col_cost_dn_in_var, MemorySegment col_cost_dn_ou_var, MemorySegment col_bound_up_value, MemorySegment col_bound_up_objective, MemorySegment col_bound_up_in_var, MemorySegment col_bound_up_ou_var, MemorySegment col_bound_dn_value, MemorySegment col_bound_dn_objective, MemorySegment col_bound_dn_in_var, MemorySegment col_bound_dn_ou_var, MemorySegment row_bound_up_value, MemorySegment row_bound_up_objective, MemorySegment row_bound_up_in_var, MemorySegment row_bound_up_ou_var, MemorySegment row_bound_dn_value, MemorySegment row_bound_dn_objective, MemorySegment row_bound_dn_in_var, MemorySegment row_bound_dn_ou_var) {
         var mh$ = Highs_getRanging.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getRanging", highs, col_cost_up_value, col_cost_up_objective, col_cost_up_in_var, col_cost_up_ou_var, col_cost_dn_value, col_cost_dn_objective, col_cost_dn_in_var, col_cost_dn_ou_var, col_bound_up_value, col_bound_up_objective, col_bound_up_in_var, col_bound_up_ou_var, col_bound_dn_value, col_bound_dn_objective, col_bound_dn_in_var, col_bound_dn_ou_var, row_bound_up_value, row_bound_up_objective, row_bound_up_in_var, row_bound_up_ou_var, row_bound_dn_value, row_bound_dn_objective, row_bound_dn_in_var, row_bound_dn_ou_var);
             }
-            return (int)mh$.invokeExact(highs, col_cost_up_value, col_cost_up_objective, col_cost_up_in_var, col_cost_up_ou_var, col_cost_dn_value, col_cost_dn_objective, col_cost_dn_in_var, col_cost_dn_ou_var, col_bound_up_value, col_bound_up_objective, col_bound_up_in_var, col_bound_up_ou_var, col_bound_dn_value, col_bound_dn_objective, col_bound_dn_in_var, col_bound_dn_ou_var, row_bound_up_value, row_bound_up_objective, row_bound_up_in_var, row_bound_up_ou_var, row_bound_dn_value, row_bound_dn_objective, row_bound_dn_in_var, row_bound_dn_ou_var);
+            return (long)mh$.invokeExact(highs, col_cost_up_value, col_cost_up_objective, col_cost_up_in_var, col_cost_up_ou_var, col_cost_dn_value, col_cost_dn_objective, col_cost_dn_in_var, col_cost_dn_ou_var, col_bound_up_value, col_bound_up_objective, col_bound_up_in_var, col_bound_up_ou_var, col_bound_dn_value, col_bound_dn_objective, col_bound_dn_in_var, col_bound_dn_ou_var, row_bound_up_value, row_bound_up_objective, row_bound_up_in_var, row_bound_up_ou_var, row_bound_dn_value, row_bound_dn_objective, row_bound_dn_in_var, row_bound_dn_ou_var);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -12313,7 +12312,7 @@ public class highs_c_api_h {
 
     private static class Highs_feasibilityRelaxation {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_DOUBLE,
             highs_c_api_h.C_DOUBLE,
@@ -12363,13 +12362,13 @@ public class highs_c_api_h {
      * HighsInt Highs_feasibilityRelaxation(void *highs, const double global_lower_penalty, const double global_upper_penalty, const double global_rhs_penalty, const double *local_lower_penalty, const double *local_upper_penalty, const double *local_rhs_penalty)
      * }
      */
-    public static int Highs_feasibilityRelaxation(MemorySegment highs, double global_lower_penalty, double global_upper_penalty, double global_rhs_penalty, MemorySegment local_lower_penalty, MemorySegment local_upper_penalty, MemorySegment local_rhs_penalty) {
+    public static long Highs_feasibilityRelaxation(MemorySegment highs, double global_lower_penalty, double global_upper_penalty, double global_rhs_penalty, MemorySegment local_lower_penalty, MemorySegment local_upper_penalty, MemorySegment local_rhs_penalty) {
         var mh$ = Highs_feasibilityRelaxation.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_feasibilityRelaxation", highs, global_lower_penalty, global_upper_penalty, global_rhs_penalty, local_lower_penalty, local_upper_penalty, local_rhs_penalty);
             }
-            return (int)mh$.invokeExact(highs, global_lower_penalty, global_upper_penalty, global_rhs_penalty, local_lower_penalty, local_upper_penalty, local_rhs_penalty);
+            return (long)mh$.invokeExact(highs, global_lower_penalty, global_upper_penalty, global_rhs_penalty, local_lower_penalty, local_upper_penalty, local_rhs_penalty);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -12377,7 +12376,7 @@ public class highs_c_api_h {
 
     private static class Highs_resetGlobalScheduler {
         public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            highs_c_api_h.C_INT
+            highs_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs_c_api_h.findOrThrow("Highs_resetGlobalScheduler");
@@ -12420,7 +12419,7 @@ public class highs_c_api_h {
      * void Highs_resetGlobalScheduler(const HighsInt blocking)
      * }
      */
-    public static void Highs_resetGlobalScheduler(int blocking) {
+    public static void Highs_resetGlobalScheduler(long blocking) {
         var mh$ = Highs_resetGlobalScheduler.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
@@ -12548,7 +12547,7 @@ public class highs_c_api_h {
     }
 
     private static class HighsStatuskError$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("HighsStatuskError").reinterpret(LAYOUT.byteSize());
     }
 
@@ -12558,7 +12557,7 @@ public class highs_c_api_h {
      * const HighsInt HighsStatuskError = -1
      * }
      */
-    public static OfInt HighsStatuskError$layout() {
+    public static OfLong HighsStatuskError$layout() {
         return HighsStatuskError$constants.LAYOUT;
     }
 
@@ -12578,7 +12577,7 @@ public class highs_c_api_h {
      * const HighsInt HighsStatuskError = -1
      * }
      */
-    public static int HighsStatuskError() {
+    public static long HighsStatuskError() {
         return HighsStatuskError$constants.SEGMENT.get(HighsStatuskError$constants.LAYOUT, 0L);
     }
 
@@ -12588,12 +12587,12 @@ public class highs_c_api_h {
      * const HighsInt HighsStatuskError = -1
      * }
      */
-    public static void HighsStatuskError(int varValue) {
+    public static void HighsStatuskError(long varValue) {
         HighsStatuskError$constants.SEGMENT.set(HighsStatuskError$constants.LAYOUT, 0L, varValue);
     }
 
     private static class HighsStatuskOk$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("HighsStatuskOk").reinterpret(LAYOUT.byteSize());
     }
 
@@ -12603,7 +12602,7 @@ public class highs_c_api_h {
      * const HighsInt HighsStatuskOk = 0
      * }
      */
-    public static OfInt HighsStatuskOk$layout() {
+    public static OfLong HighsStatuskOk$layout() {
         return HighsStatuskOk$constants.LAYOUT;
     }
 
@@ -12623,7 +12622,7 @@ public class highs_c_api_h {
      * const HighsInt HighsStatuskOk = 0
      * }
      */
-    public static int HighsStatuskOk() {
+    public static long HighsStatuskOk() {
         return HighsStatuskOk$constants.SEGMENT.get(HighsStatuskOk$constants.LAYOUT, 0L);
     }
 
@@ -12633,12 +12632,12 @@ public class highs_c_api_h {
      * const HighsInt HighsStatuskOk = 0
      * }
      */
-    public static void HighsStatuskOk(int varValue) {
+    public static void HighsStatuskOk(long varValue) {
         HighsStatuskOk$constants.SEGMENT.set(HighsStatuskOk$constants.LAYOUT, 0L, varValue);
     }
 
     private static class HighsStatuskWarning$constants {
-        public static final OfInt LAYOUT = highs_c_api_h.C_INT;
+        public static final OfLong LAYOUT = highs_c_api_h.C_LONG_LONG;
         public static final MemorySegment SEGMENT = highs_c_api_h.findOrThrow("HighsStatuskWarning").reinterpret(LAYOUT.byteSize());
     }
 
@@ -12648,7 +12647,7 @@ public class highs_c_api_h {
      * const HighsInt HighsStatuskWarning = 1
      * }
      */
-    public static OfInt HighsStatuskWarning$layout() {
+    public static OfLong HighsStatuskWarning$layout() {
         return HighsStatuskWarning$constants.LAYOUT;
     }
 
@@ -12668,7 +12667,7 @@ public class highs_c_api_h {
      * const HighsInt HighsStatuskWarning = 1
      * }
      */
-    public static int HighsStatuskWarning() {
+    public static long HighsStatuskWarning() {
         return HighsStatuskWarning$constants.SEGMENT.get(HighsStatuskWarning$constants.LAYOUT, 0L);
     }
 
@@ -12678,16 +12677,16 @@ public class highs_c_api_h {
      * const HighsInt HighsStatuskWarning = 1
      * }
      */
-    public static void HighsStatuskWarning(int varValue) {
+    public static void HighsStatuskWarning(long varValue) {
         HighsStatuskWarning$constants.SEGMENT.set(HighsStatuskWarning$constants.LAYOUT, 0L, varValue);
     }
 
     private static class Highs_call {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
@@ -12745,13 +12744,13 @@ public class highs_c_api_h {
      * HighsInt Highs_call(const HighsInt num_col, const HighsInt num_row, const HighsInt num_nz, const double *col_cost, const double *col_lower, const double *col_upper, const double *row_lower, const double *row_upper, const HighsInt *a_start, const HighsInt *a_index, const double *a_value, double *col_value, double *col_dual, double *row_value, double *row_dual, HighsInt *col_basis_status, HighsInt *row_basis_status, HighsInt *model_status)
      * }
      */
-    public static int Highs_call(int num_col, int num_row, int num_nz, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment col_value, MemorySegment col_dual, MemorySegment row_value, MemorySegment row_dual, MemorySegment col_basis_status, MemorySegment row_basis_status, MemorySegment model_status) {
+    public static long Highs_call(long num_col, long num_row, long num_nz, MemorySegment col_cost, MemorySegment col_lower, MemorySegment col_upper, MemorySegment row_lower, MemorySegment row_upper, MemorySegment a_start, MemorySegment a_index, MemorySegment a_value, MemorySegment col_value, MemorySegment col_dual, MemorySegment row_value, MemorySegment row_dual, MemorySegment col_basis_status, MemorySegment row_basis_status, MemorySegment model_status) {
         var mh$ = Highs_call.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_call", num_col, num_row, num_nz, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, col_value, col_dual, row_value, row_dual, col_basis_status, row_basis_status, model_status);
             }
-            return (int)mh$.invokeExact(num_col, num_row, num_nz, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, col_value, col_dual, row_value, row_dual, col_basis_status, row_basis_status, model_status);
+            return (long)mh$.invokeExact(num_col, num_row, num_nz, col_cost, col_lower, col_upper, row_lower, row_upper, a_start, a_index, a_value, col_value, col_dual, row_value, row_dual, col_basis_status, row_basis_status, model_status);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -12759,7 +12758,7 @@ public class highs_c_api_h {
 
     private static class Highs_runQuiet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -12803,13 +12802,13 @@ public class highs_c_api_h {
      * HighsInt Highs_runQuiet(void *highs)
      * }
      */
-    public static int Highs_runQuiet(MemorySegment highs) {
+    public static long Highs_runQuiet(MemorySegment highs) {
         var mh$ = Highs_runQuiet.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_runQuiet", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -12817,7 +12816,7 @@ public class highs_c_api_h {
 
     private static class Highs_setHighsLogfile {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -12862,13 +12861,13 @@ public class highs_c_api_h {
      * HighsInt Highs_setHighsLogfile(void *highs, const void *logfile)
      * }
      */
-    public static int Highs_setHighsLogfile(MemorySegment highs, MemorySegment logfile) {
+    public static long Highs_setHighsLogfile(MemorySegment highs, MemorySegment logfile) {
         var mh$ = Highs_setHighsLogfile.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_setHighsLogfile", highs, logfile);
             }
-            return (int)mh$.invokeExact(highs, logfile);
+            return (long)mh$.invokeExact(highs, logfile);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -12876,7 +12875,7 @@ public class highs_c_api_h {
 
     private static class Highs_setHighsOutput {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
         );
@@ -12921,13 +12920,13 @@ public class highs_c_api_h {
      * HighsInt Highs_setHighsOutput(void *highs, const void *outputfile)
      * }
      */
-    public static int Highs_setHighsOutput(MemorySegment highs, MemorySegment outputfile) {
+    public static long Highs_setHighsOutput(MemorySegment highs, MemorySegment outputfile) {
         var mh$ = Highs_setHighsOutput.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_setHighsOutput", highs, outputfile);
             }
-            return (int)mh$.invokeExact(highs, outputfile);
+            return (long)mh$.invokeExact(highs, outputfile);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -12935,7 +12934,7 @@ public class highs_c_api_h {
 
     private static class Highs_getIterationCount {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -12979,13 +12978,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getIterationCount(const void *highs)
      * }
      */
-    public static int Highs_getIterationCount(MemorySegment highs) {
+    public static long Highs_getIterationCount(MemorySegment highs) {
         var mh$ = Highs_getIterationCount.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getIterationCount", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -12993,7 +12992,7 @@ public class highs_c_api_h {
 
     private static class Highs_getSimplexIterationCount {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -13037,13 +13036,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getSimplexIterationCount(const void *highs)
      * }
      */
-    public static int Highs_getSimplexIterationCount(MemorySegment highs) {
+    public static long Highs_getSimplexIterationCount(MemorySegment highs) {
         var mh$ = Highs_getSimplexIterationCount.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getSimplexIterationCount", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -13051,10 +13050,10 @@ public class highs_c_api_h {
 
     private static class Highs_setHighsBoolOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT
+            highs_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs_c_api_h.findOrThrow("Highs_setHighsBoolOptionValue");
@@ -13097,13 +13096,13 @@ public class highs_c_api_h {
      * HighsInt Highs_setHighsBoolOptionValue(void *highs, const char *option, const HighsInt value)
      * }
      */
-    public static int Highs_setHighsBoolOptionValue(MemorySegment highs, MemorySegment option, int value) {
+    public static long Highs_setHighsBoolOptionValue(MemorySegment highs, MemorySegment option, long value) {
         var mh$ = Highs_setHighsBoolOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_setHighsBoolOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -13111,10 +13110,10 @@ public class highs_c_api_h {
 
     private static class Highs_setHighsIntOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
-            highs_c_api_h.C_INT
+            highs_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs_c_api_h.findOrThrow("Highs_setHighsIntOptionValue");
@@ -13157,13 +13156,13 @@ public class highs_c_api_h {
      * HighsInt Highs_setHighsIntOptionValue(void *highs, const char *option, const HighsInt value)
      * }
      */
-    public static int Highs_setHighsIntOptionValue(MemorySegment highs, MemorySegment option, int value) {
+    public static long Highs_setHighsIntOptionValue(MemorySegment highs, MemorySegment option, long value) {
         var mh$ = Highs_setHighsIntOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_setHighsIntOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -13171,7 +13170,7 @@ public class highs_c_api_h {
 
     private static class Highs_setHighsDoubleOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_DOUBLE
@@ -13217,13 +13216,13 @@ public class highs_c_api_h {
      * HighsInt Highs_setHighsDoubleOptionValue(void *highs, const char *option, const double value)
      * }
      */
-    public static int Highs_setHighsDoubleOptionValue(MemorySegment highs, MemorySegment option, double value) {
+    public static long Highs_setHighsDoubleOptionValue(MemorySegment highs, MemorySegment option, double value) {
         var mh$ = Highs_setHighsDoubleOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_setHighsDoubleOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -13231,7 +13230,7 @@ public class highs_c_api_h {
 
     private static class Highs_setHighsStringOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -13277,13 +13276,13 @@ public class highs_c_api_h {
      * HighsInt Highs_setHighsStringOptionValue(void *highs, const char *option, const char *value)
      * }
      */
-    public static int Highs_setHighsStringOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
+    public static long Highs_setHighsStringOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
         var mh$ = Highs_setHighsStringOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_setHighsStringOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -13291,7 +13290,7 @@ public class highs_c_api_h {
 
     private static class Highs_setHighsOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -13337,13 +13336,13 @@ public class highs_c_api_h {
      * HighsInt Highs_setHighsOptionValue(void *highs, const char *option, const char *value)
      * }
      */
-    public static int Highs_setHighsOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
+    public static long Highs_setHighsOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
         var mh$ = Highs_setHighsOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_setHighsOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -13351,7 +13350,7 @@ public class highs_c_api_h {
 
     private static class Highs_getHighsBoolOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -13397,13 +13396,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getHighsBoolOptionValue(const void *highs, const char *option, HighsInt *value)
      * }
      */
-    public static int Highs_getHighsBoolOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
+    public static long Highs_getHighsBoolOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
         var mh$ = Highs_getHighsBoolOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getHighsBoolOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -13411,7 +13410,7 @@ public class highs_c_api_h {
 
     private static class Highs_getHighsIntOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -13457,13 +13456,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getHighsIntOptionValue(const void *highs, const char *option, HighsInt *value)
      * }
      */
-    public static int Highs_getHighsIntOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
+    public static long Highs_getHighsIntOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
         var mh$ = Highs_getHighsIntOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getHighsIntOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -13471,7 +13470,7 @@ public class highs_c_api_h {
 
     private static class Highs_getHighsDoubleOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -13517,13 +13516,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getHighsDoubleOptionValue(const void *highs, const char *option, double *value)
      * }
      */
-    public static int Highs_getHighsDoubleOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
+    public static long Highs_getHighsDoubleOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
         var mh$ = Highs_getHighsDoubleOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getHighsDoubleOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -13531,7 +13530,7 @@ public class highs_c_api_h {
 
     private static class Highs_getHighsStringOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -13577,13 +13576,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getHighsStringOptionValue(const void *highs, const char *option, char *value)
      * }
      */
-    public static int Highs_getHighsStringOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
+    public static long Highs_getHighsStringOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
         var mh$ = Highs_getHighsStringOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getHighsStringOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -13591,7 +13590,7 @@ public class highs_c_api_h {
 
     private static class Highs_getHighsOptionType {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -13637,13 +13636,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getHighsOptionType(const void *highs, const char *option, HighsInt *type)
      * }
      */
-    public static int Highs_getHighsOptionType(MemorySegment highs, MemorySegment option, MemorySegment type) {
+    public static long Highs_getHighsOptionType(MemorySegment highs, MemorySegment option, MemorySegment type) {
         var mh$ = Highs_getHighsOptionType.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getHighsOptionType", highs, option, type);
             }
-            return (int)mh$.invokeExact(highs, option, type);
+            return (long)mh$.invokeExact(highs, option, type);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -13651,7 +13650,7 @@ public class highs_c_api_h {
 
     private static class Highs_resetHighsOptions {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -13695,13 +13694,13 @@ public class highs_c_api_h {
      * HighsInt Highs_resetHighsOptions(void *highs)
      * }
      */
-    public static int Highs_resetHighsOptions(MemorySegment highs) {
+    public static long Highs_resetHighsOptions(MemorySegment highs) {
         var mh$ = Highs_resetHighsOptions.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_resetHighsOptions", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -13709,7 +13708,7 @@ public class highs_c_api_h {
 
     private static class Highs_getHighsIntInfoValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -13755,13 +13754,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getHighsIntInfoValue(const void *highs, const char *info, HighsInt *value)
      * }
      */
-    public static int Highs_getHighsIntInfoValue(MemorySegment highs, MemorySegment info, MemorySegment value) {
+    public static long Highs_getHighsIntInfoValue(MemorySegment highs, MemorySegment info, MemorySegment value) {
         var mh$ = Highs_getHighsIntInfoValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getHighsIntInfoValue", highs, info, value);
             }
-            return (int)mh$.invokeExact(highs, info, value);
+            return (long)mh$.invokeExact(highs, info, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -13769,7 +13768,7 @@ public class highs_c_api_h {
 
     private static class Highs_getHighsDoubleInfoValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -13815,13 +13814,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getHighsDoubleInfoValue(const void *highs, const char *info, double *value)
      * }
      */
-    public static int Highs_getHighsDoubleInfoValue(MemorySegment highs, MemorySegment info, MemorySegment value) {
+    public static long Highs_getHighsDoubleInfoValue(MemorySegment highs, MemorySegment info, MemorySegment value) {
         var mh$ = Highs_getHighsDoubleInfoValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getHighsDoubleInfoValue", highs, info, value);
             }
-            return (int)mh$.invokeExact(highs, info, value);
+            return (long)mh$.invokeExact(highs, info, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -13829,7 +13828,7 @@ public class highs_c_api_h {
 
     private static class Highs_getNumCols {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -13873,13 +13872,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getNumCols(const void *highs)
      * }
      */
-    public static int Highs_getNumCols(MemorySegment highs) {
+    public static long Highs_getNumCols(MemorySegment highs) {
         var mh$ = Highs_getNumCols.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getNumCols", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -13887,7 +13886,7 @@ public class highs_c_api_h {
 
     private static class Highs_getNumRows {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -13931,13 +13930,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getNumRows(const void *highs)
      * }
      */
-    public static int Highs_getNumRows(MemorySegment highs) {
+    public static long Highs_getNumRows(MemorySegment highs) {
         var mh$ = Highs_getNumRows.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getNumRows", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -14061,7 +14060,7 @@ public class highs_c_api_h {
 
     private static class Highs_setOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER,
             highs_c_api_h.C_POINTER
@@ -14107,13 +14106,13 @@ public class highs_c_api_h {
      * HighsInt Highs_setOptionValue(void *highs, const char *option, const char *value)
      * }
      */
-    public static int Highs_setOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
+    public static long Highs_setOptionValue(MemorySegment highs, MemorySegment option, MemorySegment value) {
         var mh$ = Highs_setOptionValue.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_setOptionValue", highs, option, value);
             }
-            return (int)mh$.invokeExact(highs, option, value);
+            return (long)mh$.invokeExact(highs, option, value);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
@@ -14121,7 +14120,7 @@ public class highs_c_api_h {
 
     private static class Highs_getScaledModelStatus {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs_c_api_h.C_INT,
+            highs_c_api_h.C_LONG_LONG,
             highs_c_api_h.C_POINTER
         );
 
@@ -14165,13 +14164,13 @@ public class highs_c_api_h {
      * HighsInt Highs_getScaledModelStatus(const void *highs)
      * }
      */
-    public static int Highs_getScaledModelStatus(MemorySegment highs) {
+    public static long Highs_getScaledModelStatus(MemorySegment highs) {
         var mh$ = Highs_getScaledModelStatus.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("Highs_getScaledModelStatus", highs);
             }
-            return (int)mh$.invokeExact(highs);
+            return (long)mh$.invokeExact(highs);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
