@@ -22,6 +22,7 @@ INCLUDES="${HIGHS4J}"/bindings/includes.txt
 rm -f "${TMP_INCLUDES}"
 rm -f "${INCLUDES}"
 ${JEXTRACT} \
+  --define-macro HIGHSINT64=on \
   --include-dir "${HIGHS}"/src \
   --include-dir "${HIGHS}"/build \
   --dump-includes "${TMP_INCLUDES}" \

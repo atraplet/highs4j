@@ -19,6 +19,7 @@ rm -rf "${HIGHS4J}"/src/main/java/com/ustermetrics/highs4j/bindings/
 
 # generate bindings
 $JEXTRACT \
+  --define-macro HIGHSINT64=on \
   --include-dir "${HIGHS}"/src \
   --include-dir "${HIGHS}"/build \
   --target-package com.ustermetrics.highs4j.bindings \
