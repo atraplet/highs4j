@@ -87,7 +87,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsMaximumStringLength = 512
+     * extern const HighsInt kHighsMaximumStringLength = 512
      * }
      */
     public static OfLong kHighsMaximumStringLength$layout() {
@@ -97,7 +97,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsMaximumStringLength = 512
+     * extern const HighsInt kHighsMaximumStringLength = 512
      * }
      */
     public static MemorySegment kHighsMaximumStringLength$segment() {
@@ -107,7 +107,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsMaximumStringLength = 512
+     * extern const HighsInt kHighsMaximumStringLength = 512
      * }
      */
     public static long kHighsMaximumStringLength() {
@@ -117,7 +117,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsMaximumStringLength = 512
+     * extern const HighsInt kHighsMaximumStringLength = 512
      * }
      */
     public static void kHighsMaximumStringLength(long varValue) {
@@ -132,7 +132,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsStatusError = -1
+     * extern const HighsInt kHighsStatusError = -1
      * }
      */
     public static OfLong kHighsStatusError$layout() {
@@ -142,7 +142,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsStatusError = -1
+     * extern const HighsInt kHighsStatusError = -1
      * }
      */
     public static MemorySegment kHighsStatusError$segment() {
@@ -152,7 +152,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsStatusError = -1
+     * extern const HighsInt kHighsStatusError = -1
      * }
      */
     public static long kHighsStatusError() {
@@ -162,7 +162,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsStatusError = -1
+     * extern const HighsInt kHighsStatusError = -1
      * }
      */
     public static void kHighsStatusError(long varValue) {
@@ -177,7 +177,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsStatusOk = 0
+     * extern const HighsInt kHighsStatusOk = 0
      * }
      */
     public static OfLong kHighsStatusOk$layout() {
@@ -187,7 +187,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsStatusOk = 0
+     * extern const HighsInt kHighsStatusOk = 0
      * }
      */
     public static MemorySegment kHighsStatusOk$segment() {
@@ -197,7 +197,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsStatusOk = 0
+     * extern const HighsInt kHighsStatusOk = 0
      * }
      */
     public static long kHighsStatusOk() {
@@ -207,7 +207,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsStatusOk = 0
+     * extern const HighsInt kHighsStatusOk = 0
      * }
      */
     public static void kHighsStatusOk(long varValue) {
@@ -222,7 +222,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsStatusWarning = 1
+     * extern const HighsInt kHighsStatusWarning = 1
      * }
      */
     public static OfLong kHighsStatusWarning$layout() {
@@ -232,7 +232,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsStatusWarning = 1
+     * extern const HighsInt kHighsStatusWarning = 1
      * }
      */
     public static MemorySegment kHighsStatusWarning$segment() {
@@ -242,7 +242,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsStatusWarning = 1
+     * extern const HighsInt kHighsStatusWarning = 1
      * }
      */
     public static long kHighsStatusWarning() {
@@ -252,7 +252,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsStatusWarning = 1
+     * extern const HighsInt kHighsStatusWarning = 1
      * }
      */
     public static void kHighsStatusWarning(long varValue) {
@@ -267,7 +267,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeContinuous = 0
+     * extern const HighsInt kHighsVarTypeContinuous = 0
      * }
      */
     public static OfLong kHighsVarTypeContinuous$layout() {
@@ -277,7 +277,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeContinuous = 0
+     * extern const HighsInt kHighsVarTypeContinuous = 0
      * }
      */
     public static MemorySegment kHighsVarTypeContinuous$segment() {
@@ -287,7 +287,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeContinuous = 0
+     * extern const HighsInt kHighsVarTypeContinuous = 0
      * }
      */
     public static long kHighsVarTypeContinuous() {
@@ -297,7 +297,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeContinuous = 0
+     * extern const HighsInt kHighsVarTypeContinuous = 0
      * }
      */
     public static void kHighsVarTypeContinuous(long varValue) {
@@ -312,7 +312,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeInteger = 1
+     * extern const HighsInt kHighsVarTypeInteger = 1
      * }
      */
     public static OfLong kHighsVarTypeInteger$layout() {
@@ -322,7 +322,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeInteger = 1
+     * extern const HighsInt kHighsVarTypeInteger = 1
      * }
      */
     public static MemorySegment kHighsVarTypeInteger$segment() {
@@ -332,7 +332,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeInteger = 1
+     * extern const HighsInt kHighsVarTypeInteger = 1
      * }
      */
     public static long kHighsVarTypeInteger() {
@@ -342,7 +342,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeInteger = 1
+     * extern const HighsInt kHighsVarTypeInteger = 1
      * }
      */
     public static void kHighsVarTypeInteger(long varValue) {
@@ -357,7 +357,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeSemiContinuous = 2
+     * extern const HighsInt kHighsVarTypeSemiContinuous = 2
      * }
      */
     public static OfLong kHighsVarTypeSemiContinuous$layout() {
@@ -367,7 +367,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeSemiContinuous = 2
+     * extern const HighsInt kHighsVarTypeSemiContinuous = 2
      * }
      */
     public static MemorySegment kHighsVarTypeSemiContinuous$segment() {
@@ -377,7 +377,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeSemiContinuous = 2
+     * extern const HighsInt kHighsVarTypeSemiContinuous = 2
      * }
      */
     public static long kHighsVarTypeSemiContinuous() {
@@ -387,7 +387,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeSemiContinuous = 2
+     * extern const HighsInt kHighsVarTypeSemiContinuous = 2
      * }
      */
     public static void kHighsVarTypeSemiContinuous(long varValue) {
@@ -402,7 +402,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeSemiInteger = 3
+     * extern const HighsInt kHighsVarTypeSemiInteger = 3
      * }
      */
     public static OfLong kHighsVarTypeSemiInteger$layout() {
@@ -412,7 +412,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeSemiInteger = 3
+     * extern const HighsInt kHighsVarTypeSemiInteger = 3
      * }
      */
     public static MemorySegment kHighsVarTypeSemiInteger$segment() {
@@ -422,7 +422,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeSemiInteger = 3
+     * extern const HighsInt kHighsVarTypeSemiInteger = 3
      * }
      */
     public static long kHighsVarTypeSemiInteger() {
@@ -432,7 +432,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeSemiInteger = 3
+     * extern const HighsInt kHighsVarTypeSemiInteger = 3
      * }
      */
     public static void kHighsVarTypeSemiInteger(long varValue) {
@@ -447,7 +447,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeImplicitInteger = 4
+     * extern const HighsInt kHighsVarTypeImplicitInteger = 4
      * }
      */
     public static OfLong kHighsVarTypeImplicitInteger$layout() {
@@ -457,7 +457,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeImplicitInteger = 4
+     * extern const HighsInt kHighsVarTypeImplicitInteger = 4
      * }
      */
     public static MemorySegment kHighsVarTypeImplicitInteger$segment() {
@@ -467,7 +467,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeImplicitInteger = 4
+     * extern const HighsInt kHighsVarTypeImplicitInteger = 4
      * }
      */
     public static long kHighsVarTypeImplicitInteger() {
@@ -477,7 +477,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsVarTypeImplicitInteger = 4
+     * extern const HighsInt kHighsVarTypeImplicitInteger = 4
      * }
      */
     public static void kHighsVarTypeImplicitInteger(long varValue) {
@@ -492,7 +492,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsOptionTypeBool = 0
+     * extern const HighsInt kHighsOptionTypeBool = 0
      * }
      */
     public static OfLong kHighsOptionTypeBool$layout() {
@@ -502,7 +502,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsOptionTypeBool = 0
+     * extern const HighsInt kHighsOptionTypeBool = 0
      * }
      */
     public static MemorySegment kHighsOptionTypeBool$segment() {
@@ -512,7 +512,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsOptionTypeBool = 0
+     * extern const HighsInt kHighsOptionTypeBool = 0
      * }
      */
     public static long kHighsOptionTypeBool() {
@@ -522,7 +522,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsOptionTypeBool = 0
+     * extern const HighsInt kHighsOptionTypeBool = 0
      * }
      */
     public static void kHighsOptionTypeBool(long varValue) {
@@ -537,7 +537,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsOptionTypeInt = 1
+     * extern const HighsInt kHighsOptionTypeInt = 1
      * }
      */
     public static OfLong kHighsOptionTypeInt$layout() {
@@ -547,7 +547,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsOptionTypeInt = 1
+     * extern const HighsInt kHighsOptionTypeInt = 1
      * }
      */
     public static MemorySegment kHighsOptionTypeInt$segment() {
@@ -557,7 +557,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsOptionTypeInt = 1
+     * extern const HighsInt kHighsOptionTypeInt = 1
      * }
      */
     public static long kHighsOptionTypeInt() {
@@ -567,7 +567,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsOptionTypeInt = 1
+     * extern const HighsInt kHighsOptionTypeInt = 1
      * }
      */
     public static void kHighsOptionTypeInt(long varValue) {
@@ -582,7 +582,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsOptionTypeDouble = 2
+     * extern const HighsInt kHighsOptionTypeDouble = 2
      * }
      */
     public static OfLong kHighsOptionTypeDouble$layout() {
@@ -592,7 +592,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsOptionTypeDouble = 2
+     * extern const HighsInt kHighsOptionTypeDouble = 2
      * }
      */
     public static MemorySegment kHighsOptionTypeDouble$segment() {
@@ -602,7 +602,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsOptionTypeDouble = 2
+     * extern const HighsInt kHighsOptionTypeDouble = 2
      * }
      */
     public static long kHighsOptionTypeDouble() {
@@ -612,7 +612,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsOptionTypeDouble = 2
+     * extern const HighsInt kHighsOptionTypeDouble = 2
      * }
      */
     public static void kHighsOptionTypeDouble(long varValue) {
@@ -627,7 +627,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsOptionTypeString = 3
+     * extern const HighsInt kHighsOptionTypeString = 3
      * }
      */
     public static OfLong kHighsOptionTypeString$layout() {
@@ -637,7 +637,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsOptionTypeString = 3
+     * extern const HighsInt kHighsOptionTypeString = 3
      * }
      */
     public static MemorySegment kHighsOptionTypeString$segment() {
@@ -647,7 +647,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsOptionTypeString = 3
+     * extern const HighsInt kHighsOptionTypeString = 3
      * }
      */
     public static long kHighsOptionTypeString() {
@@ -657,7 +657,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsOptionTypeString = 3
+     * extern const HighsInt kHighsOptionTypeString = 3
      * }
      */
     public static void kHighsOptionTypeString(long varValue) {
@@ -672,7 +672,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsInfoTypeInt64 = -1
+     * extern const HighsInt kHighsInfoTypeInt64 = -1
      * }
      */
     public static OfLong kHighsInfoTypeInt64$layout() {
@@ -682,7 +682,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsInfoTypeInt64 = -1
+     * extern const HighsInt kHighsInfoTypeInt64 = -1
      * }
      */
     public static MemorySegment kHighsInfoTypeInt64$segment() {
@@ -692,7 +692,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsInfoTypeInt64 = -1
+     * extern const HighsInt kHighsInfoTypeInt64 = -1
      * }
      */
     public static long kHighsInfoTypeInt64() {
@@ -702,7 +702,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsInfoTypeInt64 = -1
+     * extern const HighsInt kHighsInfoTypeInt64 = -1
      * }
      */
     public static void kHighsInfoTypeInt64(long varValue) {
@@ -717,7 +717,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsInfoTypeInt = 1
+     * extern const HighsInt kHighsInfoTypeInt = 1
      * }
      */
     public static OfLong kHighsInfoTypeInt$layout() {
@@ -727,7 +727,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsInfoTypeInt = 1
+     * extern const HighsInt kHighsInfoTypeInt = 1
      * }
      */
     public static MemorySegment kHighsInfoTypeInt$segment() {
@@ -737,7 +737,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsInfoTypeInt = 1
+     * extern const HighsInt kHighsInfoTypeInt = 1
      * }
      */
     public static long kHighsInfoTypeInt() {
@@ -747,7 +747,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsInfoTypeInt = 1
+     * extern const HighsInt kHighsInfoTypeInt = 1
      * }
      */
     public static void kHighsInfoTypeInt(long varValue) {
@@ -762,7 +762,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsInfoTypeDouble = 2
+     * extern const HighsInt kHighsInfoTypeDouble = 2
      * }
      */
     public static OfLong kHighsInfoTypeDouble$layout() {
@@ -772,7 +772,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsInfoTypeDouble = 2
+     * extern const HighsInt kHighsInfoTypeDouble = 2
      * }
      */
     public static MemorySegment kHighsInfoTypeDouble$segment() {
@@ -782,7 +782,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsInfoTypeDouble = 2
+     * extern const HighsInt kHighsInfoTypeDouble = 2
      * }
      */
     public static long kHighsInfoTypeDouble() {
@@ -792,7 +792,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsInfoTypeDouble = 2
+     * extern const HighsInt kHighsInfoTypeDouble = 2
      * }
      */
     public static void kHighsInfoTypeDouble(long varValue) {
@@ -807,7 +807,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsObjSenseMinimize = 1
+     * extern const HighsInt kHighsObjSenseMinimize = 1
      * }
      */
     public static OfLong kHighsObjSenseMinimize$layout() {
@@ -817,7 +817,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsObjSenseMinimize = 1
+     * extern const HighsInt kHighsObjSenseMinimize = 1
      * }
      */
     public static MemorySegment kHighsObjSenseMinimize$segment() {
@@ -827,7 +827,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsObjSenseMinimize = 1
+     * extern const HighsInt kHighsObjSenseMinimize = 1
      * }
      */
     public static long kHighsObjSenseMinimize() {
@@ -837,7 +837,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsObjSenseMinimize = 1
+     * extern const HighsInt kHighsObjSenseMinimize = 1
      * }
      */
     public static void kHighsObjSenseMinimize(long varValue) {
@@ -852,7 +852,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsObjSenseMaximize = -1
+     * extern const HighsInt kHighsObjSenseMaximize = -1
      * }
      */
     public static OfLong kHighsObjSenseMaximize$layout() {
@@ -862,7 +862,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsObjSenseMaximize = -1
+     * extern const HighsInt kHighsObjSenseMaximize = -1
      * }
      */
     public static MemorySegment kHighsObjSenseMaximize$segment() {
@@ -872,7 +872,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsObjSenseMaximize = -1
+     * extern const HighsInt kHighsObjSenseMaximize = -1
      * }
      */
     public static long kHighsObjSenseMaximize() {
@@ -882,7 +882,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsObjSenseMaximize = -1
+     * extern const HighsInt kHighsObjSenseMaximize = -1
      * }
      */
     public static void kHighsObjSenseMaximize(long varValue) {
@@ -897,7 +897,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsMatrixFormatColwise = 1
+     * extern const HighsInt kHighsMatrixFormatColwise = 1
      * }
      */
     public static OfLong kHighsMatrixFormatColwise$layout() {
@@ -907,7 +907,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsMatrixFormatColwise = 1
+     * extern const HighsInt kHighsMatrixFormatColwise = 1
      * }
      */
     public static MemorySegment kHighsMatrixFormatColwise$segment() {
@@ -917,7 +917,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsMatrixFormatColwise = 1
+     * extern const HighsInt kHighsMatrixFormatColwise = 1
      * }
      */
     public static long kHighsMatrixFormatColwise() {
@@ -927,7 +927,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsMatrixFormatColwise = 1
+     * extern const HighsInt kHighsMatrixFormatColwise = 1
      * }
      */
     public static void kHighsMatrixFormatColwise(long varValue) {
@@ -942,7 +942,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsMatrixFormatRowwise = 2
+     * extern const HighsInt kHighsMatrixFormatRowwise = 2
      * }
      */
     public static OfLong kHighsMatrixFormatRowwise$layout() {
@@ -952,7 +952,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsMatrixFormatRowwise = 2
+     * extern const HighsInt kHighsMatrixFormatRowwise = 2
      * }
      */
     public static MemorySegment kHighsMatrixFormatRowwise$segment() {
@@ -962,7 +962,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsMatrixFormatRowwise = 2
+     * extern const HighsInt kHighsMatrixFormatRowwise = 2
      * }
      */
     public static long kHighsMatrixFormatRowwise() {
@@ -972,7 +972,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsMatrixFormatRowwise = 2
+     * extern const HighsInt kHighsMatrixFormatRowwise = 2
      * }
      */
     public static void kHighsMatrixFormatRowwise(long varValue) {
@@ -987,7 +987,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsHessianFormatTriangular = 1
+     * extern const HighsInt kHighsHessianFormatTriangular = 1
      * }
      */
     public static OfLong kHighsHessianFormatTriangular$layout() {
@@ -997,7 +997,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsHessianFormatTriangular = 1
+     * extern const HighsInt kHighsHessianFormatTriangular = 1
      * }
      */
     public static MemorySegment kHighsHessianFormatTriangular$segment() {
@@ -1007,7 +1007,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsHessianFormatTriangular = 1
+     * extern const HighsInt kHighsHessianFormatTriangular = 1
      * }
      */
     public static long kHighsHessianFormatTriangular() {
@@ -1017,7 +1017,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsHessianFormatTriangular = 1
+     * extern const HighsInt kHighsHessianFormatTriangular = 1
      * }
      */
     public static void kHighsHessianFormatTriangular(long varValue) {
@@ -1032,7 +1032,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsHessianFormatSquare = 2
+     * extern const HighsInt kHighsHessianFormatSquare = 2
      * }
      */
     public static OfLong kHighsHessianFormatSquare$layout() {
@@ -1042,7 +1042,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsHessianFormatSquare = 2
+     * extern const HighsInt kHighsHessianFormatSquare = 2
      * }
      */
     public static MemorySegment kHighsHessianFormatSquare$segment() {
@@ -1052,7 +1052,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsHessianFormatSquare = 2
+     * extern const HighsInt kHighsHessianFormatSquare = 2
      * }
      */
     public static long kHighsHessianFormatSquare() {
@@ -1062,7 +1062,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsHessianFormatSquare = 2
+     * extern const HighsInt kHighsHessianFormatSquare = 2
      * }
      */
     public static void kHighsHessianFormatSquare(long varValue) {
@@ -1077,7 +1077,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsSolutionStatusNone = 0
+     * extern const HighsInt kHighsSolutionStatusNone = 0
      * }
      */
     public static OfLong kHighsSolutionStatusNone$layout() {
@@ -1087,7 +1087,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsSolutionStatusNone = 0
+     * extern const HighsInt kHighsSolutionStatusNone = 0
      * }
      */
     public static MemorySegment kHighsSolutionStatusNone$segment() {
@@ -1097,7 +1097,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsSolutionStatusNone = 0
+     * extern const HighsInt kHighsSolutionStatusNone = 0
      * }
      */
     public static long kHighsSolutionStatusNone() {
@@ -1107,7 +1107,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsSolutionStatusNone = 0
+     * extern const HighsInt kHighsSolutionStatusNone = 0
      * }
      */
     public static void kHighsSolutionStatusNone(long varValue) {
@@ -1122,7 +1122,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsSolutionStatusInfeasible = 1
+     * extern const HighsInt kHighsSolutionStatusInfeasible = 1
      * }
      */
     public static OfLong kHighsSolutionStatusInfeasible$layout() {
@@ -1132,7 +1132,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsSolutionStatusInfeasible = 1
+     * extern const HighsInt kHighsSolutionStatusInfeasible = 1
      * }
      */
     public static MemorySegment kHighsSolutionStatusInfeasible$segment() {
@@ -1142,7 +1142,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsSolutionStatusInfeasible = 1
+     * extern const HighsInt kHighsSolutionStatusInfeasible = 1
      * }
      */
     public static long kHighsSolutionStatusInfeasible() {
@@ -1152,7 +1152,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsSolutionStatusInfeasible = 1
+     * extern const HighsInt kHighsSolutionStatusInfeasible = 1
      * }
      */
     public static void kHighsSolutionStatusInfeasible(long varValue) {
@@ -1167,7 +1167,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsSolutionStatusFeasible = 2
+     * extern const HighsInt kHighsSolutionStatusFeasible = 2
      * }
      */
     public static OfLong kHighsSolutionStatusFeasible$layout() {
@@ -1177,7 +1177,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsSolutionStatusFeasible = 2
+     * extern const HighsInt kHighsSolutionStatusFeasible = 2
      * }
      */
     public static MemorySegment kHighsSolutionStatusFeasible$segment() {
@@ -1187,7 +1187,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsSolutionStatusFeasible = 2
+     * extern const HighsInt kHighsSolutionStatusFeasible = 2
      * }
      */
     public static long kHighsSolutionStatusFeasible() {
@@ -1197,7 +1197,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsSolutionStatusFeasible = 2
+     * extern const HighsInt kHighsSolutionStatusFeasible = 2
      * }
      */
     public static void kHighsSolutionStatusFeasible(long varValue) {
@@ -1212,7 +1212,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisValidityInvalid = 0
+     * extern const HighsInt kHighsBasisValidityInvalid = 0
      * }
      */
     public static OfLong kHighsBasisValidityInvalid$layout() {
@@ -1222,7 +1222,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisValidityInvalid = 0
+     * extern const HighsInt kHighsBasisValidityInvalid = 0
      * }
      */
     public static MemorySegment kHighsBasisValidityInvalid$segment() {
@@ -1232,7 +1232,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisValidityInvalid = 0
+     * extern const HighsInt kHighsBasisValidityInvalid = 0
      * }
      */
     public static long kHighsBasisValidityInvalid() {
@@ -1242,7 +1242,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisValidityInvalid = 0
+     * extern const HighsInt kHighsBasisValidityInvalid = 0
      * }
      */
     public static void kHighsBasisValidityInvalid(long varValue) {
@@ -1257,7 +1257,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisValidityValid = 1
+     * extern const HighsInt kHighsBasisValidityValid = 1
      * }
      */
     public static OfLong kHighsBasisValidityValid$layout() {
@@ -1267,7 +1267,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisValidityValid = 1
+     * extern const HighsInt kHighsBasisValidityValid = 1
      * }
      */
     public static MemorySegment kHighsBasisValidityValid$segment() {
@@ -1277,7 +1277,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisValidityValid = 1
+     * extern const HighsInt kHighsBasisValidityValid = 1
      * }
      */
     public static long kHighsBasisValidityValid() {
@@ -1287,7 +1287,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisValidityValid = 1
+     * extern const HighsInt kHighsBasisValidityValid = 1
      * }
      */
     public static void kHighsBasisValidityValid(long varValue) {
@@ -1302,7 +1302,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusNotPresolved = -1
+     * extern const HighsInt kHighsPresolveStatusNotPresolved = -1
      * }
      */
     public static OfLong kHighsPresolveStatusNotPresolved$layout() {
@@ -1312,7 +1312,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusNotPresolved = -1
+     * extern const HighsInt kHighsPresolveStatusNotPresolved = -1
      * }
      */
     public static MemorySegment kHighsPresolveStatusNotPresolved$segment() {
@@ -1322,7 +1322,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusNotPresolved = -1
+     * extern const HighsInt kHighsPresolveStatusNotPresolved = -1
      * }
      */
     public static long kHighsPresolveStatusNotPresolved() {
@@ -1332,7 +1332,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusNotPresolved = -1
+     * extern const HighsInt kHighsPresolveStatusNotPresolved = -1
      * }
      */
     public static void kHighsPresolveStatusNotPresolved(long varValue) {
@@ -1347,7 +1347,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusNotReduced = 0
+     * extern const HighsInt kHighsPresolveStatusNotReduced = 0
      * }
      */
     public static OfLong kHighsPresolveStatusNotReduced$layout() {
@@ -1357,7 +1357,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusNotReduced = 0
+     * extern const HighsInt kHighsPresolveStatusNotReduced = 0
      * }
      */
     public static MemorySegment kHighsPresolveStatusNotReduced$segment() {
@@ -1367,7 +1367,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusNotReduced = 0
+     * extern const HighsInt kHighsPresolveStatusNotReduced = 0
      * }
      */
     public static long kHighsPresolveStatusNotReduced() {
@@ -1377,7 +1377,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusNotReduced = 0
+     * extern const HighsInt kHighsPresolveStatusNotReduced = 0
      * }
      */
     public static void kHighsPresolveStatusNotReduced(long varValue) {
@@ -1392,7 +1392,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusInfeasible = 1
+     * extern const HighsInt kHighsPresolveStatusInfeasible = 1
      * }
      */
     public static OfLong kHighsPresolveStatusInfeasible$layout() {
@@ -1402,7 +1402,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusInfeasible = 1
+     * extern const HighsInt kHighsPresolveStatusInfeasible = 1
      * }
      */
     public static MemorySegment kHighsPresolveStatusInfeasible$segment() {
@@ -1412,7 +1412,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusInfeasible = 1
+     * extern const HighsInt kHighsPresolveStatusInfeasible = 1
      * }
      */
     public static long kHighsPresolveStatusInfeasible() {
@@ -1422,7 +1422,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusInfeasible = 1
+     * extern const HighsInt kHighsPresolveStatusInfeasible = 1
      * }
      */
     public static void kHighsPresolveStatusInfeasible(long varValue) {
@@ -1437,7 +1437,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusUnboundedOrInfeasible = 2
+     * extern const HighsInt kHighsPresolveStatusUnboundedOrInfeasible = 2
      * }
      */
     public static OfLong kHighsPresolveStatusUnboundedOrInfeasible$layout() {
@@ -1447,7 +1447,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusUnboundedOrInfeasible = 2
+     * extern const HighsInt kHighsPresolveStatusUnboundedOrInfeasible = 2
      * }
      */
     public static MemorySegment kHighsPresolveStatusUnboundedOrInfeasible$segment() {
@@ -1457,7 +1457,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusUnboundedOrInfeasible = 2
+     * extern const HighsInt kHighsPresolveStatusUnboundedOrInfeasible = 2
      * }
      */
     public static long kHighsPresolveStatusUnboundedOrInfeasible() {
@@ -1467,7 +1467,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusUnboundedOrInfeasible = 2
+     * extern const HighsInt kHighsPresolveStatusUnboundedOrInfeasible = 2
      * }
      */
     public static void kHighsPresolveStatusUnboundedOrInfeasible(long varValue) {
@@ -1482,7 +1482,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusReduced = 3
+     * extern const HighsInt kHighsPresolveStatusReduced = 3
      * }
      */
     public static OfLong kHighsPresolveStatusReduced$layout() {
@@ -1492,7 +1492,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusReduced = 3
+     * extern const HighsInt kHighsPresolveStatusReduced = 3
      * }
      */
     public static MemorySegment kHighsPresolveStatusReduced$segment() {
@@ -1502,7 +1502,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusReduced = 3
+     * extern const HighsInt kHighsPresolveStatusReduced = 3
      * }
      */
     public static long kHighsPresolveStatusReduced() {
@@ -1512,7 +1512,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusReduced = 3
+     * extern const HighsInt kHighsPresolveStatusReduced = 3
      * }
      */
     public static void kHighsPresolveStatusReduced(long varValue) {
@@ -1527,7 +1527,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusReducedToEmpty = 4
+     * extern const HighsInt kHighsPresolveStatusReducedToEmpty = 4
      * }
      */
     public static OfLong kHighsPresolveStatusReducedToEmpty$layout() {
@@ -1537,7 +1537,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusReducedToEmpty = 4
+     * extern const HighsInt kHighsPresolveStatusReducedToEmpty = 4
      * }
      */
     public static MemorySegment kHighsPresolveStatusReducedToEmpty$segment() {
@@ -1547,7 +1547,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusReducedToEmpty = 4
+     * extern const HighsInt kHighsPresolveStatusReducedToEmpty = 4
      * }
      */
     public static long kHighsPresolveStatusReducedToEmpty() {
@@ -1557,7 +1557,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusReducedToEmpty = 4
+     * extern const HighsInt kHighsPresolveStatusReducedToEmpty = 4
      * }
      */
     public static void kHighsPresolveStatusReducedToEmpty(long varValue) {
@@ -1572,7 +1572,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusTimeout = 5
+     * extern const HighsInt kHighsPresolveStatusTimeout = 5
      * }
      */
     public static OfLong kHighsPresolveStatusTimeout$layout() {
@@ -1582,7 +1582,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusTimeout = 5
+     * extern const HighsInt kHighsPresolveStatusTimeout = 5
      * }
      */
     public static MemorySegment kHighsPresolveStatusTimeout$segment() {
@@ -1592,7 +1592,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusTimeout = 5
+     * extern const HighsInt kHighsPresolveStatusTimeout = 5
      * }
      */
     public static long kHighsPresolveStatusTimeout() {
@@ -1602,7 +1602,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusTimeout = 5
+     * extern const HighsInt kHighsPresolveStatusTimeout = 5
      * }
      */
     public static void kHighsPresolveStatusTimeout(long varValue) {
@@ -1617,7 +1617,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusNullError = 6
+     * extern const HighsInt kHighsPresolveStatusNullError = 6
      * }
      */
     public static OfLong kHighsPresolveStatusNullError$layout() {
@@ -1627,7 +1627,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusNullError = 6
+     * extern const HighsInt kHighsPresolveStatusNullError = 6
      * }
      */
     public static MemorySegment kHighsPresolveStatusNullError$segment() {
@@ -1637,7 +1637,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusNullError = 6
+     * extern const HighsInt kHighsPresolveStatusNullError = 6
      * }
      */
     public static long kHighsPresolveStatusNullError() {
@@ -1647,7 +1647,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusNullError = 6
+     * extern const HighsInt kHighsPresolveStatusNullError = 6
      * }
      */
     public static void kHighsPresolveStatusNullError(long varValue) {
@@ -1662,7 +1662,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusOptionsError = 7
+     * extern const HighsInt kHighsPresolveStatusOptionsError = 7
      * }
      */
     public static OfLong kHighsPresolveStatusOptionsError$layout() {
@@ -1672,7 +1672,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusOptionsError = 7
+     * extern const HighsInt kHighsPresolveStatusOptionsError = 7
      * }
      */
     public static MemorySegment kHighsPresolveStatusOptionsError$segment() {
@@ -1682,7 +1682,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusOptionsError = 7
+     * extern const HighsInt kHighsPresolveStatusOptionsError = 7
      * }
      */
     public static long kHighsPresolveStatusOptionsError() {
@@ -1692,7 +1692,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusOptionsError = 7
+     * extern const HighsInt kHighsPresolveStatusOptionsError = 7
      * }
      */
     public static void kHighsPresolveStatusOptionsError(long varValue) {
@@ -1707,7 +1707,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusOutOfMemory = 8
+     * extern const HighsInt kHighsPresolveStatusOutOfMemory = 8
      * }
      */
     public static OfLong kHighsPresolveStatusOutOfMemory$layout() {
@@ -1717,7 +1717,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusOutOfMemory = 8
+     * extern const HighsInt kHighsPresolveStatusOutOfMemory = 8
      * }
      */
     public static MemorySegment kHighsPresolveStatusOutOfMemory$segment() {
@@ -1727,7 +1727,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusOutOfMemory = 8
+     * extern const HighsInt kHighsPresolveStatusOutOfMemory = 8
      * }
      */
     public static long kHighsPresolveStatusOutOfMemory() {
@@ -1737,7 +1737,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsPresolveStatusOutOfMemory = 8
+     * extern const HighsInt kHighsPresolveStatusOutOfMemory = 8
      * }
      */
     public static void kHighsPresolveStatusOutOfMemory(long varValue) {
@@ -1752,7 +1752,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusNotset = 0
+     * extern const HighsInt kHighsModelStatusNotset = 0
      * }
      */
     public static OfLong kHighsModelStatusNotset$layout() {
@@ -1762,7 +1762,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusNotset = 0
+     * extern const HighsInt kHighsModelStatusNotset = 0
      * }
      */
     public static MemorySegment kHighsModelStatusNotset$segment() {
@@ -1772,7 +1772,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusNotset = 0
+     * extern const HighsInt kHighsModelStatusNotset = 0
      * }
      */
     public static long kHighsModelStatusNotset() {
@@ -1782,7 +1782,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusNotset = 0
+     * extern const HighsInt kHighsModelStatusNotset = 0
      * }
      */
     public static void kHighsModelStatusNotset(long varValue) {
@@ -1797,7 +1797,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusLoadError = 1
+     * extern const HighsInt kHighsModelStatusLoadError = 1
      * }
      */
     public static OfLong kHighsModelStatusLoadError$layout() {
@@ -1807,7 +1807,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusLoadError = 1
+     * extern const HighsInt kHighsModelStatusLoadError = 1
      * }
      */
     public static MemorySegment kHighsModelStatusLoadError$segment() {
@@ -1817,7 +1817,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusLoadError = 1
+     * extern const HighsInt kHighsModelStatusLoadError = 1
      * }
      */
     public static long kHighsModelStatusLoadError() {
@@ -1827,7 +1827,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusLoadError = 1
+     * extern const HighsInt kHighsModelStatusLoadError = 1
      * }
      */
     public static void kHighsModelStatusLoadError(long varValue) {
@@ -1842,7 +1842,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusModelError = 2
+     * extern const HighsInt kHighsModelStatusModelError = 2
      * }
      */
     public static OfLong kHighsModelStatusModelError$layout() {
@@ -1852,7 +1852,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusModelError = 2
+     * extern const HighsInt kHighsModelStatusModelError = 2
      * }
      */
     public static MemorySegment kHighsModelStatusModelError$segment() {
@@ -1862,7 +1862,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusModelError = 2
+     * extern const HighsInt kHighsModelStatusModelError = 2
      * }
      */
     public static long kHighsModelStatusModelError() {
@@ -1872,7 +1872,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusModelError = 2
+     * extern const HighsInt kHighsModelStatusModelError = 2
      * }
      */
     public static void kHighsModelStatusModelError(long varValue) {
@@ -1887,7 +1887,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusPresolveError = 3
+     * extern const HighsInt kHighsModelStatusPresolveError = 3
      * }
      */
     public static OfLong kHighsModelStatusPresolveError$layout() {
@@ -1897,7 +1897,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusPresolveError = 3
+     * extern const HighsInt kHighsModelStatusPresolveError = 3
      * }
      */
     public static MemorySegment kHighsModelStatusPresolveError$segment() {
@@ -1907,7 +1907,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusPresolveError = 3
+     * extern const HighsInt kHighsModelStatusPresolveError = 3
      * }
      */
     public static long kHighsModelStatusPresolveError() {
@@ -1917,7 +1917,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusPresolveError = 3
+     * extern const HighsInt kHighsModelStatusPresolveError = 3
      * }
      */
     public static void kHighsModelStatusPresolveError(long varValue) {
@@ -1932,7 +1932,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusSolveError = 4
+     * extern const HighsInt kHighsModelStatusSolveError = 4
      * }
      */
     public static OfLong kHighsModelStatusSolveError$layout() {
@@ -1942,7 +1942,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusSolveError = 4
+     * extern const HighsInt kHighsModelStatusSolveError = 4
      * }
      */
     public static MemorySegment kHighsModelStatusSolveError$segment() {
@@ -1952,7 +1952,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusSolveError = 4
+     * extern const HighsInt kHighsModelStatusSolveError = 4
      * }
      */
     public static long kHighsModelStatusSolveError() {
@@ -1962,7 +1962,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusSolveError = 4
+     * extern const HighsInt kHighsModelStatusSolveError = 4
      * }
      */
     public static void kHighsModelStatusSolveError(long varValue) {
@@ -1977,7 +1977,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusPostsolveError = 5
+     * extern const HighsInt kHighsModelStatusPostsolveError = 5
      * }
      */
     public static OfLong kHighsModelStatusPostsolveError$layout() {
@@ -1987,7 +1987,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusPostsolveError = 5
+     * extern const HighsInt kHighsModelStatusPostsolveError = 5
      * }
      */
     public static MemorySegment kHighsModelStatusPostsolveError$segment() {
@@ -1997,7 +1997,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusPostsolveError = 5
+     * extern const HighsInt kHighsModelStatusPostsolveError = 5
      * }
      */
     public static long kHighsModelStatusPostsolveError() {
@@ -2007,7 +2007,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusPostsolveError = 5
+     * extern const HighsInt kHighsModelStatusPostsolveError = 5
      * }
      */
     public static void kHighsModelStatusPostsolveError(long varValue) {
@@ -2022,7 +2022,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusModelEmpty = 6
+     * extern const HighsInt kHighsModelStatusModelEmpty = 6
      * }
      */
     public static OfLong kHighsModelStatusModelEmpty$layout() {
@@ -2032,7 +2032,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusModelEmpty = 6
+     * extern const HighsInt kHighsModelStatusModelEmpty = 6
      * }
      */
     public static MemorySegment kHighsModelStatusModelEmpty$segment() {
@@ -2042,7 +2042,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusModelEmpty = 6
+     * extern const HighsInt kHighsModelStatusModelEmpty = 6
      * }
      */
     public static long kHighsModelStatusModelEmpty() {
@@ -2052,7 +2052,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusModelEmpty = 6
+     * extern const HighsInt kHighsModelStatusModelEmpty = 6
      * }
      */
     public static void kHighsModelStatusModelEmpty(long varValue) {
@@ -2067,7 +2067,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusOptimal = 7
+     * extern const HighsInt kHighsModelStatusOptimal = 7
      * }
      */
     public static OfLong kHighsModelStatusOptimal$layout() {
@@ -2077,7 +2077,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusOptimal = 7
+     * extern const HighsInt kHighsModelStatusOptimal = 7
      * }
      */
     public static MemorySegment kHighsModelStatusOptimal$segment() {
@@ -2087,7 +2087,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusOptimal = 7
+     * extern const HighsInt kHighsModelStatusOptimal = 7
      * }
      */
     public static long kHighsModelStatusOptimal() {
@@ -2097,7 +2097,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusOptimal = 7
+     * extern const HighsInt kHighsModelStatusOptimal = 7
      * }
      */
     public static void kHighsModelStatusOptimal(long varValue) {
@@ -2112,7 +2112,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusInfeasible = 8
+     * extern const HighsInt kHighsModelStatusInfeasible = 8
      * }
      */
     public static OfLong kHighsModelStatusInfeasible$layout() {
@@ -2122,7 +2122,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusInfeasible = 8
+     * extern const HighsInt kHighsModelStatusInfeasible = 8
      * }
      */
     public static MemorySegment kHighsModelStatusInfeasible$segment() {
@@ -2132,7 +2132,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusInfeasible = 8
+     * extern const HighsInt kHighsModelStatusInfeasible = 8
      * }
      */
     public static long kHighsModelStatusInfeasible() {
@@ -2142,7 +2142,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusInfeasible = 8
+     * extern const HighsInt kHighsModelStatusInfeasible = 8
      * }
      */
     public static void kHighsModelStatusInfeasible(long varValue) {
@@ -2157,7 +2157,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusUnboundedOrInfeasible = 9
+     * extern const HighsInt kHighsModelStatusUnboundedOrInfeasible = 9
      * }
      */
     public static OfLong kHighsModelStatusUnboundedOrInfeasible$layout() {
@@ -2167,7 +2167,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusUnboundedOrInfeasible = 9
+     * extern const HighsInt kHighsModelStatusUnboundedOrInfeasible = 9
      * }
      */
     public static MemorySegment kHighsModelStatusUnboundedOrInfeasible$segment() {
@@ -2177,7 +2177,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusUnboundedOrInfeasible = 9
+     * extern const HighsInt kHighsModelStatusUnboundedOrInfeasible = 9
      * }
      */
     public static long kHighsModelStatusUnboundedOrInfeasible() {
@@ -2187,7 +2187,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusUnboundedOrInfeasible = 9
+     * extern const HighsInt kHighsModelStatusUnboundedOrInfeasible = 9
      * }
      */
     public static void kHighsModelStatusUnboundedOrInfeasible(long varValue) {
@@ -2202,7 +2202,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusUnbounded = 10
+     * extern const HighsInt kHighsModelStatusUnbounded = 10
      * }
      */
     public static OfLong kHighsModelStatusUnbounded$layout() {
@@ -2212,7 +2212,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusUnbounded = 10
+     * extern const HighsInt kHighsModelStatusUnbounded = 10
      * }
      */
     public static MemorySegment kHighsModelStatusUnbounded$segment() {
@@ -2222,7 +2222,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusUnbounded = 10
+     * extern const HighsInt kHighsModelStatusUnbounded = 10
      * }
      */
     public static long kHighsModelStatusUnbounded() {
@@ -2232,7 +2232,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusUnbounded = 10
+     * extern const HighsInt kHighsModelStatusUnbounded = 10
      * }
      */
     public static void kHighsModelStatusUnbounded(long varValue) {
@@ -2247,7 +2247,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusObjectiveBound = 11
+     * extern const HighsInt kHighsModelStatusObjectiveBound = 11
      * }
      */
     public static OfLong kHighsModelStatusObjectiveBound$layout() {
@@ -2257,7 +2257,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusObjectiveBound = 11
+     * extern const HighsInt kHighsModelStatusObjectiveBound = 11
      * }
      */
     public static MemorySegment kHighsModelStatusObjectiveBound$segment() {
@@ -2267,7 +2267,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusObjectiveBound = 11
+     * extern const HighsInt kHighsModelStatusObjectiveBound = 11
      * }
      */
     public static long kHighsModelStatusObjectiveBound() {
@@ -2277,7 +2277,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusObjectiveBound = 11
+     * extern const HighsInt kHighsModelStatusObjectiveBound = 11
      * }
      */
     public static void kHighsModelStatusObjectiveBound(long varValue) {
@@ -2292,7 +2292,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusObjectiveTarget = 12
+     * extern const HighsInt kHighsModelStatusObjectiveTarget = 12
      * }
      */
     public static OfLong kHighsModelStatusObjectiveTarget$layout() {
@@ -2302,7 +2302,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusObjectiveTarget = 12
+     * extern const HighsInt kHighsModelStatusObjectiveTarget = 12
      * }
      */
     public static MemorySegment kHighsModelStatusObjectiveTarget$segment() {
@@ -2312,7 +2312,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusObjectiveTarget = 12
+     * extern const HighsInt kHighsModelStatusObjectiveTarget = 12
      * }
      */
     public static long kHighsModelStatusObjectiveTarget() {
@@ -2322,7 +2322,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusObjectiveTarget = 12
+     * extern const HighsInt kHighsModelStatusObjectiveTarget = 12
      * }
      */
     public static void kHighsModelStatusObjectiveTarget(long varValue) {
@@ -2337,7 +2337,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusTimeLimit = 13
+     * extern const HighsInt kHighsModelStatusTimeLimit = 13
      * }
      */
     public static OfLong kHighsModelStatusTimeLimit$layout() {
@@ -2347,7 +2347,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusTimeLimit = 13
+     * extern const HighsInt kHighsModelStatusTimeLimit = 13
      * }
      */
     public static MemorySegment kHighsModelStatusTimeLimit$segment() {
@@ -2357,7 +2357,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusTimeLimit = 13
+     * extern const HighsInt kHighsModelStatusTimeLimit = 13
      * }
      */
     public static long kHighsModelStatusTimeLimit() {
@@ -2367,7 +2367,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusTimeLimit = 13
+     * extern const HighsInt kHighsModelStatusTimeLimit = 13
      * }
      */
     public static void kHighsModelStatusTimeLimit(long varValue) {
@@ -2382,7 +2382,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusIterationLimit = 14
+     * extern const HighsInt kHighsModelStatusIterationLimit = 14
      * }
      */
     public static OfLong kHighsModelStatusIterationLimit$layout() {
@@ -2392,7 +2392,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusIterationLimit = 14
+     * extern const HighsInt kHighsModelStatusIterationLimit = 14
      * }
      */
     public static MemorySegment kHighsModelStatusIterationLimit$segment() {
@@ -2402,7 +2402,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusIterationLimit = 14
+     * extern const HighsInt kHighsModelStatusIterationLimit = 14
      * }
      */
     public static long kHighsModelStatusIterationLimit() {
@@ -2412,7 +2412,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusIterationLimit = 14
+     * extern const HighsInt kHighsModelStatusIterationLimit = 14
      * }
      */
     public static void kHighsModelStatusIterationLimit(long varValue) {
@@ -2427,7 +2427,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusUnknown = 15
+     * extern const HighsInt kHighsModelStatusUnknown = 15
      * }
      */
     public static OfLong kHighsModelStatusUnknown$layout() {
@@ -2437,7 +2437,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusUnknown = 15
+     * extern const HighsInt kHighsModelStatusUnknown = 15
      * }
      */
     public static MemorySegment kHighsModelStatusUnknown$segment() {
@@ -2447,7 +2447,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusUnknown = 15
+     * extern const HighsInt kHighsModelStatusUnknown = 15
      * }
      */
     public static long kHighsModelStatusUnknown() {
@@ -2457,7 +2457,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusUnknown = 15
+     * extern const HighsInt kHighsModelStatusUnknown = 15
      * }
      */
     public static void kHighsModelStatusUnknown(long varValue) {
@@ -2472,7 +2472,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusSolutionLimit = 16
+     * extern const HighsInt kHighsModelStatusSolutionLimit = 16
      * }
      */
     public static OfLong kHighsModelStatusSolutionLimit$layout() {
@@ -2482,7 +2482,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusSolutionLimit = 16
+     * extern const HighsInt kHighsModelStatusSolutionLimit = 16
      * }
      */
     public static MemorySegment kHighsModelStatusSolutionLimit$segment() {
@@ -2492,7 +2492,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusSolutionLimit = 16
+     * extern const HighsInt kHighsModelStatusSolutionLimit = 16
      * }
      */
     public static long kHighsModelStatusSolutionLimit() {
@@ -2502,7 +2502,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusSolutionLimit = 16
+     * extern const HighsInt kHighsModelStatusSolutionLimit = 16
      * }
      */
     public static void kHighsModelStatusSolutionLimit(long varValue) {
@@ -2517,7 +2517,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusInterrupt = 17
+     * extern const HighsInt kHighsModelStatusInterrupt = 17
      * }
      */
     public static OfLong kHighsModelStatusInterrupt$layout() {
@@ -2527,7 +2527,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusInterrupt = 17
+     * extern const HighsInt kHighsModelStatusInterrupt = 17
      * }
      */
     public static MemorySegment kHighsModelStatusInterrupt$segment() {
@@ -2537,7 +2537,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusInterrupt = 17
+     * extern const HighsInt kHighsModelStatusInterrupt = 17
      * }
      */
     public static long kHighsModelStatusInterrupt() {
@@ -2547,7 +2547,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsModelStatusInterrupt = 17
+     * extern const HighsInt kHighsModelStatusInterrupt = 17
      * }
      */
     public static void kHighsModelStatusInterrupt(long varValue) {
@@ -2562,7 +2562,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusLower = 0
+     * extern const HighsInt kHighsBasisStatusLower = 0
      * }
      */
     public static OfLong kHighsBasisStatusLower$layout() {
@@ -2572,7 +2572,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusLower = 0
+     * extern const HighsInt kHighsBasisStatusLower = 0
      * }
      */
     public static MemorySegment kHighsBasisStatusLower$segment() {
@@ -2582,7 +2582,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusLower = 0
+     * extern const HighsInt kHighsBasisStatusLower = 0
      * }
      */
     public static long kHighsBasisStatusLower() {
@@ -2592,7 +2592,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusLower = 0
+     * extern const HighsInt kHighsBasisStatusLower = 0
      * }
      */
     public static void kHighsBasisStatusLower(long varValue) {
@@ -2607,7 +2607,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusBasic = 1
+     * extern const HighsInt kHighsBasisStatusBasic = 1
      * }
      */
     public static OfLong kHighsBasisStatusBasic$layout() {
@@ -2617,7 +2617,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusBasic = 1
+     * extern const HighsInt kHighsBasisStatusBasic = 1
      * }
      */
     public static MemorySegment kHighsBasisStatusBasic$segment() {
@@ -2627,7 +2627,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusBasic = 1
+     * extern const HighsInt kHighsBasisStatusBasic = 1
      * }
      */
     public static long kHighsBasisStatusBasic() {
@@ -2637,7 +2637,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusBasic = 1
+     * extern const HighsInt kHighsBasisStatusBasic = 1
      * }
      */
     public static void kHighsBasisStatusBasic(long varValue) {
@@ -2652,7 +2652,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusUpper = 2
+     * extern const HighsInt kHighsBasisStatusUpper = 2
      * }
      */
     public static OfLong kHighsBasisStatusUpper$layout() {
@@ -2662,7 +2662,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusUpper = 2
+     * extern const HighsInt kHighsBasisStatusUpper = 2
      * }
      */
     public static MemorySegment kHighsBasisStatusUpper$segment() {
@@ -2672,7 +2672,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusUpper = 2
+     * extern const HighsInt kHighsBasisStatusUpper = 2
      * }
      */
     public static long kHighsBasisStatusUpper() {
@@ -2682,7 +2682,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusUpper = 2
+     * extern const HighsInt kHighsBasisStatusUpper = 2
      * }
      */
     public static void kHighsBasisStatusUpper(long varValue) {
@@ -2697,7 +2697,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusZero = 3
+     * extern const HighsInt kHighsBasisStatusZero = 3
      * }
      */
     public static OfLong kHighsBasisStatusZero$layout() {
@@ -2707,7 +2707,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusZero = 3
+     * extern const HighsInt kHighsBasisStatusZero = 3
      * }
      */
     public static MemorySegment kHighsBasisStatusZero$segment() {
@@ -2717,7 +2717,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusZero = 3
+     * extern const HighsInt kHighsBasisStatusZero = 3
      * }
      */
     public static long kHighsBasisStatusZero() {
@@ -2727,7 +2727,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusZero = 3
+     * extern const HighsInt kHighsBasisStatusZero = 3
      * }
      */
     public static void kHighsBasisStatusZero(long varValue) {
@@ -2742,7 +2742,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusNonbasic = 4
+     * extern const HighsInt kHighsBasisStatusNonbasic = 4
      * }
      */
     public static OfLong kHighsBasisStatusNonbasic$layout() {
@@ -2752,7 +2752,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusNonbasic = 4
+     * extern const HighsInt kHighsBasisStatusNonbasic = 4
      * }
      */
     public static MemorySegment kHighsBasisStatusNonbasic$segment() {
@@ -2762,7 +2762,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusNonbasic = 4
+     * extern const HighsInt kHighsBasisStatusNonbasic = 4
      * }
      */
     public static long kHighsBasisStatusNonbasic() {
@@ -2772,7 +2772,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsBasisStatusNonbasic = 4
+     * extern const HighsInt kHighsBasisStatusNonbasic = 4
      * }
      */
     public static void kHighsBasisStatusNonbasic(long varValue) {
@@ -2787,7 +2787,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackLogging = 0
+     * extern const HighsInt kHighsCallbackLogging = 0
      * }
      */
     public static OfLong kHighsCallbackLogging$layout() {
@@ -2797,7 +2797,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackLogging = 0
+     * extern const HighsInt kHighsCallbackLogging = 0
      * }
      */
     public static MemorySegment kHighsCallbackLogging$segment() {
@@ -2807,7 +2807,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackLogging = 0
+     * extern const HighsInt kHighsCallbackLogging = 0
      * }
      */
     public static long kHighsCallbackLogging() {
@@ -2817,7 +2817,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackLogging = 0
+     * extern const HighsInt kHighsCallbackLogging = 0
      * }
      */
     public static void kHighsCallbackLogging(long varValue) {
@@ -2832,7 +2832,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackSimplexInterrupt = 1
+     * extern const HighsInt kHighsCallbackSimplexInterrupt = 1
      * }
      */
     public static OfLong kHighsCallbackSimplexInterrupt$layout() {
@@ -2842,7 +2842,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackSimplexInterrupt = 1
+     * extern const HighsInt kHighsCallbackSimplexInterrupt = 1
      * }
      */
     public static MemorySegment kHighsCallbackSimplexInterrupt$segment() {
@@ -2852,7 +2852,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackSimplexInterrupt = 1
+     * extern const HighsInt kHighsCallbackSimplexInterrupt = 1
      * }
      */
     public static long kHighsCallbackSimplexInterrupt() {
@@ -2862,7 +2862,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackSimplexInterrupt = 1
+     * extern const HighsInt kHighsCallbackSimplexInterrupt = 1
      * }
      */
     public static void kHighsCallbackSimplexInterrupt(long varValue) {
@@ -2877,7 +2877,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackIpmInterrupt = 2
+     * extern const HighsInt kHighsCallbackIpmInterrupt = 2
      * }
      */
     public static OfLong kHighsCallbackIpmInterrupt$layout() {
@@ -2887,7 +2887,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackIpmInterrupt = 2
+     * extern const HighsInt kHighsCallbackIpmInterrupt = 2
      * }
      */
     public static MemorySegment kHighsCallbackIpmInterrupt$segment() {
@@ -2897,7 +2897,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackIpmInterrupt = 2
+     * extern const HighsInt kHighsCallbackIpmInterrupt = 2
      * }
      */
     public static long kHighsCallbackIpmInterrupt() {
@@ -2907,7 +2907,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackIpmInterrupt = 2
+     * extern const HighsInt kHighsCallbackIpmInterrupt = 2
      * }
      */
     public static void kHighsCallbackIpmInterrupt(long varValue) {
@@ -2922,7 +2922,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipSolution = 3
+     * extern const HighsInt kHighsCallbackMipSolution = 3
      * }
      */
     public static OfLong kHighsCallbackMipSolution$layout() {
@@ -2932,7 +2932,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipSolution = 3
+     * extern const HighsInt kHighsCallbackMipSolution = 3
      * }
      */
     public static MemorySegment kHighsCallbackMipSolution$segment() {
@@ -2942,7 +2942,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipSolution = 3
+     * extern const HighsInt kHighsCallbackMipSolution = 3
      * }
      */
     public static long kHighsCallbackMipSolution() {
@@ -2952,7 +2952,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipSolution = 3
+     * extern const HighsInt kHighsCallbackMipSolution = 3
      * }
      */
     public static void kHighsCallbackMipSolution(long varValue) {
@@ -2967,7 +2967,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipImprovingSolution = 4
+     * extern const HighsInt kHighsCallbackMipImprovingSolution = 4
      * }
      */
     public static OfLong kHighsCallbackMipImprovingSolution$layout() {
@@ -2977,7 +2977,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipImprovingSolution = 4
+     * extern const HighsInt kHighsCallbackMipImprovingSolution = 4
      * }
      */
     public static MemorySegment kHighsCallbackMipImprovingSolution$segment() {
@@ -2987,7 +2987,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipImprovingSolution = 4
+     * extern const HighsInt kHighsCallbackMipImprovingSolution = 4
      * }
      */
     public static long kHighsCallbackMipImprovingSolution() {
@@ -2997,7 +2997,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipImprovingSolution = 4
+     * extern const HighsInt kHighsCallbackMipImprovingSolution = 4
      * }
      */
     public static void kHighsCallbackMipImprovingSolution(long varValue) {
@@ -3012,7 +3012,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipLogging = 5
+     * extern const HighsInt kHighsCallbackMipLogging = 5
      * }
      */
     public static OfLong kHighsCallbackMipLogging$layout() {
@@ -3022,7 +3022,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipLogging = 5
+     * extern const HighsInt kHighsCallbackMipLogging = 5
      * }
      */
     public static MemorySegment kHighsCallbackMipLogging$segment() {
@@ -3032,7 +3032,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipLogging = 5
+     * extern const HighsInt kHighsCallbackMipLogging = 5
      * }
      */
     public static long kHighsCallbackMipLogging() {
@@ -3042,7 +3042,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipLogging = 5
+     * extern const HighsInt kHighsCallbackMipLogging = 5
      * }
      */
     public static void kHighsCallbackMipLogging(long varValue) {
@@ -3057,7 +3057,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipInterrupt = 6
+     * extern const HighsInt kHighsCallbackMipInterrupt = 6
      * }
      */
     public static OfLong kHighsCallbackMipInterrupt$layout() {
@@ -3067,7 +3067,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipInterrupt = 6
+     * extern const HighsInt kHighsCallbackMipInterrupt = 6
      * }
      */
     public static MemorySegment kHighsCallbackMipInterrupt$segment() {
@@ -3077,7 +3077,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipInterrupt = 6
+     * extern const HighsInt kHighsCallbackMipInterrupt = 6
      * }
      */
     public static long kHighsCallbackMipInterrupt() {
@@ -3087,7 +3087,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipInterrupt = 6
+     * extern const HighsInt kHighsCallbackMipInterrupt = 6
      * }
      */
     public static void kHighsCallbackMipInterrupt(long varValue) {
@@ -3102,7 +3102,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipGetCutPool = 7
+     * extern const HighsInt kHighsCallbackMipGetCutPool = 7
      * }
      */
     public static OfLong kHighsCallbackMipGetCutPool$layout() {
@@ -3112,7 +3112,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipGetCutPool = 7
+     * extern const HighsInt kHighsCallbackMipGetCutPool = 7
      * }
      */
     public static MemorySegment kHighsCallbackMipGetCutPool$segment() {
@@ -3122,7 +3122,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipGetCutPool = 7
+     * extern const HighsInt kHighsCallbackMipGetCutPool = 7
      * }
      */
     public static long kHighsCallbackMipGetCutPool() {
@@ -3132,7 +3132,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipGetCutPool = 7
+     * extern const HighsInt kHighsCallbackMipGetCutPool = 7
      * }
      */
     public static void kHighsCallbackMipGetCutPool(long varValue) {
@@ -3147,7 +3147,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipDefineLazyConstraints = 8
+     * extern const HighsInt kHighsCallbackMipDefineLazyConstraints = 8
      * }
      */
     public static OfLong kHighsCallbackMipDefineLazyConstraints$layout() {
@@ -3157,7 +3157,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipDefineLazyConstraints = 8
+     * extern const HighsInt kHighsCallbackMipDefineLazyConstraints = 8
      * }
      */
     public static MemorySegment kHighsCallbackMipDefineLazyConstraints$segment() {
@@ -3167,7 +3167,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipDefineLazyConstraints = 8
+     * extern const HighsInt kHighsCallbackMipDefineLazyConstraints = 8
      * }
      */
     public static long kHighsCallbackMipDefineLazyConstraints() {
@@ -3177,7 +3177,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const HighsInt kHighsCallbackMipDefineLazyConstraints = 8
+     * extern const HighsInt kHighsCallbackMipDefineLazyConstraints = 8
      * }
      */
     public static void kHighsCallbackMipDefineLazyConstraints(long varValue) {
@@ -3192,7 +3192,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutLogTypeName = "log_type"
+     * extern const char *const kHighsCallbackDataOutLogTypeName = "log_type"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutLogTypeName$layout() {
@@ -3202,7 +3202,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutLogTypeName = "log_type"
+     * extern const char *const kHighsCallbackDataOutLogTypeName = "log_type"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutLogTypeName$segment() {
@@ -3212,7 +3212,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutLogTypeName = "log_type"
+     * extern const char *const kHighsCallbackDataOutLogTypeName = "log_type"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutLogTypeName() {
@@ -3222,7 +3222,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutLogTypeName = "log_type"
+     * extern const char *const kHighsCallbackDataOutLogTypeName = "log_type"
      * }
      */
     public static void kHighsCallbackDataOutLogTypeName(MemorySegment varValue) {
@@ -3237,7 +3237,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutRunningTimeName = "running_time"
+     * extern const char *const kHighsCallbackDataOutRunningTimeName = "running_time"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutRunningTimeName$layout() {
@@ -3247,7 +3247,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutRunningTimeName = "running_time"
+     * extern const char *const kHighsCallbackDataOutRunningTimeName = "running_time"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutRunningTimeName$segment() {
@@ -3257,7 +3257,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutRunningTimeName = "running_time"
+     * extern const char *const kHighsCallbackDataOutRunningTimeName = "running_time"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutRunningTimeName() {
@@ -3267,7 +3267,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutRunningTimeName = "running_time"
+     * extern const char *const kHighsCallbackDataOutRunningTimeName = "running_time"
      * }
      */
     public static void kHighsCallbackDataOutRunningTimeName(MemorySegment varValue) {
@@ -3282,7 +3282,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutSimplexIterationCountName = "simplex_iteration_count"
+     * extern const char *const kHighsCallbackDataOutSimplexIterationCountName = "simplex_iteration_count"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutSimplexIterationCountName$layout() {
@@ -3292,7 +3292,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutSimplexIterationCountName = "simplex_iteration_count"
+     * extern const char *const kHighsCallbackDataOutSimplexIterationCountName = "simplex_iteration_count"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutSimplexIterationCountName$segment() {
@@ -3302,7 +3302,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutSimplexIterationCountName = "simplex_iteration_count"
+     * extern const char *const kHighsCallbackDataOutSimplexIterationCountName = "simplex_iteration_count"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutSimplexIterationCountName() {
@@ -3312,7 +3312,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutSimplexIterationCountName = "simplex_iteration_count"
+     * extern const char *const kHighsCallbackDataOutSimplexIterationCountName = "simplex_iteration_count"
      * }
      */
     public static void kHighsCallbackDataOutSimplexIterationCountName(MemorySegment varValue) {
@@ -3327,7 +3327,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutIpmIterationCountName = "ipm_iteration_count"
+     * extern const char *const kHighsCallbackDataOutIpmIterationCountName = "ipm_iteration_count"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutIpmIterationCountName$layout() {
@@ -3337,7 +3337,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutIpmIterationCountName = "ipm_iteration_count"
+     * extern const char *const kHighsCallbackDataOutIpmIterationCountName = "ipm_iteration_count"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutIpmIterationCountName$segment() {
@@ -3347,7 +3347,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutIpmIterationCountName = "ipm_iteration_count"
+     * extern const char *const kHighsCallbackDataOutIpmIterationCountName = "ipm_iteration_count"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutIpmIterationCountName() {
@@ -3357,7 +3357,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutIpmIterationCountName = "ipm_iteration_count"
+     * extern const char *const kHighsCallbackDataOutIpmIterationCountName = "ipm_iteration_count"
      * }
      */
     public static void kHighsCallbackDataOutIpmIterationCountName(MemorySegment varValue) {
@@ -3372,7 +3372,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutPdlpIterationCountName = "pdlp_iteration_count"
+     * extern const char *const kHighsCallbackDataOutPdlpIterationCountName = "pdlp_iteration_count"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutPdlpIterationCountName$layout() {
@@ -3382,7 +3382,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutPdlpIterationCountName = "pdlp_iteration_count"
+     * extern const char *const kHighsCallbackDataOutPdlpIterationCountName = "pdlp_iteration_count"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutPdlpIterationCountName$segment() {
@@ -3392,7 +3392,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutPdlpIterationCountName = "pdlp_iteration_count"
+     * extern const char *const kHighsCallbackDataOutPdlpIterationCountName = "pdlp_iteration_count"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutPdlpIterationCountName() {
@@ -3402,7 +3402,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutPdlpIterationCountName = "pdlp_iteration_count"
+     * extern const char *const kHighsCallbackDataOutPdlpIterationCountName = "pdlp_iteration_count"
      * }
      */
     public static void kHighsCallbackDataOutPdlpIterationCountName(MemorySegment varValue) {
@@ -3417,7 +3417,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutObjectiveFunctionValueName = "objective_function_value"
+     * extern const char *const kHighsCallbackDataOutObjectiveFunctionValueName = "objective_function_value"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutObjectiveFunctionValueName$layout() {
@@ -3427,7 +3427,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutObjectiveFunctionValueName = "objective_function_value"
+     * extern const char *const kHighsCallbackDataOutObjectiveFunctionValueName = "objective_function_value"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutObjectiveFunctionValueName$segment() {
@@ -3437,7 +3437,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutObjectiveFunctionValueName = "objective_function_value"
+     * extern const char *const kHighsCallbackDataOutObjectiveFunctionValueName = "objective_function_value"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutObjectiveFunctionValueName() {
@@ -3447,7 +3447,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutObjectiveFunctionValueName = "objective_function_value"
+     * extern const char *const kHighsCallbackDataOutObjectiveFunctionValueName = "objective_function_value"
      * }
      */
     public static void kHighsCallbackDataOutObjectiveFunctionValueName(MemorySegment varValue) {
@@ -3462,7 +3462,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipNodeCountName = "mip_node_count"
+     * extern const char *const kHighsCallbackDataOutMipNodeCountName = "mip_node_count"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutMipNodeCountName$layout() {
@@ -3472,7 +3472,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipNodeCountName = "mip_node_count"
+     * extern const char *const kHighsCallbackDataOutMipNodeCountName = "mip_node_count"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutMipNodeCountName$segment() {
@@ -3482,7 +3482,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipNodeCountName = "mip_node_count"
+     * extern const char *const kHighsCallbackDataOutMipNodeCountName = "mip_node_count"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutMipNodeCountName() {
@@ -3492,7 +3492,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipNodeCountName = "mip_node_count"
+     * extern const char *const kHighsCallbackDataOutMipNodeCountName = "mip_node_count"
      * }
      */
     public static void kHighsCallbackDataOutMipNodeCountName(MemorySegment varValue) {
@@ -3507,7 +3507,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipTotalLpIterationsName = "mip_total_lp_iterations"
+     * extern const char *const kHighsCallbackDataOutMipTotalLpIterationsName = "mip_total_lp_iterations"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutMipTotalLpIterationsName$layout() {
@@ -3517,7 +3517,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipTotalLpIterationsName = "mip_total_lp_iterations"
+     * extern const char *const kHighsCallbackDataOutMipTotalLpIterationsName = "mip_total_lp_iterations"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutMipTotalLpIterationsName$segment() {
@@ -3527,7 +3527,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipTotalLpIterationsName = "mip_total_lp_iterations"
+     * extern const char *const kHighsCallbackDataOutMipTotalLpIterationsName = "mip_total_lp_iterations"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutMipTotalLpIterationsName() {
@@ -3537,7 +3537,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipTotalLpIterationsName = "mip_total_lp_iterations"
+     * extern const char *const kHighsCallbackDataOutMipTotalLpIterationsName = "mip_total_lp_iterations"
      * }
      */
     public static void kHighsCallbackDataOutMipTotalLpIterationsName(MemorySegment varValue) {
@@ -3552,7 +3552,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipPrimalBoundName = "mip_primal_bound"
+     * extern const char *const kHighsCallbackDataOutMipPrimalBoundName = "mip_primal_bound"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutMipPrimalBoundName$layout() {
@@ -3562,7 +3562,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipPrimalBoundName = "mip_primal_bound"
+     * extern const char *const kHighsCallbackDataOutMipPrimalBoundName = "mip_primal_bound"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutMipPrimalBoundName$segment() {
@@ -3572,7 +3572,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipPrimalBoundName = "mip_primal_bound"
+     * extern const char *const kHighsCallbackDataOutMipPrimalBoundName = "mip_primal_bound"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutMipPrimalBoundName() {
@@ -3582,7 +3582,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipPrimalBoundName = "mip_primal_bound"
+     * extern const char *const kHighsCallbackDataOutMipPrimalBoundName = "mip_primal_bound"
      * }
      */
     public static void kHighsCallbackDataOutMipPrimalBoundName(MemorySegment varValue) {
@@ -3597,7 +3597,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipDualBoundName = "mip_dual_bound"
+     * extern const char *const kHighsCallbackDataOutMipDualBoundName = "mip_dual_bound"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutMipDualBoundName$layout() {
@@ -3607,7 +3607,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipDualBoundName = "mip_dual_bound"
+     * extern const char *const kHighsCallbackDataOutMipDualBoundName = "mip_dual_bound"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutMipDualBoundName$segment() {
@@ -3617,7 +3617,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipDualBoundName = "mip_dual_bound"
+     * extern const char *const kHighsCallbackDataOutMipDualBoundName = "mip_dual_bound"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutMipDualBoundName() {
@@ -3627,7 +3627,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipDualBoundName = "mip_dual_bound"
+     * extern const char *const kHighsCallbackDataOutMipDualBoundName = "mip_dual_bound"
      * }
      */
     public static void kHighsCallbackDataOutMipDualBoundName(MemorySegment varValue) {
@@ -3642,7 +3642,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipGapName = "mip_gap"
+     * extern const char *const kHighsCallbackDataOutMipGapName = "mip_gap"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutMipGapName$layout() {
@@ -3652,7 +3652,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipGapName = "mip_gap"
+     * extern const char *const kHighsCallbackDataOutMipGapName = "mip_gap"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutMipGapName$segment() {
@@ -3662,7 +3662,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipGapName = "mip_gap"
+     * extern const char *const kHighsCallbackDataOutMipGapName = "mip_gap"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutMipGapName() {
@@ -3672,7 +3672,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipGapName = "mip_gap"
+     * extern const char *const kHighsCallbackDataOutMipGapName = "mip_gap"
      * }
      */
     public static void kHighsCallbackDataOutMipGapName(MemorySegment varValue) {
@@ -3687,7 +3687,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipSolutionName = "mip_solution"
+     * extern const char *const kHighsCallbackDataOutMipSolutionName = "mip_solution"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutMipSolutionName$layout() {
@@ -3697,7 +3697,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipSolutionName = "mip_solution"
+     * extern const char *const kHighsCallbackDataOutMipSolutionName = "mip_solution"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutMipSolutionName$segment() {
@@ -3707,7 +3707,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipSolutionName = "mip_solution"
+     * extern const char *const kHighsCallbackDataOutMipSolutionName = "mip_solution"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutMipSolutionName() {
@@ -3717,7 +3717,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutMipSolutionName = "mip_solution"
+     * extern const char *const kHighsCallbackDataOutMipSolutionName = "mip_solution"
      * }
      */
     public static void kHighsCallbackDataOutMipSolutionName(MemorySegment varValue) {
@@ -3732,7 +3732,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolNumColName = "cutpool_num_col"
+     * extern const char *const kHighsCallbackDataOutCutpoolNumColName = "cutpool_num_col"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutCutpoolNumColName$layout() {
@@ -3742,7 +3742,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolNumColName = "cutpool_num_col"
+     * extern const char *const kHighsCallbackDataOutCutpoolNumColName = "cutpool_num_col"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutCutpoolNumColName$segment() {
@@ -3752,7 +3752,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolNumColName = "cutpool_num_col"
+     * extern const char *const kHighsCallbackDataOutCutpoolNumColName = "cutpool_num_col"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutCutpoolNumColName() {
@@ -3762,7 +3762,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolNumColName = "cutpool_num_col"
+     * extern const char *const kHighsCallbackDataOutCutpoolNumColName = "cutpool_num_col"
      * }
      */
     public static void kHighsCallbackDataOutCutpoolNumColName(MemorySegment varValue) {
@@ -3777,7 +3777,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolNumCutName = "cutpool_num_cut"
+     * extern const char *const kHighsCallbackDataOutCutpoolNumCutName = "cutpool_num_cut"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutCutpoolNumCutName$layout() {
@@ -3787,7 +3787,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolNumCutName = "cutpool_num_cut"
+     * extern const char *const kHighsCallbackDataOutCutpoolNumCutName = "cutpool_num_cut"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutCutpoolNumCutName$segment() {
@@ -3797,7 +3797,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolNumCutName = "cutpool_num_cut"
+     * extern const char *const kHighsCallbackDataOutCutpoolNumCutName = "cutpool_num_cut"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutCutpoolNumCutName() {
@@ -3807,7 +3807,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolNumCutName = "cutpool_num_cut"
+     * extern const char *const kHighsCallbackDataOutCutpoolNumCutName = "cutpool_num_cut"
      * }
      */
     public static void kHighsCallbackDataOutCutpoolNumCutName(MemorySegment varValue) {
@@ -3822,7 +3822,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolNumNzName = "cutpool_num_nz"
+     * extern const char *const kHighsCallbackDataOutCutpoolNumNzName = "cutpool_num_nz"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutCutpoolNumNzName$layout() {
@@ -3832,7 +3832,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolNumNzName = "cutpool_num_nz"
+     * extern const char *const kHighsCallbackDataOutCutpoolNumNzName = "cutpool_num_nz"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutCutpoolNumNzName$segment() {
@@ -3842,7 +3842,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolNumNzName = "cutpool_num_nz"
+     * extern const char *const kHighsCallbackDataOutCutpoolNumNzName = "cutpool_num_nz"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutCutpoolNumNzName() {
@@ -3852,7 +3852,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolNumNzName = "cutpool_num_nz"
+     * extern const char *const kHighsCallbackDataOutCutpoolNumNzName = "cutpool_num_nz"
      * }
      */
     public static void kHighsCallbackDataOutCutpoolNumNzName(MemorySegment varValue) {
@@ -3867,7 +3867,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolStartName = "cutpool_start"
+     * extern const char *const kHighsCallbackDataOutCutpoolStartName = "cutpool_start"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutCutpoolStartName$layout() {
@@ -3877,7 +3877,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolStartName = "cutpool_start"
+     * extern const char *const kHighsCallbackDataOutCutpoolStartName = "cutpool_start"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutCutpoolStartName$segment() {
@@ -3887,7 +3887,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolStartName = "cutpool_start"
+     * extern const char *const kHighsCallbackDataOutCutpoolStartName = "cutpool_start"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutCutpoolStartName() {
@@ -3897,7 +3897,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolStartName = "cutpool_start"
+     * extern const char *const kHighsCallbackDataOutCutpoolStartName = "cutpool_start"
      * }
      */
     public static void kHighsCallbackDataOutCutpoolStartName(MemorySegment varValue) {
@@ -3912,7 +3912,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolIndexName = "cutpool_index"
+     * extern const char *const kHighsCallbackDataOutCutpoolIndexName = "cutpool_index"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutCutpoolIndexName$layout() {
@@ -3922,7 +3922,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolIndexName = "cutpool_index"
+     * extern const char *const kHighsCallbackDataOutCutpoolIndexName = "cutpool_index"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutCutpoolIndexName$segment() {
@@ -3932,7 +3932,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolIndexName = "cutpool_index"
+     * extern const char *const kHighsCallbackDataOutCutpoolIndexName = "cutpool_index"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutCutpoolIndexName() {
@@ -3942,7 +3942,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolIndexName = "cutpool_index"
+     * extern const char *const kHighsCallbackDataOutCutpoolIndexName = "cutpool_index"
      * }
      */
     public static void kHighsCallbackDataOutCutpoolIndexName(MemorySegment varValue) {
@@ -3957,7 +3957,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolValueName = "cutpool_value"
+     * extern const char *const kHighsCallbackDataOutCutpoolValueName = "cutpool_value"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutCutpoolValueName$layout() {
@@ -3967,7 +3967,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolValueName = "cutpool_value"
+     * extern const char *const kHighsCallbackDataOutCutpoolValueName = "cutpool_value"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutCutpoolValueName$segment() {
@@ -3977,7 +3977,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolValueName = "cutpool_value"
+     * extern const char *const kHighsCallbackDataOutCutpoolValueName = "cutpool_value"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutCutpoolValueName() {
@@ -3987,7 +3987,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolValueName = "cutpool_value"
+     * extern const char *const kHighsCallbackDataOutCutpoolValueName = "cutpool_value"
      * }
      */
     public static void kHighsCallbackDataOutCutpoolValueName(MemorySegment varValue) {
@@ -4002,7 +4002,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolLowerName = "cutpool_lower"
+     * extern const char *const kHighsCallbackDataOutCutpoolLowerName = "cutpool_lower"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutCutpoolLowerName$layout() {
@@ -4012,7 +4012,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolLowerName = "cutpool_lower"
+     * extern const char *const kHighsCallbackDataOutCutpoolLowerName = "cutpool_lower"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutCutpoolLowerName$segment() {
@@ -4022,7 +4022,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolLowerName = "cutpool_lower"
+     * extern const char *const kHighsCallbackDataOutCutpoolLowerName = "cutpool_lower"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutCutpoolLowerName() {
@@ -4032,7 +4032,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolLowerName = "cutpool_lower"
+     * extern const char *const kHighsCallbackDataOutCutpoolLowerName = "cutpool_lower"
      * }
      */
     public static void kHighsCallbackDataOutCutpoolLowerName(MemorySegment varValue) {
@@ -4047,7 +4047,7 @@ public class highs_c_api_h {
     /**
      * Layout for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolUpperName = "cutpool_upper"
+     * extern const char *const kHighsCallbackDataOutCutpoolUpperName = "cutpool_upper"
      * }
      */
     public static AddressLayout kHighsCallbackDataOutCutpoolUpperName$layout() {
@@ -4057,7 +4057,7 @@ public class highs_c_api_h {
     /**
      * Segment for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolUpperName = "cutpool_upper"
+     * extern const char *const kHighsCallbackDataOutCutpoolUpperName = "cutpool_upper"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutCutpoolUpperName$segment() {
@@ -4067,7 +4067,7 @@ public class highs_c_api_h {
     /**
      * Getter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolUpperName = "cutpool_upper"
+     * extern const char *const kHighsCallbackDataOutCutpoolUpperName = "cutpool_upper"
      * }
      */
     public static MemorySegment kHighsCallbackDataOutCutpoolUpperName() {
@@ -4077,7 +4077,7 @@ public class highs_c_api_h {
     /**
      * Setter for variable:
      * {@snippet lang=c :
-     * const char *const kHighsCallbackDataOutCutpoolUpperName = "cutpool_upper"
+     * extern const char *const kHighsCallbackDataOutCutpoolUpperName = "cutpool_upper"
      * }
      */
     public static void kHighsCallbackDataOutCutpoolUpperName(MemorySegment varValue) {
