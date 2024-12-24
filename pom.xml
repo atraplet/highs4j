@@ -61,7 +61,7 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>33.3.1-jre</version>
+            <version>33.4.0-jre</version>
         </dependency>
         <dependency>
             <groupId>org.scijava</groupId>
@@ -78,13 +78,13 @@
         <dependency>
             <groupId>com.ustermetrics</groupId>
             <artifactId>highs4j-native</artifactId>
-            <version>0.2.0-1.8.1</version>
+            <version>1.0.0-1.9.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.11.3</version>
+            <version>5.11.4</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
