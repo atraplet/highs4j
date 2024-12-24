@@ -78,16 +78,15 @@ public class highs4j_c_api_h {
     public static final ValueLayout.OfDouble C_DOUBLE = ValueLayout.JAVA_DOUBLE;
     public static final AddressLayout C_POINTER = ValueLayout.ADDRESS
             .withTargetLayout(MemoryLayout.sequenceLayout(java.lang.Long.MAX_VALUE, JAVA_BYTE));
-    public static final ValueLayout.OfLong C_LONG = ValueLayout.JAVA_LONG;
 
     private static class Highs_lpCall {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_DOUBLE,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -160,12 +159,12 @@ public class highs4j_c_api_h {
 
     private static class Highs_mipCall {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_DOUBLE,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -235,14 +234,14 @@ public class highs4j_c_api_h {
 
     private static class Highs_qpCall {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_DOUBLE,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -487,7 +486,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_versionMajor {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG    );
+            highs4j_c_api_h.C_LONG_LONG    );
 
         public static final MemorySegment ADDR = highs4j_c_api_h.findOrThrow("Highs_versionMajor");
 
@@ -543,7 +542,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_versionMinor {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG    );
+            highs4j_c_api_h.C_LONG_LONG    );
 
         public static final MemorySegment ADDR = highs4j_c_api_h.findOrThrow("Highs_versionMinor");
 
@@ -599,7 +598,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_versionPatch {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG    );
+            highs4j_c_api_h.C_LONG_LONG    );
 
         public static final MemorySegment ADDR = highs4j_c_api_h.findOrThrow("Highs_versionPatch");
 
@@ -711,7 +710,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_readModel {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -770,7 +769,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_writeModel {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -829,7 +828,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_writePresolvedModel {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -888,7 +887,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_clear {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -946,7 +945,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_clearModel {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -1004,7 +1003,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_clearSolver {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -1062,7 +1061,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_presolve {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -1120,7 +1119,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_run {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -1178,7 +1177,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_postsolve {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -1239,7 +1238,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_writeSolution {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -1298,7 +1297,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_writeSolutionPretty {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -1357,13 +1356,13 @@ public class highs4j_c_api_h {
 
     private static class Highs_passLp {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_DOUBLE,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -1429,13 +1428,13 @@ public class highs4j_c_api_h {
 
     private static class Highs_passMip {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_DOUBLE,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -1502,15 +1501,15 @@ public class highs4j_c_api_h {
 
     private static class Highs_passModel {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_DOUBLE,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -1580,11 +1579,11 @@ public class highs4j_c_api_h {
 
     private static class Highs_passHessian {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -1644,9 +1643,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_passLinearObjectives {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -1709,14 +1708,14 @@ public class highs4j_c_api_h {
 
     private static class Highs_addLinearObjective {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_DOUBLE,
             highs4j_c_api_h.C_DOUBLE,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_DOUBLE,
             highs4j_c_api_h.C_DOUBLE,
-            highs4j_c_api_h.C_LONG
+            highs4j_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs4j_c_api_h.findOrThrow("Highs_addLinearObjective");
@@ -1773,7 +1772,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_clearLinearObjectives {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -1831,9 +1830,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_passRowName {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -1891,9 +1890,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_passColName {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -1951,7 +1950,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_passModelName {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -2010,7 +2009,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_readOptions {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -2069,10 +2068,10 @@ public class highs4j_c_api_h {
 
     private static class Highs_setBoolOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG
+            highs4j_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs4j_c_api_h.findOrThrow("Highs_setBoolOptionValue");
@@ -2129,10 +2128,10 @@ public class highs4j_c_api_h {
 
     private static class Highs_setIntOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG
+            highs4j_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs4j_c_api_h.findOrThrow("Highs_setIntOptionValue");
@@ -2189,7 +2188,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_setDoubleOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_DOUBLE
@@ -2249,7 +2248,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_setStringOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -2309,7 +2308,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getBoolOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -2369,7 +2368,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getIntOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -2429,7 +2428,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getDoubleOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -2489,7 +2488,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getStringOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -2549,7 +2548,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getOptionType {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -2609,7 +2608,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_resetOptions {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -2667,7 +2666,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_writeOptions {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -2726,7 +2725,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_writeOptionsDeviations {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -2785,7 +2784,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getNumOptions {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -2843,9 +2842,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_getOptionName {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -2903,7 +2902,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getBoolOptionValues {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -2964,7 +2963,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getIntOptionValues {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -3027,7 +3026,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getDoubleOptionValues {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -3090,7 +3089,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getStringOptionValues {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -3151,7 +3150,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getIntInfoValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -3211,7 +3210,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getDoubleInfoValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -3271,7 +3270,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getInt64InfoValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -3331,7 +3330,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getInfoType {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -3391,7 +3390,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getSolution {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -3453,7 +3452,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getBasis {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -3513,7 +3512,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getModelStatus {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -3571,7 +3570,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getDualRay {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -3631,7 +3630,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getDualUnboundednessDirection {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -3691,7 +3690,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getPrimalRay {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -3809,7 +3808,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getBasicVariables {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -3868,9 +3867,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_getBasisInverseRow {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -3930,9 +3929,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_getBasisInverseCol {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -3992,7 +3991,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getBasisSolve {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -4054,7 +4053,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getBasisTransposeSolve {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -4116,9 +4115,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_getReducedRow {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -4178,9 +4177,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_getReducedColumn {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -4240,7 +4239,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_setBasis {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -4300,7 +4299,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_setLogicalBasis {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -4358,7 +4357,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_setSolution {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -4420,9 +4419,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_setSparseSolution {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -4481,7 +4480,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_setCallback {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -4541,7 +4540,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_startCallback {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_INT
         );
@@ -4600,7 +4599,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_stopCallback {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_INT
         );
@@ -4717,7 +4716,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_zeroAllClocks {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -4775,12 +4774,12 @@ public class highs4j_c_api_h {
 
     private static class Highs_addCol {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_DOUBLE,
             highs4j_c_api_h.C_DOUBLE,
             highs4j_c_api_h.C_DOUBLE,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -4839,13 +4838,13 @@ public class highs4j_c_api_h {
 
     private static class Highs_addCols {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -4905,7 +4904,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_addVar {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_DOUBLE,
             highs4j_c_api_h.C_DOUBLE
@@ -4965,9 +4964,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_addVars {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -5026,11 +5025,11 @@ public class highs4j_c_api_h {
 
     private static class Highs_addRow {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_DOUBLE,
             highs4j_c_api_h.C_DOUBLE,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -5089,12 +5088,12 @@ public class highs4j_c_api_h {
 
     private static class Highs_addRows {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -5154,9 +5153,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeObjectiveSense {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG
+            highs4j_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs4j_c_api_h.findOrThrow("Highs_changeObjectiveSense");
@@ -5213,7 +5212,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeObjectiveOffset {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_DOUBLE
         );
@@ -5272,10 +5271,10 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeColIntegrality {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs4j_c_api_h.findOrThrow("Highs_changeColIntegrality");
@@ -5332,10 +5331,10 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeColsIntegralityByRange {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -5393,9 +5392,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeColsIntegralityBySet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -5454,7 +5453,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeColsIntegralityByMask {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -5514,7 +5513,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_clearIntegrality {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -5572,9 +5571,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeColCost {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_DOUBLE
         );
 
@@ -5632,10 +5631,10 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeColsCostByRange {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -5693,9 +5692,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeColsCostBySet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -5754,7 +5753,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeColsCostByMask {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -5814,9 +5813,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeColBounds {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_DOUBLE,
             highs4j_c_api_h.C_DOUBLE
         );
@@ -5875,10 +5874,10 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeColsBoundsByRange {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -5937,9 +5936,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeColsBoundsBySet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -5999,7 +5998,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeColsBoundsByMask {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -6060,9 +6059,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeRowBounds {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_DOUBLE,
             highs4j_c_api_h.C_DOUBLE
         );
@@ -6121,9 +6120,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeRowsBoundsBySet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -6183,7 +6182,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeRowsBoundsByMask {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -6244,10 +6243,10 @@ public class highs4j_c_api_h {
 
     private static class Highs_changeCoeff {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_DOUBLE
         );
 
@@ -6305,7 +6304,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getObjectiveSense {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -6364,7 +6363,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getObjectiveOffset {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -6423,10 +6422,10 @@ public class highs4j_c_api_h {
 
     private static class Highs_getColsByRange {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -6491,9 +6490,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_getColsBySet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -6559,7 +6558,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getColsByMask {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -6626,10 +6625,10 @@ public class highs4j_c_api_h {
 
     private static class Highs_getRowsByRange {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -6693,9 +6692,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_getRowsBySet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -6760,7 +6759,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getRowsByMask {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -6826,9 +6825,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_getRowName {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -6886,7 +6885,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getRowByName {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -6946,9 +6945,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_getColName {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -7006,7 +7005,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getColByName {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -7066,9 +7065,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_getColIntegrality {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -7126,10 +7125,10 @@ public class highs4j_c_api_h {
 
     private static class Highs_deleteColsByRange {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs4j_c_api_h.findOrThrow("Highs_deleteColsByRange");
@@ -7186,9 +7185,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_deleteColsBySet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -7246,7 +7245,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_deleteColsByMask {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -7305,10 +7304,10 @@ public class highs4j_c_api_h {
 
     private static class Highs_deleteRowsByRange {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_INT,
-            highs4j_c_api_h.C_LONG
+            highs4j_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs4j_c_api_h.findOrThrow("Highs_deleteRowsByRange");
@@ -7365,9 +7364,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_deleteRowsBySet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -7425,7 +7424,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_deleteRowsByMask {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -7484,9 +7483,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_scaleCol {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_DOUBLE
         );
 
@@ -7544,9 +7543,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_scaleRow {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_DOUBLE
         );
 
@@ -7662,7 +7661,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getSizeofHighsInt {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -7720,7 +7719,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getNumCol {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -7778,7 +7777,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getNumRow {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -7836,7 +7835,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getNumNz {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -7894,7 +7893,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getHessianNumNz {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -7952,7 +7951,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getPresolvedNumCol {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -8010,7 +8009,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getPresolvedNumRow {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -8068,7 +8067,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getPresolvedNumNz {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -8126,10 +8125,10 @@ public class highs4j_c_api_h {
 
     private static class Highs_getModel {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -8204,9 +8203,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_getLp {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -8277,9 +8276,9 @@ public class highs4j_c_api_h {
 
     private static class Highs_getPresolvedLp {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -8350,7 +8349,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_crossover {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_INT,
             highs4j_c_api_h.C_INT,
@@ -8413,7 +8412,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getRanging {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -8495,7 +8494,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_feasibilityRelaxation {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_DOUBLE,
             highs4j_c_api_h.C_DOUBLE,
@@ -8559,7 +8558,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_resetGlobalScheduler {
         public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            highs4j_c_api_h.C_LONG
+            highs4j_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs4j_c_api_h.findOrThrow("Highs_resetGlobalScheduler");
@@ -8731,10 +8730,10 @@ public class highs4j_c_api_h {
 
     private static class Highs_call {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
@@ -8806,7 +8805,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_runQuiet {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -8864,7 +8863,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_setHighsLogfile {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -8923,7 +8922,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_setHighsOutput {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
         );
@@ -8982,7 +8981,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getIterationCount {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -9040,7 +9039,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getSimplexIterationCount {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -9098,10 +9097,10 @@ public class highs4j_c_api_h {
 
     private static class Highs_setHighsBoolOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG
+            highs4j_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs4j_c_api_h.findOrThrow("Highs_setHighsBoolOptionValue");
@@ -9158,10 +9157,10 @@ public class highs4j_c_api_h {
 
     private static class Highs_setHighsIntOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
-            highs4j_c_api_h.C_LONG
+            highs4j_c_api_h.C_LONG_LONG
         );
 
         public static final MemorySegment ADDR = highs4j_c_api_h.findOrThrow("Highs_setHighsIntOptionValue");
@@ -9218,7 +9217,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_setHighsDoubleOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_DOUBLE
@@ -9278,7 +9277,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_setHighsStringOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -9338,7 +9337,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_setHighsOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -9398,7 +9397,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getHighsBoolOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -9458,7 +9457,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getHighsIntOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -9518,7 +9517,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getHighsDoubleOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -9578,7 +9577,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getHighsStringOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -9638,7 +9637,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getHighsOptionType {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -9698,7 +9697,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_resetHighsOptions {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -9756,7 +9755,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getHighsIntInfoValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -9816,7 +9815,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getHighsDoubleInfoValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -9876,7 +9875,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getNumCols {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -9934,7 +9933,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getNumRows {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
@@ -10108,7 +10107,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_setOptionValue {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER,
             highs4j_c_api_h.C_POINTER
@@ -10168,7 +10167,7 @@ public class highs4j_c_api_h {
 
     private static class Highs_getScaledModelStatus {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            highs4j_c_api_h.C_LONG,
+            highs4j_c_api_h.C_LONG_LONG,
             highs4j_c_api_h.C_POINTER
         );
 
