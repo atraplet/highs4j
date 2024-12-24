@@ -11083,5 +11083,41 @@ public class highs4j_c_api_h {
         }
         return Holder.K_HIGHS_CALLBACK_DATA_OUT_CUTPOOL_UPPER_NAME;
     }
+    /**
+     * {@snippet lang=c :
+     * #define K_HIGHS_CALLBACK_DATA_OUT_PRIMAL_SOLUTION_STATUS_NAME "primal_solution_status"
+     * }
+     */
+    public static MemorySegment K_HIGHS_CALLBACK_DATA_OUT_PRIMAL_SOLUTION_STATUS_NAME() {
+        class Holder {
+            static final MemorySegment K_HIGHS_CALLBACK_DATA_OUT_PRIMAL_SOLUTION_STATUS_NAME
+                = highs4j_c_api_h.LIBRARY_ARENA.allocateFrom("primal_solution_status");
+        }
+        return Holder.K_HIGHS_CALLBACK_DATA_OUT_PRIMAL_SOLUTION_STATUS_NAME;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define K_HIGHS_CALLBACK_DATA_OUT_DUAL_SOLUTION_STATUS_NAME "dual_solution_status"
+     * }
+     */
+    public static MemorySegment K_HIGHS_CALLBACK_DATA_OUT_DUAL_SOLUTION_STATUS_NAME() {
+        class Holder {
+            static final MemorySegment K_HIGHS_CALLBACK_DATA_OUT_DUAL_SOLUTION_STATUS_NAME
+                = highs4j_c_api_h.LIBRARY_ARENA.allocateFrom("dual_solution_status");
+        }
+        return Holder.K_HIGHS_CALLBACK_DATA_OUT_DUAL_SOLUTION_STATUS_NAME;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define K_HIGHS_CALLBACK_DATA_OUT_BASIS_VALIDITY_NAME "basis_validity"
+     * }
+     */
+    public static MemorySegment K_HIGHS_CALLBACK_DATA_OUT_BASIS_VALIDITY_NAME() {
+        class Holder {
+            static final MemorySegment K_HIGHS_CALLBACK_DATA_OUT_BASIS_VALIDITY_NAME
+                = highs4j_c_api_h.LIBRARY_ARENA.allocateFrom("basis_validity");
+        }
+        return Holder.K_HIGHS_CALLBACK_DATA_OUT_BASIS_VALIDITY_NAME;
+    }
 }
 

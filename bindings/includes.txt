@@ -6,6 +6,7 @@
 --include-constant K_HIGHS_BASIS_STATUS_ZERO                               # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_BASIS_VALIDITY_INVALID                          # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_BASIS_VALIDITY_VALID                            # header: HiGHS/src/interfaces/highs4j_c_api.h
+--include-constant K_HIGHS_CALLBACK_DATA_OUT_BASIS_VALIDITY_NAME           # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_CALLBACK_DATA_OUT_CUTPOOL_INDEX_NAME            # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_CALLBACK_DATA_OUT_CUTPOOL_LOWER_NAME            # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_CALLBACK_DATA_OUT_CUTPOOL_NUM_COL_NAME          # header: HiGHS/src/interfaces/highs4j_c_api.h
@@ -14,6 +15,7 @@
 --include-constant K_HIGHS_CALLBACK_DATA_OUT_CUTPOOL_START_NAME            # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_CALLBACK_DATA_OUT_CUTPOOL_UPPER_NAME            # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_CALLBACK_DATA_OUT_CUTPOOL_VALUE_NAME            # header: HiGHS/src/interfaces/highs4j_c_api.h
+--include-constant K_HIGHS_CALLBACK_DATA_OUT_DUAL_SOLUTION_STATUS_NAME     # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_CALLBACK_DATA_OUT_IPM_ITERATION_COUNT_NAME      # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_CALLBACK_DATA_OUT_LOG_TYPE_NAME                 # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_CALLBACK_DATA_OUT_MIP_DUAL_BOUND_NAME           # header: HiGHS/src/interfaces/highs4j_c_api.h
@@ -24,6 +26,7 @@
 --include-constant K_HIGHS_CALLBACK_DATA_OUT_MIP_TOTAL_LP_ITERATIONS_NAME  # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_CALLBACK_DATA_OUT_OBJECTIVE_FUNCTION_VALUE_NAME # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_CALLBACK_DATA_OUT_PDLPI_TERATION_COUNT_NAME     # header: HiGHS/src/interfaces/highs4j_c_api.h
+--include-constant K_HIGHS_CALLBACK_DATA_OUT_PRIMAL_SOLUTION_STATUS_NAME   # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_CALLBACK_DATA_OUT_RUNNING_TIME_NAME             # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_CALLBACK_DATA_OUT_SIMPLEX_ITERATION_COUNT_NAME  # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_CALLBACK_IPM_INTERRUPT                          # header: HiGHS/src/interfaces/highs4j_c_api.h
