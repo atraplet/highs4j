@@ -22,12 +22,12 @@ INCLUDES="${HIGHS4J}"/bindings/includes.txt
 rm -f "${TMP_INCLUDES}"
 rm -f "${INCLUDES}"
 ${JEXTRACT} \
-  --define-macro HIGHSINT64=on \
+  --define-macro HIGHSINT64=ON \
   --include-dir "${HIGHS}"/src \
   --include-dir "${HIGHS}"/build \
   --dump-includes "${TMP_INCLUDES}" \
-  "${HIGHS}"/src/interfaces/highs_c_api.h
+  "${HIGHS}"/src/interfaces/highs4j_c_api.h
 
 # select symbols
-grep "highs" "${TMP_INCLUDES}" >"${INCLUDES}"
+grep "highs" "${TMP_INCLUDES}" | grep -v "include-var" >"${INCLUDES}"
 rm -f "${TMP_INCLUDES}"
