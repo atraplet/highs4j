@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.lang.foreign.Arena;
 
 import static com.ustermetrics.highs4j.bindings.highs4j_c_api_h.*;
+import static java.lang.foreign.MemorySegment.NULL;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BindingsTest {
@@ -30,21 +31,24 @@ class BindingsTest {
         val aFormat = K_HIGHS_MATRIX_FORMAT_COLWISE();
 
         try (val arena = Arena.ofConfined()) {
+            val highsSeg = Highs_create();
+
+            val infinity = Highs_getInfinity(highsSeg);
+
             val colCostSeg = arena.allocateFrom(C_DOUBLE, 1., 1.);
             val colLowerSeg = arena.allocateFrom(C_DOUBLE, 0., 1.);
-            val colUpperSeg = arena.allocateFrom(C_DOUBLE, 4., 1e30);
-            val rowLowerSeg = arena.allocateFrom(C_DOUBLE, -1e30, 5., 6.);
-            val rowUpperSeg = arena.allocateFrom(C_DOUBLE, 7., 15., 1e30);
+            val colUpperSeg = arena.allocateFrom(C_DOUBLE, 4., infinity);
+            val rowLowerSeg = arena.allocateFrom(C_DOUBLE, -infinity, 5., 6.);
+            val rowUpperSeg = arena.allocateFrom(C_DOUBLE, 7., 15., infinity);
             val aStartSeg = arena.allocateFrom(C_LONG_LONG, 0, 2);
             val aIndexSeg = arena.allocateFrom(C_LONG_LONG, 1, 2, 0, 1, 2);
             val aValueSeg = arena.allocateFrom(C_DOUBLE, 1., 3., 1., 2., 2.);
 
-            val highsSeg = Highs_create();
-
             assertEquals(K_HIGHS_STATUS_OK(), Highs_setBoolOptionValue(highsSeg, arena.allocateFrom("output_flag"), 0));
 
-            assertEquals(K_HIGHS_STATUS_OK(), Highs_passLp(highsSeg, numCol, numRow, numNz, aFormat, sense, offset,
-                    colCostSeg, colLowerSeg, colUpperSeg, rowLowerSeg, rowUpperSeg, aStartSeg, aIndexSeg, aValueSeg));
+            assertEquals(K_HIGHS_STATUS_OK(), Highs_passModel(highsSeg, numCol, numRow, numNz, 0, aFormat, 0, sense,
+                    offset, colCostSeg, colLowerSeg, colUpperSeg, rowLowerSeg, rowUpperSeg, aStartSeg, aIndexSeg,
+                    aValueSeg, NULL, NULL, NULL, NULL));
 
             assertEquals(K_HIGHS_STATUS_OK(), Highs_run(highsSeg));
 
