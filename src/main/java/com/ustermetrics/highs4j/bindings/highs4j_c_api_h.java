@@ -10717,6 +10717,15 @@ public class highs4j_c_api_h {
     public static long K_HIGHS_MODEL_STATUS_INTERRUPT() {
         return K_HIGHS_MODEL_STATUS_INTERRUPT;
     }
+    private static final long K_HIGHS_MODEL_STATUS_MEMORY_LIMIT = 18L;
+    /**
+     * {@snippet lang=c :
+     * #define K_HIGHS_MODEL_STATUS_MEMORY_LIMIT 18
+     * }
+     */
+    public static long K_HIGHS_MODEL_STATUS_MEMORY_LIMIT() {
+        return K_HIGHS_MODEL_STATUS_MEMORY_LIMIT;
+    }
     private static final long K_HIGHS_BASIS_STATUS_LOWER = 0L;
     /**
      * {@snippet lang=c :

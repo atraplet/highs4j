@@ -15,6 +15,7 @@
 --include-constant K_HIGHS_MODEL_STATUS_INTERRUPT                  # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_MODEL_STATUS_ITERATION_LIMIT            # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_MODEL_STATUS_LOAD_ERROR                 # header: HiGHS/src/interfaces/highs4j_c_api.h
+--include-constant K_HIGHS_MODEL_STATUS_MEMORY_LIMIT               # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_MODEL_STATUS_MODEL_EMPTY                # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_MODEL_STATUS_MODEL_ERROR                # header: HiGHS/src/interfaces/highs4j_c_api.h
 --include-constant K_HIGHS_MODEL_STATUS_NOTSET                     # header: HiGHS/src/interfaces/highs4j_c_api.h
