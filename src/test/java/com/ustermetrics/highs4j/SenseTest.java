@@ -11,7 +11,7 @@ class SenseTest {
 
     @ParameterizedTest
     @ValueSource(ints = {-1, 1})
-    void valueOfThrowsNoException(int sense) {
+    void valueOfDoesNotThrow(int sense) {
         assertDoesNotThrow(() -> Sense.valueOf(sense));
     }
 

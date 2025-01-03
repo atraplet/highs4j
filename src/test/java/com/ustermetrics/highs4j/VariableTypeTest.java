@@ -11,7 +11,7 @@ class VariableTypeTest {
 
     @ParameterizedTest
     @ValueSource(ints = {0, 1, 2, 3, 4})
-    void valueOfThrowsNoException(int type) {
+    void valueOfDoesNotThrow(int type) {
         assertDoesNotThrow(() -> VariableType.valueOf(type));
     }
 

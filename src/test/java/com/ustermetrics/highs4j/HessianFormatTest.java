@@ -11,7 +11,7 @@ class HessianFormatTest {
 
     @ParameterizedTest
     @ValueSource(ints = {1, 2})
-    void valueOfThrowsNoException(int format) {
+    void valueOfDoesNotThrow(int format) {
         assertDoesNotThrow(() -> HessianFormat.valueOf(format));
     }
 
