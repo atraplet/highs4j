@@ -61,7 +61,7 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>33.4.5-jre</version>
+            <version>33.4.6-jre</version>
         </dependency>
         <dependency>
             <groupId>org.scijava</groupId>
@@ -108,7 +108,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.5.2</version>
+                <version>3.5.3</version>
                 <configuration>
                     <argLine>@{argLine} --enable-native-access=com.ustermetrics.highs4j</argLine>
                 </configuration>
