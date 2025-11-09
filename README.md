@@ -7,13 +7,11 @@
 [![Maven Central](https://img.shields.io/maven-central/v/com.ustermetrics/highs4j)](https://central.sonatype.com/artifact/com.ustermetrics/highs4j)
 [![Apache License, Version 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/atraplet/highs4j/blob/master/LICENSE)
 
-*This library requires JDK 23 as it depends on
-Java's [Foreign Function and Memory (FFM) API](https://docs.oracle.com/en/java/javase/23/core/foreign-function-and-memory-api.html).*
+*This library requires JDK 25 or later.*
 
 highs4j (HiGHS Solver for Java) is a Java library that provides an interface from the Java programming language to
-the native open source mathematical programming solver [HiGHS](https://ergo-code.github.io/HiGHS). It invokes the solver
-through
-Java's [Foreign Function and Memory (FFM) API](https://docs.oracle.com/en/java/javase/23/core/foreign-function-and-memory-api.html).
+the native open source mathematical programming solver [HiGHS](https://highs.dev). It invokes the solver through
+Java's [Foreign Function and Memory (FFM) API](https://docs.oracle.com/en/java/javase/25/core/foreign-function-and-memory-api.html).
 
 ## Usage
 
@@ -33,26 +31,30 @@ your `pom.xml`
 ### Native Library
 
 Either add the latest version of [highs4j-native](https://github.com/atraplet/highs4j-native)
-from [Maven Central](https://central.sonatype.com/artifact/com.ustermetrics/highs4j-native) to
-your `pom.xml`
+from [Maven Central](https://central.sonatype.com/artifact/com.ustermetrics/highs4j-native) to your `pom.xml`
 
 ```
 <dependency>
     <groupId>com.ustermetrics</groupId>
     <artifactId>highs4j-native</artifactId>
     <version>x.y.z</version>
+    <classifier>platform</classifier>
     <scope>runtime</scope>
 </dependency>
 ```
 
-or install the native solver on the machine and add the location to the `java.library.path`. highs4j dynamically
-loads the native solver.
+where `x.y.z` is the version of the library and `platform` is one of `linux_64`, `windows_64`, or `osx_arm64`. If no
+`classifier` is specified, binaries for all platforms are included.
+
+Or alternatively install the native solver on the machine and add the location to the `java.library.path`. highs4j
+dynamically loads the native solver.
 
 ### Run Code
 
 Since highs4j invokes some restricted methods of the FFM API,
-use `--enable-native-access=com.ustermetrics.highs4j` or `--enable-native-access=ALL-UNNAMED` (if you are not using
-the Java Platform Module System) to avoid warnings from the Java runtime.
+use `--enable-native-access=com.ustermetrics.highs4j --enable-native-access=org.scijava.nativelib` or
+`--enable-native-access=ALL-UNNAMED` (if you are not using the Java Platform Module System) to avoid warnings from the
+Java runtime.
 
 ## Build
 
@@ -90,6 +92,6 @@ release.
 ## Credits
 
 This project is based on the native open source mathematical programming
-solver [HiGHS](https://ergo-code.github.io/HiGHS), which is developed and maintained by Julian Hall, Ivet Galabova, Qi
-Huangfu, Leona Gottwald, Michael Feldmeier, and other contributors. For details see https://ergo-code.github.io/HiGHS
-and https://github.com/ERGO-Code/HiGHS.
+solver [HiGHS](https://highs.dev), which is developed and maintained by Julian Hall, Ivet Galabova, Qi
+Huangfu, Leona Gottwald, Michael Feldmeier, and other contributors. For details see https://highs.dev,
+https://ergo-code.github.io/HiGHS, and https://github.com/ERGO-Code/HiGHS.
