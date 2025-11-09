@@ -9,8 +9,10 @@
     <version>0-SNAPSHOT</version>
 
     <properties>
-        <java.version>23</java.version>
+        <java.version>25</java.version>
         <lombok.version>1.18.42</lombok.version>
+        <highs4j-native.version>2.0.0-1.12.0</highs4j-native.version>
+        <slf4j.version>2.0.17</slf4j.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.proc>full</maven.compiler.proc>
@@ -46,17 +48,6 @@
         <url>${git.repository}/tree/master</url>
     </scm>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
-
     <dependencies>
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -74,17 +65,22 @@
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
-
-        <dependency>
-            <groupId>com.ustermetrics</groupId>
-            <artifactId>highs4j-native</artifactId>
-            <version>1.0.0-1.9.0</version>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>6.0.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <version>${slf4j.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -110,13 +106,67 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.5.4</version>
                 <configuration>
-                    <argLine>@{argLine} --enable-native-access=com.ustermetrics.highs4j</argLine>
+                    <argLine>
+                        @{argLine} --enable-native-access=com.ustermetrics.highs4j
+                        --enable-native-access=org.scijava.nativelib
+                    </argLine>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
     <profiles>
+        <profile>
+            <id>linux</id>
+            <activation>
+                <os>
+                    <name>Linux</name>
+                </os>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>com.ustermetrics</groupId>
+                    <artifactId>highs4j-native</artifactId>
+                    <version>${highs4j-native.version}</version>
+                    <classifier>linux_64</classifier>
+                    <scope>test</scope>
+                </dependency>
+            </dependencies>
+        </profile>
+        <profile>
+            <id>windows</id>
+            <activation>
+                <os>
+                    <family>windows</family>
+                </os>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>com.ustermetrics</groupId>
+                    <artifactId>highs4j-native</artifactId>
+                    <version>${highs4j-native.version}</version>
+                    <classifier>windows_64</classifier>
+                    <scope>test</scope>
+                </dependency>
+            </dependencies>
+        </profile>
+        <profile>
+            <id>mac</id>
+            <activation>
+                <os>
+                    <family>mac</family>
+                </os>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>com.ustermetrics</groupId>
+                    <artifactId>highs4j-native</artifactId>
+                    <version>${highs4j-native.version}</version>
+                    <classifier>osx_arm64</classifier>
+                    <scope>test</scope>
+                </dependency>
+            </dependencies>
+        </profile>
         <profile>
             <id>release</id>
             <build>
@@ -168,14 +218,13 @@
                         </executions>
                     </plugin>
                     <plugin>
-                        <groupId>org.sonatype.plugins</groupId>
-                        <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>1.7.0</version>
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
+                        <version>0.9.0</version>
                         <extensions>true</extensions>
                         <configuration>
-                            <serverId>ossrh</serverId>
-                            <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                            <publishingServerId>central</publishingServerId>
+                            <autoPublish>true</autoPublish>
                         </configuration>
                     </plugin>
                 </plugins>
