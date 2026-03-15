@@ -66,27 +66,16 @@ if [ "${DUMP_INCLUDES}" = "true" ]; then
 
   # Dump included symbols
   "${JEXTRACT}" \
-    --define-macro FEATURE_FAER_SPARSE \
-    --define-macro FEATURE_PARDISO_MKL \
-    --define-macro FEATURE_PARDISO_ANY \
+    --define-macro HIGHSINT64=ON \
+    --define-macro HIPO=ON \
+    --include-dir "${REPO_DIR}"/highs \
     --dump-includes "${INCLUDES_FILE}" \
     "${HEADER_FILE_FULL_PATH}" || { echo "Error: Failed to dump symbols"; exit 1; }
 
   # Select symbols
-  grep "Clarabel" "${INCLUDES_FILE}" \
-    | grep -v "f32" \
-    | grep -v "\-\-include\-typedef ClarabelCscMatrix " \
-    | grep -v "\-\-include\-typedef ClarabelDefaultInfo " \
-    | grep -v "\-\-include\-typedef ClarabelDefaultSettings " \
-    | grep -v "\-\-include\-typedef ClarabelDefaultSolution " \
-    | grep -v "\-\-include\-typedef ClarabelDefaultSolver " \
-    | grep -v "\-\-include\-function clarabel_DefaultSolver_f64_set_termination_callback " \
-    | grep -v "\-\-include\-function clarabel_DefaultSolver_f64_unset_termination_callback " \
-    | grep -v "\-\-include\-typedef ClarabelCallbackFcn " \
-    | grep -v "\-\-include\-typedef ClarabelCallbackFcn_f64 " \
-    | grep -v "\-\-include\-typedef ClarabelSupportedConeT " \
-    | sed "s/Extracted from: .*Clarabel\.cpp/Extracted from: Clarabel.cpp/" \
-    | sed "s/header: .*Clarabel\.cpp/header: Clarabel.cpp/" >"${INCLUDES_FILE}".tmp && mv "${INCLUDES_FILE}".tmp "${INCLUDES_FILE}"
+  grep "HiGHS" "${INCLUDES_FILE}" \
+    | sed "s/Extracted from: .*HiGHS/Extracted from: HiGHS/" \
+    | sed "s/header: .*HiGHS/header: HiGHS/" >"${INCLUDES_FILE}".tmp && mv "${INCLUDES_FILE}".tmp "${INCLUDES_FILE}"
 
 else
 
@@ -97,11 +86,11 @@ else
 
   # Generate bindings
   "${JEXTRACT}" \
-    --define-macro FEATURE_FAER_SPARSE \
-    --define-macro FEATURE_PARDISO_MKL \
-    --define-macro FEATURE_PARDISO_ANY \
+    --define-macro HIGHSINT64=ON \
+    --define-macro HIPO=ON \
+    --include-dir "${REPO_DIR}"/highs \
     --target-package "${ARTIFACT_ID}".bindings \
-    --header-class-name Clarabel_h \
+    --header-class-name Highs_c_api_h \
     --output "${JAVA_SRC_DIR}" \
     @"${BINDINGS_DIR}"/includes.txt "${HEADER_FILE_FULL_PATH}" || { echo "Error: Failed to generate bindings"; exit 1; }
 
