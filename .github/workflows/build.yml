@@ -14,25 +14,49 @@ permissions:
   contents: read
 
 jobs:
-  build:
-    strategy:
-      matrix:
-        os: [ ubuntu-latest, windows-latest, macos-latest ]
-    runs-on: ${{ matrix.os }}
+  build-linux:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
       - uses: ./.github/actions/detect-jdk
-      - name: Set up JDK
+      - &setup_jdk
+        name: Set up JDK
         uses: actions/setup-java@v5
         with:
           java-version: ${{ env.JDK_VERSION }}
           distribution: 'temurin'
           cache: maven
+      - name: Install OpenBLAS on Linux
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libopenblas-dev
       - name: Build with Maven
         run: mvn -B clean verify -P coverage --file pom.xml
       - name: Upload coverage reports to Codecov
-        if: matrix.os == 'ubuntu-latest'
         uses: codecov/codecov-action@v5.5.2
         with:
           token: ${{ secrets.codecov_token }}
           slug: atraplet/highs4j
+
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: ./.github/actions/detect-jdk
+      - *setup_jdk
+      - name: Install OpenBLAS on Windows
+        shell: bash
+        run: |
+          vcpkg install openblas[threads]
+      - &build_with_maven
+        name: Build with Maven
+        run: mvn -B clean verify --file pom.xml
+
+  build-macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: ./.github/actions/detect-jdk
+      - *setup_jdk
+      - *build_with_maven
