@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.lang.foreign.Arena;
 
-import static com.ustermetrics.highs4j.bindings.highs4j_c_api_h.*;
+import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BindingsTest {
@@ -26,8 +26,8 @@ class BindingsTest {
         val numRow = 3;
         val numNz = 5;
         val offset = 3.;
-        val sense = K_HIGHS_OBJSENSE_MINIMIZE();
-        val aFormat = K_HIGHS_MATRIX_FORMAT_COLWISE();
+        val sense = kHighsObjSenseMinimize();
+        val aFormat = kHighsMatrixFormatColwise();
 
         try (val arena = Arena.ofConfined()) {
             val colCostSeg = arena.allocateFrom(C_DOUBLE, 1., 1.);
@@ -41,52 +41,52 @@ class BindingsTest {
 
             val highsSeg = Highs_create();
 
-            assertEquals(K_HIGHS_STATUS_OK(), Highs_setBoolOptionValue(highsSeg, arena.allocateFrom("output_flag"), 0));
+            assertEquals(kHighsStatusOk(), Highs_setBoolOptionValue(highsSeg, arena.allocateFrom("output_flag"), 0));
 
-            assertEquals(K_HIGHS_STATUS_OK(), Highs_passLp(highsSeg, numCol, numRow, numNz, aFormat, sense, offset,
+            assertEquals(kHighsStatusOk(), Highs_passLp(highsSeg, numCol, numRow, numNz, aFormat, sense, offset,
                     colCostSeg, colLowerSeg, colUpperSeg, rowLowerSeg, rowUpperSeg, aStartSeg, aIndexSeg, aValueSeg));
 
-            assertEquals(K_HIGHS_STATUS_OK(), Highs_run(highsSeg));
+            assertEquals(kHighsStatusOk(), Highs_run(highsSeg));
 
             val modelStatus = Highs_getModelStatus(highsSeg);
-            assertEquals(K_HIGHS_MODEL_STATUS_OPTIMAL(), modelStatus);
+            assertEquals(kHighsModelStatusOptimal(), modelStatus);
 
             val objectiveFunctionValueSeg = arena.allocate(C_DOUBLE);
-            assertEquals(K_HIGHS_STATUS_OK(), Highs_getDoubleInfoValue(highsSeg,
+            assertEquals(kHighsStatusOk(), Highs_getDoubleInfoValue(highsSeg,
                     arena.allocateFrom("objective_function_value"), objectiveFunctionValueSeg));
             val objectiveFunctionValue = objectiveFunctionValueSeg.get(C_DOUBLE, 0);
             val tol = 1e-8;
             assertEquals(5.75, objectiveFunctionValue, tol);
 
             val simplexIterationCountSeg = arena.allocate(C_LONG_LONG);
-            assertEquals(K_HIGHS_STATUS_OK(), Highs_getIntInfoValue(highsSeg,
+            assertEquals(kHighsStatusOk(), Highs_getIntInfoValue(highsSeg,
                     arena.allocateFrom("simplex_iteration_count"), simplexIterationCountSeg));
             val simplexIterationCount = simplexIterationCountSeg.get(C_LONG_LONG, 0);
             assertEquals(2, simplexIterationCount);
 
             val primalSolutionStatusSeg = arena.allocate(C_LONG_LONG);
-            assertEquals(K_HIGHS_STATUS_OK(), Highs_getIntInfoValue(highsSeg,
+            assertEquals(kHighsStatusOk(), Highs_getIntInfoValue(highsSeg,
                     arena.allocateFrom("primal_solution_status"), primalSolutionStatusSeg));
             val primalSolutionStatus = primalSolutionStatusSeg.get(C_LONG_LONG, 0);
-            assertEquals(K_HIGHS_SOLUTION_STATUS_FEASIBLE(), primalSolutionStatus);
+            assertEquals(kHighsSolutionStatusFeasible(), primalSolutionStatus);
 
             val dualSolutionStatusSeg = arena.allocate(C_LONG_LONG);
-            assertEquals(K_HIGHS_STATUS_OK(), Highs_getIntInfoValue(highsSeg,
+            assertEquals(kHighsStatusOk(), Highs_getIntInfoValue(highsSeg,
                     arena.allocateFrom("dual_solution_status"), dualSolutionStatusSeg));
             val dualSolutionStatus = dualSolutionStatusSeg.get(C_LONG_LONG, 0);
-            assertEquals(K_HIGHS_SOLUTION_STATUS_FEASIBLE(), dualSolutionStatus);
+            assertEquals(kHighsSolutionStatusFeasible(), dualSolutionStatus);
 
             val basisValiditySeg = arena.allocate(C_LONG_LONG);
-            assertEquals(K_HIGHS_STATUS_OK(), Highs_getIntInfoValue(highsSeg, arena.allocateFrom("basis_validity"),
+            assertEquals(kHighsStatusOk(), Highs_getIntInfoValue(highsSeg, arena.allocateFrom("basis_validity"),
                     basisValiditySeg));
             val basisValidity = basisValiditySeg.get(C_LONG_LONG, 0);
-            assertEquals(K_HIGHS_BASIS_VALIDITY_VALID(), basisValidity);
+            assertEquals(kHighsBasisValidityValid(), basisValidity);
 
             val colValueSeg = arena.allocate(C_DOUBLE, numCol);
             val colDualSeg = arena.allocate(C_DOUBLE, numCol);
             val rowValueSeg = arena.allocate(C_DOUBLE, numRow);
             val rowDualSeg = arena.allocate(C_DOUBLE, numRow);
-            assertEquals(K_HIGHS_STATUS_OK(), Highs_getSolution(highsSeg, colValueSeg, colDualSeg, rowValueSeg,
+            assertEquals(kHighsStatusOk(), Highs_getSolution(highsSeg, colValueSeg, colDualSeg, rowValueSeg,
                     rowDualSeg));
             val colValue = colValueSeg.toArray(C_DOUBLE);
             val colDual = colDualSeg.toArray(C_DOUBLE);
@@ -99,16 +99,16 @@ class BindingsTest {
 
             val colBasisStatusSeg = arena.allocate(C_LONG_LONG, numCol);
             val rowBasisStatusSeg = arena.allocate(C_LONG_LONG, numRow);
-            assertEquals(K_HIGHS_STATUS_OK(), Highs_getBasis(highsSeg, colBasisStatusSeg, rowBasisStatusSeg));
+            assertEquals(kHighsStatusOk(), Highs_getBasis(highsSeg, colBasisStatusSeg, rowBasisStatusSeg));
             val colBasisStatus = colBasisStatusSeg.toArray(C_LONG_LONG);
             val rowBasisStatus = rowBasisStatusSeg.toArray(C_LONG_LONG);
             assertArrayEquals(new long[]{1, 1}, colBasisStatus);
             assertArrayEquals(new long[]{1, 0, 0}, rowBasisStatus);
 
             val objectiveSenseSeg = arena.allocate(C_LONG_LONG);
-            assertEquals(K_HIGHS_STATUS_OK(), Highs_getObjectiveSense(highsSeg, objectiveSenseSeg));
+            assertEquals(kHighsStatusOk(), Highs_getObjectiveSense(highsSeg, objectiveSenseSeg));
             val objectiveSense = objectiveSenseSeg.get(C_LONG_LONG, 0);
-            assertEquals(K_HIGHS_OBJSENSE_MINIMIZE(), objectiveSense);
+            assertEquals(kHighsObjSenseMinimize(), objectiveSense);
 
             Highs_destroy(highsSeg);
         }
