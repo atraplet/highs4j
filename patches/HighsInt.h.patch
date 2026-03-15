@@ -1,0 +1,12 @@
+diff --git a/highs/util/HighsInt.h b/highs/util/HighsInt.h
+--- a/highs/util/HighsInt.h	(revision 3be639f037e0001b617c59830d3965f246ab5beb)
++++ b/highs/util/HighsInt.h	(date 1773586378671)
+@@ -21,7 +21,7 @@
+ #endif
+ #include <inttypes.h>
+
+-#include "HConfig.h"
++// #include "HConfig.h"
+
+ #ifdef HIGHSINT64
+ typedef int64_t HighsInt;
