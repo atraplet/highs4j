@@ -28,6 +28,18 @@ jobs:
           java-version: ${{ env.JDK_VERSION }}
           distribution: 'temurin'
           cache: maven
+      - name: Install OpenBLAS on Linux
+        if: matrix.os == 'ubuntu-latest'
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libopenblas-dev
+      - name: Install OpenBLAS on Windows and add to PATH
+        if: matrix.os == 'windows-latest'
+        shell: bash
+        run: |
+          vcpkg install openblas[threads]
+          echo "$VCPKG_INSTALLATION_ROOT/installed/x64-windows/bin" >> $GITHUB_PATH
       - name: Build with Maven
         run: mvn -B clean verify -P coverage --file pom.xml
       - name: Upload coverage reports to Codecov
