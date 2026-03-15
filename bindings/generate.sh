@@ -16,7 +16,7 @@ fi
 
 # Define project name, version, repo, and header file
 PROJECT_NAME=highs4j
-VERSION=v0.13.1
+VERSION=v1.13.1
 REPO="https://github.com/ERGO-Code/HiGHS"
 HEADER_FILE=highs/interfaces/highs_c_api.h
 
