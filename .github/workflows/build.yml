@@ -49,6 +49,10 @@ jobs:
         shell: bash
         run: |
           vcpkg install openblas[threads]
+      - name: Add vcpkg bin to PATH
+        shell: bash
+        run: |
+          echo "$VCPKG_INSTALLATION_ROOT/installed/x64-windows/bin" >> $GITHUB_PATH
       - &build_with_maven
         name: Build with Maven
         run: mvn -B clean verify --file pom.xml
