@@ -74,6 +74,9 @@ if [ "${DUMP_INCLUDES}" = "true" ]; then
 
   # Select symbols
   grep "HiGHS" "${INCLUDES_FILE}" \
+    | grep -v "\-\-include\-function Highs_lpCall " \
+    | grep -v "\-\-include\-function Highs_mipCall " \
+    | grep -v "\-\-include\-function Highs_qpCall " \
     | sed "s/Extracted from: .*HiGHS/Extracted from: HiGHS/" \
     | sed "s/header: .*HiGHS/header: HiGHS/" >"${INCLUDES_FILE}".tmp && mv "${INCLUDES_FILE}".tmp "${INCLUDES_FILE}"
 
