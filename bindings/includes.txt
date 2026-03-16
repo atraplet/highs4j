@@ -220,8 +220,6 @@
 --include-function Highs_getStringOptionValue                      # header: HiGHS\highs\interfaces\highs_c_api.h
 --include-function Highs_getStringOptionValues                     # header: HiGHS\highs\interfaces\highs_c_api.h
 --include-function Highs_githash                                   # header: HiGHS\highs\interfaces\highs_c_api.h
---include-function Highs_lpCall                                    # header: HiGHS\highs\interfaces\highs_c_api.h
---include-function Highs_mipCall                                   # header: HiGHS\highs\interfaces\highs_c_api.h
 --include-function Highs_passColName                               # header: HiGHS\highs\interfaces\highs_c_api.h
 --include-function Highs_passHessian                               # header: HiGHS\highs\interfaces\highs_c_api.h
 --include-function Highs_passLinearObjectives                      # header: HiGHS\highs\interfaces\highs_c_api.h
@@ -232,7 +230,6 @@
 --include-function Highs_passRowName                               # header: HiGHS\highs\interfaces\highs_c_api.h
 --include-function Highs_postsolve                                 # header: HiGHS\highs\interfaces\highs_c_api.h
 --include-function Highs_presolve                                  # header: HiGHS\highs\interfaces\highs_c_api.h
---include-function Highs_qpCall                                    # header: HiGHS\highs\interfaces\highs_c_api.h
 --include-function Highs_readModel                                 # header: HiGHS\highs\interfaces\highs_c_api.h
 --include-function Highs_readOptions                               # header: HiGHS\highs\interfaces\highs_c_api.h
 --include-function Highs_repairCallbackSolution                    # header: HiGHS\highs\interfaces\highs_c_api.h
