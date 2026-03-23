@@ -2,7 +2,8 @@ package com.ustermetrics.highs4j;
 
 import lombok.val;
 
-import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.*;
+import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.kHighsObjSenseMaximize;
+import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.kHighsObjSenseMinimize;
 
 public enum ObjectiveSense {
 

@@ -2,7 +2,8 @@ package com.ustermetrics.highs4j;
 
 import lombok.val;
 
-import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.*;
+import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.kHighsHessianFormatSquare;
+import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.kHighsHessianFormatTriangular;
 
 public enum HessianFormat {
 
