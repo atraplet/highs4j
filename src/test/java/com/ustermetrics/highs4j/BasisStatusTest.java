@@ -7,19 +7,19 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class StatusTest {
+class BasisStatusTest {
 
     @ParameterizedTest
-    @ValueSource(ints = {-1, 0, 1})
+    @ValueSource(ints = {0, 1, 2, 3, 4})
     void valueOfDoesNotThrow(int status) {
-        assertDoesNotThrow(() -> Status.valueOf(status));
+        assertDoesNotThrow(() -> BasisStatus.valueOf(status));
     }
 
     @Test
     void valueOf100ThrowsException() {
-        val exception = assertThrowsExactly(IllegalArgumentException.class, () -> Status.valueOf(100));
+        val exception = assertThrowsExactly(IllegalArgumentException.class, () -> BasisStatus.valueOf(100));
 
-        assertEquals("Unknown status 100", exception.getMessage());
+        assertEquals("Unknown basis status 100", exception.getMessage());
     }
 
 }
