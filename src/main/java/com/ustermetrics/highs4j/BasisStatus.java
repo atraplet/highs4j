@@ -4,15 +4,17 @@ import lombok.val;
 
 import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.*;
 
-public enum Status {
+public enum BasisStatus {
 
-    ERROR(kHighsStatusError()),
-    OK(kHighsStatusOk()),
-    WARNING(kHighsStatusWarning());
+    LOWER(kHighsBasisStatusLower()),
+    BASIC(kHighsBasisStatusBasic()),
+    UPPER(kHighsBasisStatusUpper()),
+    ZERO(kHighsBasisStatusZero()),
+    NONBASIC(kHighsBasisStatusNonbasic());
 
     private final int status;
 
-    Status(int status) {
+    BasisStatus(int status) {
         this.status = status;
     }
 
@@ -20,14 +22,14 @@ public enum Status {
         return status;
     }
 
-    static Status valueOf(int status) {
+    static BasisStatus valueOf(int status) {
         for (val c : values()) {
             if (c.status() == status) {
                 return c;
             }
         }
 
-        throw new IllegalArgumentException("Unknown status " + status);
+        throw new IllegalArgumentException("Unknown basis status " + status);
     }
 
 }
