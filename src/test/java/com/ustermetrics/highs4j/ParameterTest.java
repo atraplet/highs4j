@@ -75,4 +75,32 @@ class ParameterTest {
         assertThrows(IllegalArgumentException.class, () -> new DoubleParameter("", 1.0));
     }
 
+    @Test
+    void stringParameterReturnsExpectedValues() {
+        var p = new StringParameter("solver", "simplex");
+
+        assertEquals("solver", p.name());
+        assertEquals("simplex", p.value());
+    }
+
+    @Test
+    void stringParameterIsParameter() {
+        assertInstanceOf(Parameter.class, new StringParameter("solver", "ipm"));
+    }
+
+    @Test
+    void stringParameterThrowsOnNullName() {
+        assertThrows(NullPointerException.class, () -> new StringParameter(null, "x"));
+    }
+
+    @Test
+    void stringParameterThrowsOnBlankName() {
+        assertThrows(IllegalArgumentException.class, () -> new StringParameter(" ", "x"));
+    }
+
+    @Test
+    void stringParameterThrowsOnNullValue() {
+        assertThrows(NullPointerException.class, () -> new StringParameter("solver", null));
+    }
+
 }
