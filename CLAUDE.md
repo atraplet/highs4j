@@ -9,8 +9,8 @@ the native open source mathematical programming solver [HiGHS](https://highs.dev
 Java's [Foreign Function and Memory (FFM) API](https://docs.oracle.com/en/java/javase/25/core/foreign-function-and-memory-api.html).
 Requires JDK 25+.
 
-**Status**: Work in progress. Bindings and enums are implemented. Core classes (Model, Parameters, etc.) are not yet
-implemented.
+**Status**: Work in progress. Bindings, enums, and the `Parameter` sealed interface are implemented. Core classes
+(Model, etc.) are not yet implemented.
 
 ## Build Commands
 
@@ -35,9 +35,12 @@ mvn test -Dtest=BindingsTest#solveLinearProgramReturnsExpectedSolution
 
 ### Core Classes (`com.ustermetrics.highs4j`)
 
-Except enums, core classes need to be implemented (see clarabel4j for reference patterns):
+Except enums and the `Parameter` sealed interface, core classes need to be implemented (see clarabel4j for reference
+patterns):
 - **Model**: Main entry point. Should implement `AutoCloseable` with `Arena`-based memory management. Not yet implemented.
-- **Parameters**: Solver configuration. Should use record with builder pattern. Not yet implemented.
+- **Parameter**: Sealed interface for solver parameters. Permits `BooleanParameter`, `IntParameter`, `DoubleParameter`,
+  and `StringParameter`. Consumers pass solver parameters as `List<Parameter>` — there is no `Parameters` wrapper class.
+  Implemented.
 - **Status**: Operation status (OK, WARNING, ERROR).
 - **ModelStatus**: Solver result status (OPTIMAL, INFEASIBLE, UNBOUNDED, etc., 18 values).
 - **BasisStatus**: Basis status (LOWER, BASIC, UPPER, ZERO, NONBASIC).
