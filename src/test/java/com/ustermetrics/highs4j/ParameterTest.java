@@ -103,4 +103,32 @@ class ParameterTest {
         assertThrows(NullPointerException.class, () -> new StringParameter("solver", null));
     }
 
+    @Test
+    void parameterPatternMatchingCoversAllPermittedTypes() {
+        Parameter[] parameters = new Parameter[] {
+                new BooleanParameter("output_flag", true),
+                new IntParameter("threads", 4),
+                new DoubleParameter("time_limit", 60.0),
+                new StringParameter("solver", "simplex")
+        };
+
+        for (Parameter parameter : parameters) {
+            Object value = switch (parameter) {
+                case BooleanParameter p -> p.value();
+                case IntParameter p -> p.value();
+                case DoubleParameter p -> p.value();
+                case StringParameter p -> p.value();
+            };
+
+            if (parameter instanceof BooleanParameter) {
+                assertEquals(true, value);
+            } else if (parameter instanceof IntParameter) {
+                assertEquals(4, value);
+            } else if (parameter instanceof DoubleParameter) {
+                assertEquals(60.0, (Double) value, 0.0);
+            } else if (parameter instanceof StringParameter) {
+                assertEquals("simplex", value);
+            }
+        }
+    }
 }
