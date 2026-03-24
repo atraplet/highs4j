@@ -29,4 +29,27 @@ class ParameterTest {
         assertThrows(IllegalArgumentException.class, () -> new BooleanParameter(" ", true));
     }
 
+    @Test
+    void intParameterReturnsExpectedValues() {
+        var p = new IntParameter("threads", 4);
+
+        assertEquals("threads", p.name());
+        assertEquals(4, p.value());
+    }
+
+    @Test
+    void intParameterIsParameter() {
+        assertInstanceOf(Parameter.class, new IntParameter("threads", 0));
+    }
+
+    @Test
+    void intParameterThrowsOnNullName() {
+        assertThrows(NullPointerException.class, () -> new IntParameter(null, 1));
+    }
+
+    @Test
+    void intParameterThrowsOnBlankName() {
+        assertThrows(IllegalArgumentException.class, () -> new IntParameter("", 1));
+    }
+
 }
