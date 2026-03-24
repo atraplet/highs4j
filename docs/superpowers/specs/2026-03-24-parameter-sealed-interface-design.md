@@ -71,7 +71,25 @@ public record StringParameter(@NonNull String name, @NonNull String value) imple
 ### Integration with Model (future)
 
 When `Model` is implemented, it will accept `List<Parameter>` and apply them via pattern matching
-switch over the sealed interface, dispatching to the appropriate `Highs_set*OptionValue` binding.
+switch over the sealed interface, dispatching to the appropriate `Highs_set*OptionValue` binding:
+
+```java
+void setParameters(List<Parameter> parameters) {
+  for (val p : parameters) {
+      val status = switch (p) {
+          case BooleanParameter(val name, val value) ->
+              Highs_setBoolOptionValue(highsSeg, arena.allocateFrom(name), value ? 1 : 0);
+          case IntParameter(val name, val value) ->
+              Highs_setIntOptionValue(highsSeg, arena.allocateFrom(name), value);
+          case DoubleParameter(val name, val value) ->
+              Highs_setDoubleOptionValue(highsSeg, arena.allocateFrom(name), value);
+          case StringParameter(val name, val value) ->
+              Highs_setStringOptionValue(highsSeg, arena.allocateFrom(name), arena.allocateFrom(value));
+      };
+      // check status
+  }
+}
+```
 
 ## Files
 
