@@ -52,4 +52,27 @@ class ParameterTest {
         assertThrows(IllegalArgumentException.class, () -> new IntParameter("", 1));
     }
 
+    @Test
+    void doubleParameterReturnsExpectedValues() {
+        var p = new DoubleParameter("time_limit", 60.0);
+
+        assertEquals("time_limit", p.name());
+        assertEquals(60.0, p.value());
+    }
+
+    @Test
+    void doubleParameterIsParameter() {
+        assertInstanceOf(Parameter.class, new DoubleParameter("time_limit", 0.0));
+    }
+
+    @Test
+    void doubleParameterThrowsOnNullName() {
+        assertThrows(NullPointerException.class, () -> new DoubleParameter(null, 1.0));
+    }
+
+    @Test
+    void doubleParameterThrowsOnBlankName() {
+        assertThrows(IllegalArgumentException.class, () -> new DoubleParameter("", 1.0));
+    }
+
 }
