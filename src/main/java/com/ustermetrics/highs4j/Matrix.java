@@ -14,7 +14,7 @@ import static java.lang.Math.toIntExact;
 public record Matrix(
         int numRow,
         int numCol,
-        boolean colwise,
+        @NonNull MatrixFormat matrixFormat,
         long @NonNull [] start,
         long @NonNull [] index,
         double @NonNull [] value
@@ -25,6 +25,7 @@ public record Matrix(
         checkArgument(numCol > 0, "number of columns must be positive");
         checkArgument(start.length > 0, "length of the column index must be positive");
 
+        val colwise = matrixFormat == MatrixFormat.COLWISE;
         val numNz = value.length;
         checkArgument(numNz == index.length, "length of data must be equal to the length of the row index");
         checkArgument(start.length == (colwise ? numCol + 1 : numRow + 1),
