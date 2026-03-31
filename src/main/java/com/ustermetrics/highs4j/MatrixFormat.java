@@ -5,6 +5,11 @@ import lombok.val;
 import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.kHighsMatrixFormatColwise;
 import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.kHighsMatrixFormatRowwise;
 
+/**
+ * The storage format of a sparse {@link Matrix} in a <a href="https://highs.dev">HiGHS</a> model.
+ *
+ * @see <a href="https://highs.dev">HiGHS</a>
+ */
 public enum MatrixFormat {
 
     COLWISE(kHighsMatrixFormatColwise()),
