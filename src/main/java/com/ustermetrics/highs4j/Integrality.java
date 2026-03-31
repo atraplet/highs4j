@@ -4,6 +4,11 @@ import lombok.val;
 
 import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.*;
 
+/**
+ * The integrality type of a variable in a <a href="https://highs.dev">HiGHS</a> model.
+ *
+ * @see <a href="https://highs.dev">HiGHS</a>
+ */
 public enum Integrality {
 
     CONTINUOUS(kHighsVarTypeContinuous()),

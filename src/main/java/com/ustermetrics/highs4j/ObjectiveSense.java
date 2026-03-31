@@ -5,6 +5,11 @@ import lombok.val;
 import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.kHighsObjSenseMaximize;
 import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.kHighsObjSenseMinimize;
 
+/**
+ * The objective direction for a <a href="https://highs.dev">HiGHS</a> model.
+ *
+ * @see <a href="https://highs.dev">HiGHS</a>
+ */
 public enum ObjectiveSense {
 
     MINIMIZE(kHighsObjSenseMinimize()),

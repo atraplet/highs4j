@@ -4,6 +4,11 @@ import lombok.val;
 
 import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.*;
 
+/**
+ * The model status from solving a {@link Model} with the <a href="https://highs.dev">HiGHS</a> solver.
+ *
+ * @see <a href="https://highs.dev">HiGHS</a>
+ */
 public enum ModelStatus {
 
     NOTSET(kHighsModelStatusNotset()),

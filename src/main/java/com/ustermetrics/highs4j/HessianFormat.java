@@ -5,6 +5,11 @@ import lombok.val;
 import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.kHighsHessianFormatSquare;
 import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.kHighsHessianFormatTriangular;
 
+/**
+ * The storage format of a Hessian {@link Matrix} in a <a href="https://highs.dev">HiGHS</a> quadratic program.
+ *
+ * @see <a href="https://highs.dev">HiGHS</a>
+ */
 public enum HessianFormat {
 
     TRIANGULAR(kHighsHessianFormatTriangular()),

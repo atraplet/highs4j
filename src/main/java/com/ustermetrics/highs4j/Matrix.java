@@ -10,6 +10,20 @@ import java.util.stream.IntStream;
 import static com.google.common.base.Preconditions.checkArgument;
 import static java.lang.Math.toIntExact;
 
+/**
+ * A sparse matrix in compressed storage format for a <a href="https://highs.dev">HiGHS</a> model.
+ * <p>
+ * Supports both column-wise (CSC) and row-wise (CSR) storage via the {@link MatrixFormat} parameter.
+ *
+ * @param numRow       number of rows
+ * @param numCol       number of columns
+ * @param matrixFormat storage format (column-wise or row-wise)
+ * @param start        start index of each column (CSC) or row (CSR), length is number of columns or rows plus one
+ * @param index        row indices (CSC) or column indices (CSR) of non-zero entries. Entries within each column or
+ *                     row must appear in order of increasing index.
+ * @param value        non-zero values
+ * @see <a href="https://highs.dev">HiGHS</a>
+ */
 @Builder
 public record Matrix(
         int numRow,

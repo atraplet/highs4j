@@ -328,6 +328,10 @@ public class Model implements AutoCloseable {
         stage = Stage.NEW;
     }
 
+    /**
+     * Closes this {@link Model} and releases all associated native resources. If the {@link Model} was created with
+     * its own confined arena, the arena is also closed.
+     */
     @Override
     public void close() {
         if (stage != Stage.NEW) {
