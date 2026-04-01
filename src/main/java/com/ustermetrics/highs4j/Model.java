@@ -407,7 +407,7 @@ public class Model implements AutoCloseable {
 
     private static void checkStatus(long status) {
         if (status != kHighsStatusOk() && status != kHighsStatusWarning()) {
-            throw new IllegalStateException("HiGHS returned error status " + status);
+            throw new IllegalStateException("HiGHS returned status " + Status.valueOf(Math.toIntExact(status)));
         }
     }
 
