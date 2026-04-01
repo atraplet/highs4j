@@ -6,7 +6,7 @@ import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.kHighsHessianForma
 import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.kHighsHessianFormatTriangular;
 
 /**
- * The storage format of a Hessian {@link Matrix} in a <a href="https://highs.dev">HiGHS</a> quadratic program.
+ * The format of a {@link HessianMatrix}.
  *
  * @see <a href="https://highs.dev">HiGHS</a>
  */
@@ -32,7 +32,7 @@ public enum HessianFormat {
             }
         }
 
-        throw new IllegalArgumentException("Unknown hessian format " + format);
+        throw new IllegalArgumentException("Unknown Hessian format " + format);
     }
 
 }
