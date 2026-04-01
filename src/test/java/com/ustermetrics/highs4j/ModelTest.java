@@ -136,6 +136,55 @@ class ModelTest {
         }
     }
 
+    // Same QP problem as above but with the full symmetric Hessian in square format
+    // HiGHS internally computes (Q+Q^T)/2 and extracts the lower triangle
+
+    @Test
+    void solveQpWithSquareHessianReturnsExpectedSolution() {
+        val colCost = new double[]{0., -1., 0.};
+        val colLower = new double[]{0., 0., 0.};
+        val colUpper = new double[]{1e30, 1e30, 1e30};
+        val rowLower = new double[]{1.};
+        val rowUpper = new double[]{1e30};
+        val a = new SparseMatrix(1, 3, MatrixFormat.ROWWISE,
+                new long[]{0, 3}, new long[]{0, 1, 2}, new double[]{1., 1., 1.});
+        // Full symmetric Hessian (square format)
+        val q = new HessianMatrix(3, HessianFormat.SQUARE,
+                new long[]{0, 2, 3, 5}, new long[]{0, 2, 1, 0, 2}, new double[]{2., -1., 0.2, -1., 2.});
+
+        try (val model = new Model()) {
+            model.setParameters(List.of(new BooleanParameter("output_flag", false)));
+            model.setup(ObjectiveSense.MINIMIZE, 0., colCost, colLower, colUpper, rowLower, rowUpper, a,
+                    q, null);
+
+            val status = model.solve();
+
+            assertEquals(Status.OK, status);
+            assertEquals(ModelStatus.OPTIMAL, model.modelStatus());
+
+            // Should produce the same solution as the triangular format test
+            val colValue = model.colValue();
+            var expectedObj = 0.;
+            for (int i = 0; i < colCost.length; i++) {
+                expectedObj += colCost[i] * colValue[i];
+            }
+            // For square format, HiGHS symmetrizes internally, so we compute
+            // the quadratic part using the original triangular representation
+            val qTriStart = new long[]{0, 2, 3, 4};
+            val qTriIndex = new long[]{0, 2, 1, 2};
+            val qTriValue = new double[]{2., -1., 0.2, 2.};
+            for (int i = 0; i < colCost.length; i++) {
+                val fromEl = (int) qTriStart[i];
+                val toEl = (int) qTriStart[i + 1];
+                for (int el = fromEl; el < toEl; el++) {
+                    val j = (int) qTriIndex[el];
+                    expectedObj += 0.5 * colValue[i] * colValue[j] * qTriValue[el];
+                }
+            }
+            assertEquals(expectedObj, model.objectiveFunctionValue(), TOL);
+        }
+    }
+
     @Test
     void solveWithExternalArenaReturnsExpectedSolution() {
         try (val arena = Arena.ofConfined()) {

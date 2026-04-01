@@ -23,14 +23,18 @@ class HessianMatrixTest {
 
     @Test
     void createSquareHessianMatrixReturnsHessianMatrix() {
-        val matrix = new HessianMatrix(2, HessianFormat.SQUARE, new long[]{0, 1, 2}, new long[]{0, 1},
-                new double[]{6., 4.});
+        // 5x5 square Hessian from HiGHS TestHighsHessian.cpp
+        val matrix = new HessianMatrix(5, HessianFormat.SQUARE,
+                new long[]{0, 4, 7, 9, 12, 15},
+                new long[]{0, 1, 3, 4, 0, 1, 4, 2, 3, 0, 2, 3, 0, 1, 4},
+                new double[]{5., 1., -1., 2., 1., 4., 1., 3., -1., -1., -1., 4., 2., 1., 5.});
 
-        assertEquals(2, matrix.dim());
+        assertEquals(5, matrix.dim());
         assertEquals(HessianFormat.SQUARE, matrix.hessianFormat());
-        assertArrayEquals(new long[]{0, 1, 2}, matrix.start());
-        assertArrayEquals(new long[]{0, 1}, matrix.index());
-        assertArrayEquals(new double[]{6., 4.}, matrix.value(), 1e-8);
+        assertArrayEquals(new long[]{0, 4, 7, 9, 12, 15}, matrix.start());
+        assertArrayEquals(new long[]{0, 1, 3, 4, 0, 1, 4, 2, 3, 0, 2, 3, 0, 1, 4}, matrix.index());
+        assertArrayEquals(new double[]{5., 1., -1., 2., 1., 4., 1., 3., -1., -1., -1., 4., 2., 1., 5.},
+                matrix.value(), 1e-8);
     }
 
     @Test

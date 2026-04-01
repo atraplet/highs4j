@@ -19,7 +19,7 @@ class HessianFormatTest {
     void valueOf100ThrowsException() {
         val exception = assertThrowsExactly(IllegalArgumentException.class, () -> HessianFormat.valueOf(100));
 
-        assertEquals("Unknown hessian format 100", exception.getMessage());
+        assertEquals("Unknown Hessian format 100", exception.getMessage());
     }
 
 }
