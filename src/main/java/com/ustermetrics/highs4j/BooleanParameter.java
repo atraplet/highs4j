@@ -5,7 +5,7 @@ import lombok.NonNull;
 import static com.google.common.base.Preconditions.checkArgument;
 
 /**
- * A parameter object for boolean <a href="https://highs.dev">HiGHS</a> solver options.
+ * A parameter object for <a href="https://highs.dev">HiGHS</a> solver boolean options.
  *
  * @param name  the option name
  * @param value the option value
