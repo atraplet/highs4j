@@ -7,11 +7,11 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MatrixTest {
+class SparseMatrixTest {
 
     @Test
-    void createColwiseMatrixReturnsMatrix() {
-        val matrix = new Matrix(2, 2, MatrixFormat.COLWISE, new long[]{0, 1, 2}, new long[]{0, 1},
+    void createColwiseSparseMatrixReturnsSparseMatrix() {
+        val matrix = new SparseMatrix(2, 2, MatrixFormat.COLWISE, new long[]{0, 1, 2}, new long[]{0, 1},
                 new double[]{6., 4.});
 
         assertEquals(2, matrix.numRow());
@@ -23,8 +23,8 @@ class MatrixTest {
     }
 
     @Test
-    void createRowwiseMatrixReturnsMatrix() {
-        val matrix = new Matrix(2, 2, MatrixFormat.ROWWISE, new long[]{0, 1, 2}, new long[]{0, 1},
+    void createRowwiseSparseMatrixReturnsSparseMatrix() {
+        val matrix = new SparseMatrix(2, 2, MatrixFormat.ROWWISE, new long[]{0, 1, 2}, new long[]{0, 1},
                 new double[]{6., 4.});
 
         assertEquals(2, matrix.numRow());
@@ -36,8 +36,8 @@ class MatrixTest {
     }
 
     @Test
-    void createZeroMatrixReturnsZeroMatrix() {
-        val matrix = new Matrix(2, 2, MatrixFormat.COLWISE, new long[]{0, 0, 0}, new long[]{}, new double[]{});
+    void createZeroSparseMatrixReturnsZeroSparseMatrix() {
+        val matrix = new SparseMatrix(2, 2, MatrixFormat.COLWISE, new long[]{0, 0, 0}, new long[]{}, new double[]{});
 
         assertEquals(2, matrix.numRow());
         assertEquals(2, matrix.numCol());
@@ -47,36 +47,36 @@ class MatrixTest {
     }
 
     @Test
-    void createMatrixWithZeroNumberOfRowsThrowsException() {
+    void createSparseMatrixWithZeroNumberOfRowsThrowsException() {
         val exception = assertThrowsExactly(IllegalArgumentException.class, () ->
-                new Matrix(0, 0, MatrixFormat.COLWISE, new long[]{}, new long[]{}, new double[]{})
+                new SparseMatrix(0, 0, MatrixFormat.COLWISE, new long[]{}, new long[]{}, new double[]{})
         );
 
         assertEquals("number of rows must be positive", exception.getMessage());
     }
 
     @Test
-    void createMatrixWithZeroNumberOfColumnsThrowsException() {
+    void createSparseMatrixWithZeroNumberOfColumnsThrowsException() {
         val exception = assertThrowsExactly(IllegalArgumentException.class, () ->
-                new Matrix(1, 0, MatrixFormat.COLWISE, new long[]{}, new long[]{}, new double[]{})
+                new SparseMatrix(1, 0, MatrixFormat.COLWISE, new long[]{}, new long[]{}, new double[]{})
         );
 
         assertEquals("number of columns must be positive", exception.getMessage());
     }
 
     @Test
-    void createMatrixWithZeroLengthColumnIndexThrowsException() {
+    void createSparseMatrixWithZeroLengthColumnIndexThrowsException() {
         val exception = assertThrowsExactly(IllegalArgumentException.class, () ->
-                new Matrix(1, 1, MatrixFormat.COLWISE, new long[]{}, new long[]{}, new double[]{})
+                new SparseMatrix(1, 1, MatrixFormat.COLWISE, new long[]{}, new long[]{}, new double[]{})
         );
 
         assertEquals("length of the column index must be positive", exception.getMessage());
     }
 
     @Test
-    void createMatrixWithInvalidDataThrowsException() {
+    void createSparseMatrixWithInvalidDataThrowsException() {
         val exception = assertThrowsExactly(IllegalArgumentException.class, () ->
-                new Matrix(2, 2, MatrixFormat.COLWISE, new long[]{0, 1, 2}, new long[]{0, 1},
+                new SparseMatrix(2, 2, MatrixFormat.COLWISE, new long[]{0, 1, 2}, new long[]{0, 1},
                         new double[]{6., 4., 5.})
         );
 
@@ -84,9 +84,9 @@ class MatrixTest {
     }
 
     @Test
-    void createColwiseMatrixWithInvalidColumnIndexThrowsException() {
+    void createColwiseSparseMatrixWithInvalidColumnIndexThrowsException() {
         val exception = assertThrowsExactly(IllegalArgumentException.class, () ->
-                new Matrix(2, 2, MatrixFormat.COLWISE, new long[]{0, 1, 2, 3}, new long[]{0, 1},
+                new SparseMatrix(2, 2, MatrixFormat.COLWISE, new long[]{0, 1, 2, 3}, new long[]{0, 1},
                         new double[]{6., 4.})
         );
 
@@ -95,9 +95,9 @@ class MatrixTest {
     }
 
     @Test
-    void createRowwiseMatrixWithInvalidColumnIndexThrowsException() {
+    void createRowwiseSparseMatrixWithInvalidColumnIndexThrowsException() {
         val exception = assertThrowsExactly(IllegalArgumentException.class, () ->
-                new Matrix(2, 2, MatrixFormat.ROWWISE, new long[]{0, 1, 2, 3, 4}, new long[]{0, 1},
+                new SparseMatrix(2, 2, MatrixFormat.ROWWISE, new long[]{0, 1, 2, 3, 4}, new long[]{0, 1},
                         new double[]{6., 4.})
         );
 
@@ -106,9 +106,9 @@ class MatrixTest {
     }
 
     @Test
-    void createMatrixWithInvalidNumberOfNonZeroEntriesThrowsException() {
+    void createSparseMatrixWithInvalidNumberOfNonZeroEntriesThrowsException() {
         val exception = assertThrowsExactly(IllegalArgumentException.class, () ->
-                new Matrix(2, 2, MatrixFormat.COLWISE, new long[]{0, 1, 2}, new long[]{0, 1, 2, 3, 4},
+                new SparseMatrix(2, 2, MatrixFormat.COLWISE, new long[]{0, 1, 2}, new long[]{0, 1, 2, 3, 4},
                         new double[]{0., 1., 2., 3., 4.})
         );
 
@@ -117,9 +117,9 @@ class MatrixTest {
     }
 
     @Test
-    void createMatrixWithInvalidRowIndexThrowsException() {
+    void createSparseMatrixWithInvalidRowIndexThrowsException() {
         val exception = assertThrowsExactly(IllegalArgumentException.class, () ->
-                new Matrix(2, 2, MatrixFormat.COLWISE, new long[]{0, 1, 2}, new long[]{-1, 1},
+                new SparseMatrix(2, 2, MatrixFormat.COLWISE, new long[]{0, 1, 2}, new long[]{-1, 1},
                         new double[]{6., 4.})
         );
 
@@ -128,9 +128,9 @@ class MatrixTest {
     }
 
     @Test
-    void createMatrixWithInvalidColumnIndexEntriesThrowsException() {
+    void createSparseMatrixWithInvalidColumnIndexEntriesThrowsException() {
         val exception = assertThrowsExactly(IllegalArgumentException.class, () ->
-                new Matrix(2, 2, MatrixFormat.COLWISE, new long[]{-1, 1, 2}, new long[]{0, 1},
+                new SparseMatrix(2, 2, MatrixFormat.COLWISE, new long[]{-1, 1, 2}, new long[]{0, 1},
                         new double[]{6., 4.})
         );
 
@@ -139,9 +139,9 @@ class MatrixTest {
     }
 
     @Test
-    void createMatrixWithTooLargeEntryInColumnIndexThrowsException() {
+    void createSparseMatrixWithTooLargeEntryInColumnIndexThrowsException() {
         val exception = assertThrowsExactly(IllegalArgumentException.class, () ->
-                new Matrix(2, 2, MatrixFormat.COLWISE, new long[]{0, 3, 2}, new long[]{0, 1},
+                new SparseMatrix(2, 2, MatrixFormat.COLWISE, new long[]{0, 3, 2}, new long[]{0, 1},
                         new double[]{6., 4.})
         );
 
@@ -150,9 +150,9 @@ class MatrixTest {
     }
 
     @Test
-    void createMatrixWithUnorderedRowIndexWithinColumnThrowsException() {
+    void createSparseMatrixWithUnorderedRowIndexWithinColumnThrowsException() {
         val exception = assertThrowsExactly(IllegalArgumentException.class, () ->
-                new Matrix(5, 4, MatrixFormat.COLWISE, new long[]{0, 2, 5, 7, 8}, new long[]{0, 3, 1, 4, 3, 0, 4, 4},
+                new SparseMatrix(5, 4, MatrixFormat.COLWISE, new long[]{0, 2, 5, 7, 8}, new long[]{0, 3, 1, 4, 3, 0, 4, 4},
                         new double[]{1., 4., 3., 5., 6., 2., 7., 8.})
         );
 
@@ -160,19 +160,19 @@ class MatrixTest {
     }
 
     @Test
-    void createLargeMatrixDoesNotThrowException() {
+    void createLargeSparseMatrixDoesNotThrowException() {
         val m = 46341;
         val start = new long[m + 1];
         Arrays.fill(start, 1, m + 1, 1);
         assertDoesNotThrow(() ->
-                new Matrix(m, m, MatrixFormat.COLWISE, start, new long[]{0}, new double[]{1.})
+                new SparseMatrix(m, m, MatrixFormat.COLWISE, start, new long[]{0}, new double[]{1.})
         );
     }
 
     @Test
-    void createMatrixWithNullMatrixFormatThrowsException() {
+    void createSparseMatrixWithNullMatrixFormatThrowsException() {
         assertThrows(NullPointerException.class, () ->
-                new Matrix(2, 2, null, new long[]{0, 0, 0}, new long[]{}, new double[]{})
+                new SparseMatrix(2, 2, null, new long[]{0, 0, 0}, new long[]{}, new double[]{})
         );
     }
 

@@ -23,7 +23,7 @@ class ModelTest {
     private static final double[] COL_UPPER = {4., 1e30};
     private static final double[] ROW_LOWER = {-1e30, 5., 6.};
     private static final double[] ROW_UPPER = {7., 15., 1e30};
-    private static final Matrix A = new Matrix(3, 2, MatrixFormat.COLWISE,
+    private static final SparseMatrix A = new SparseMatrix(3, 2, MatrixFormat.COLWISE,
             new long[]{0, 2, 5}, new long[]{1, 2, 0, 1, 2}, new double[]{1., 3., 1., 2., 2.});
     private static final double OFFSET = 3.;
     private static final double TOL = 1e-8;
@@ -98,16 +98,16 @@ class ModelTest {
         val rowLower = new double[]{1.};
         val rowUpper = new double[]{1e30};
         // Constraint matrix: row-wise, single row [1, 1, 1]
-        val a = new Matrix(1, 3, MatrixFormat.ROWWISE,
+        val a = new SparseMatrix(1, 3, MatrixFormat.ROWWISE,
                 new long[]{0, 3}, new long[]{0, 1, 2}, new double[]{1., 1., 1.});
         // Hessian (triangular): 2x1^2 - 2x1x3 + 0.2x2^2 + 2x3^2
-        val q = new Matrix(3, 3, MatrixFormat.COLWISE,
+        val q = new HessianMatrix(3, HessianFormat.TRIANGULAR,
                 new long[]{0, 2, 3, 4}, new long[]{0, 2, 1, 2}, new double[]{2., -1., 0.2, 2.});
 
         try (val model = new Model()) {
             model.setParameters(List.of(new BooleanParameter("output_flag", false)));
             model.setup(ObjectiveSense.MINIMIZE, 0., colCost, colLower, colUpper, rowLower, rowUpper, a,
-                    HessianFormat.TRIANGULAR, q, null);
+                    q, null);
 
             val status = model.solve();
 

@@ -79,7 +79,7 @@ public class Model implements AutoCloseable {
      */
     public void setup(@NonNull ObjectiveSense sense, double offset,
                       double @NonNull [] colCost, double @NonNull [] colLower, double @NonNull [] colUpper,
-                      double @NonNull [] rowLower, double @NonNull [] rowUpper, @NonNull Matrix a) {
+                      double @NonNull [] rowLower, double @NonNull [] rowUpper, @NonNull SparseMatrix a) {
         checkState(stage == Stage.NEW, "model must be in stage new");
 
         numCol = colCost.length;
@@ -118,7 +118,7 @@ public class Model implements AutoCloseable {
      */
     public void setup(@NonNull ObjectiveSense sense, double offset,
                       double @NonNull [] colCost, double @NonNull [] colLower, double @NonNull [] colUpper,
-                      double @NonNull [] rowLower, double @NonNull [] rowUpper, @NonNull Matrix a,
+                      double @NonNull [] rowLower, double @NonNull [] rowUpper, @NonNull SparseMatrix a,
                       @NonNull Integrality[] integrality) {
         checkState(stage == Stage.NEW, "model must be in stage new");
 
@@ -157,14 +157,13 @@ public class Model implements AutoCloseable {
      * @param rowLower    row lower bounds
      * @param rowUpper    row upper bounds
      * @param a           constraint matrix
-     * @param qFormat     Hessian format (triangular or square)
      * @param q           Hessian matrix
      * @param integrality variable integrality constraints (may be {@code null})
      */
     public void setup(@NonNull ObjectiveSense sense, double offset,
                       double @NonNull [] colCost, double @NonNull [] colLower, double @NonNull [] colUpper,
-                      double @NonNull [] rowLower, double @NonNull [] rowUpper, @NonNull Matrix a,
-                      @NonNull HessianFormat qFormat, @NonNull Matrix q, Integrality[] integrality) {
+                      double @NonNull [] rowLower, double @NonNull [] rowUpper, @NonNull SparseMatrix a,
+                      @NonNull HessianMatrix q, Integrality[] integrality) {
         checkState(stage == Stage.NEW, "model must be in stage new");
 
         numCol = colCost.length;
@@ -191,7 +190,7 @@ public class Model implements AutoCloseable {
                 : NULL;
 
         checkStatus(Highs_passModel(highsSeg, numCol, numRow, numNz, qNumNz, a.matrixFormat().format(),
-                qFormat.format(), sense.sense(), offset,
+                q.hessianFormat().format(), sense.sense(), offset,
                 colCostSeg, colLowerSeg, colUpperSeg, rowLowerSeg, rowUpperSeg, aStartSeg, aIndexSeg, aValueSeg,
                 qStartSeg, qIndexSeg, qValueSeg, integralitySeg));
 

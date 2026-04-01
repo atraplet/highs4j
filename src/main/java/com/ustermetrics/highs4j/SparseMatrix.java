@@ -25,7 +25,7 @@ import static java.lang.Math.toIntExact;
  * @see <a href="https://highs.dev">HiGHS</a>
  */
 @Builder
-public record Matrix(
+public record SparseMatrix(
         int numRow,
         int numCol,
         @NonNull MatrixFormat matrixFormat,
@@ -34,7 +34,7 @@ public record Matrix(
         double @NonNull [] value
 ) {
 
-    public Matrix {
+    public SparseMatrix {
         checkArgument(numRow > 0, "number of rows must be positive");
         checkArgument(numCol > 0, "number of columns must be positive");
         checkArgument(start.length > 0, "length of the column index must be positive");
