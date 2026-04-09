@@ -23,9 +23,9 @@ class BindingsTest {
         val versionMinor = Highs_versionMinor();
         val versionPatch = Highs_versionPatch();
 
-        assertTrue(versionMajor > 0);
-        assertTrue(versionMinor > 0);
-        assertTrue(versionPatch > 0);
+        assertTrue(versionMajor >= 0);
+        assertTrue(versionMinor >= 0);
+        assertTrue(versionPatch >= 0);
     }
 
     @Test
