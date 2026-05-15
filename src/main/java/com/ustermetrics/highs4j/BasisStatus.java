@@ -23,7 +23,7 @@ public enum BasisStatus {
         this.status = status;
     }
 
-    private int status() {
+    int status() {
         return status;
     }
 
