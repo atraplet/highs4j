@@ -7,19 +7,19 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class IntegralityTest {
+class VariableTypeTest {
 
     @ParameterizedTest
     @ValueSource(ints = {0, 1, 2, 3, 4})
     void valueOfDoesNotThrow(int integrality) {
-        assertDoesNotThrow(() -> Integrality.valueOf(integrality));
+        assertDoesNotThrow(() -> VariableType.valueOf(integrality));
     }
 
     @Test
     void valueOf100ThrowsException() {
-        val exception = assertThrowsExactly(IllegalArgumentException.class, () -> Integrality.valueOf(100));
+        val exception = assertThrowsExactly(IllegalArgumentException.class, () -> VariableType.valueOf(100));
 
-        assertEquals("Unknown integrality 100", exception.getMessage());
+        assertEquals("Unknown variable type 100", exception.getMessage());
     }
 
 }
