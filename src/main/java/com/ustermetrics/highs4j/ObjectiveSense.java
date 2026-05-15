@@ -6,9 +6,7 @@ import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.kHighsObjSenseMaxi
 import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.kHighsObjSenseMinimize;
 
 /**
- * The objective direction for a <a href="https://highs.dev">HiGHS</a> model.
- *
- * @see <a href="https://highs.dev">HiGHS</a>
+ * The optimization sense of a <a href="https://highs.dev">HiGHS</a> model.
  */
 public enum ObjectiveSense {
 
