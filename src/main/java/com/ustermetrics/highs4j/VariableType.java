@@ -5,11 +5,11 @@ import lombok.val;
 import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.*;
 
 /**
- * The integrality type of a variable in a <a href="https://highs.dev">HiGHS</a> model.
+ * The type of a variable.
  *
  * @see <a href="https://highs.dev">HiGHS</a>
  */
-public enum Integrality {
+public enum VariableType {
 
     CONTINUOUS(kHighsVarTypeContinuous()),
     INTEGER(kHighsVarTypeInteger()),
@@ -17,24 +17,24 @@ public enum Integrality {
     SEMI_INTEGER(kHighsVarTypeSemiInteger()),
     IMPLICIT_INTEGER(kHighsVarTypeImplicitInteger());
 
-    private final int integrality;
+    private final int type;
 
-    Integrality(int integrality) {
-        this.integrality = integrality;
+    VariableType(int type) {
+        this.type = type;
     }
 
-    int integrality() {
-        return integrality;
+    int type() {
+        return type;
     }
 
-    static Integrality valueOf(int integrality) {
+    static VariableType valueOf(int type) {
         for (val c : values()) {
-            if (c.integrality() == integrality) {
+            if (c.type() == type) {
                 return c;
             }
         }
 
-        throw new IllegalArgumentException("Unknown integrality " + integrality);
+        throw new IllegalArgumentException("Unknown variable type " + type);
     }
 
 }
