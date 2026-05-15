@@ -5,11 +5,9 @@ import lombok.val;
 import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.*;
 
 /**
- * The return status from a <a href="https://highs.dev">HiGHS</a> solver operation.
- *
- * @see <a href="https://highs.dev">HiGHS</a>
+ * The return value of most <a href="https://highs.dev">HiGHS</a> methods.
  */
-public enum Status {
+enum Status {
 
     ERROR(kHighsStatusError()),
     OK(kHighsStatusOk()),
