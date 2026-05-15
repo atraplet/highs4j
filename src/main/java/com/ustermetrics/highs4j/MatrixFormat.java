@@ -6,7 +6,7 @@ import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.kHighsMatrixFormat
 import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.kHighsMatrixFormatRowwise;
 
 /**
- * The storage format of a sparse {@link Matrix} in a <a href="https://highs.dev">HiGHS</a> model.
+ * The format of a {@link SparseMatrix}.
  *
  * @see <a href="https://highs.dev">HiGHS</a>
  */
