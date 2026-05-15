@@ -9,7 +9,6 @@ import static com.google.common.base.Preconditions.checkArgument;
  *
  * @param name  the option name
  * @param value the option value
- * @see <a href="https://highs.dev">HiGHS</a>
  */
 public record IntParameter(@NonNull String name, int value) implements Parameter {
 
