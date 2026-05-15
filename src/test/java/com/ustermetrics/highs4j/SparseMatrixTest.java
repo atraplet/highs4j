@@ -70,7 +70,7 @@ class SparseMatrixTest {
                 new SparseMatrix(1, 1, MatrixFormat.COLWISE, new long[]{}, new long[]{}, new double[]{})
         );
 
-        assertEquals("length of the column index must be positive", exception.getMessage());
+        assertEquals("length of the start index must be positive", exception.getMessage());
     }
 
     @Test
@@ -80,7 +80,7 @@ class SparseMatrixTest {
                         new double[]{6., 4., 5.})
         );
 
-        assertEquals("length of data must be equal to the length of the row index", exception.getMessage());
+        assertEquals("length of values must be equal to the length of the index", exception.getMessage());
     }
 
     @Test
@@ -90,8 +90,8 @@ class SparseMatrixTest {
                         new double[]{6., 4.})
         );
 
-        assertEquals("length of the column index must be equal to the number of columns or rows plus one",
-                exception.getMessage());
+        assertEquals("length of the start index must be equal to the number of columns (column-wise) or rows " +
+                "(row-wise) plus one", exception.getMessage());
     }
 
     @Test
@@ -101,8 +101,8 @@ class SparseMatrixTest {
                         new double[]{6., 4.})
         );
 
-        assertEquals("length of the column index must be equal to the number of columns or rows plus one",
-                exception.getMessage());
+        assertEquals("length of the start index must be equal to the number of columns (column-wise) or rows " +
+                "(row-wise) plus one", exception.getMessage());
     }
 
     @Test
@@ -123,8 +123,8 @@ class SparseMatrixTest {
                         new double[]{6., 4.})
         );
 
-        assertEquals("entries of the row index must be greater equal zero and less than the number of rows or columns",
-                exception.getMessage());
+        assertEquals("entries of the index must be greater equal zero and less than the number of rows " +
+                "(column-wise) or columns (row-wise)", exception.getMessage());
     }
 
     @Test
@@ -134,8 +134,8 @@ class SparseMatrixTest {
                         new double[]{6., 4.})
         );
 
-        assertEquals("the first entry of the column index must be equal to zero and the last entry must be equal to " +
-                "the number of non-zero entries", exception.getMessage());
+        assertEquals("the first entry of the start index must be equal to zero and the last entry must be " +
+                "equal to the number of non-zero entries", exception.getMessage());
     }
 
     @Test
@@ -145,8 +145,8 @@ class SparseMatrixTest {
                         new double[]{6., 4.})
         );
 
-        assertEquals("entries of the column index must be greater equal zero, less equal than the number of non-zero " +
-                "entries, and must be ordered", exception.getMessage());
+        assertEquals("entries of the start index must be greater equal zero, less equal than the number of " +
+                "non-zero entries, and must be increasing", exception.getMessage());
     }
 
     @Test
@@ -156,7 +156,7 @@ class SparseMatrixTest {
                         new double[]{1., 4., 3., 5., 6., 2., 7., 8.})
         );
 
-        assertEquals("entries of the row index within each column must be strictly ordered", exception.getMessage());
+        assertEquals("entries of the index within each compressed vector must be strictly increasing", exception.getMessage());
     }
 
     @Test
