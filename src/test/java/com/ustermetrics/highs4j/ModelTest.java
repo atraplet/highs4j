@@ -63,7 +63,7 @@ class ModelTest {
         try (val model = new Model()) {
             model.setParameters(List.of(new BooleanParameter("output_flag", false)));
             model.setup(ObjectiveSense.MAXIMIZE, OFFSET, COL_COST, COL_LOWER, COL_UPPER, ROW_LOWER, ROW_UPPER, A,
-                    new Integrality[]{Integrality.INTEGER, Integrality.INTEGER});
+                    new VariableType[]{VariableType.INTEGER, VariableType.INTEGER});
 
             val status = model.solve();
 
