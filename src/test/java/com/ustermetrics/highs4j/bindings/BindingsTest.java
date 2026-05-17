@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.lang.foreign.Arena;
 
 import static com.ustermetrics.highs4j.bindings.Highs_c_api_h.*;
+import static java.lang.foreign.MemorySegment.NULL;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BindingsTest {
@@ -40,7 +41,7 @@ class BindingsTest {
         try (val arena = Arena.ofConfined()) {
             // Create and solve linear program from the HiGHS examples
             // https://github.com/atraplet/HiGHS/blob/master/examples/call_highs_from_c.c
-            // full_api(), first part
+            // full_api(), first part, use Highs_passModel() instead of Highs_passLp()
             val numCol = 2;
             val numRow = 3;
             val numNz = 5;
@@ -61,8 +62,9 @@ class BindingsTest {
 
             assertEquals(kHighsStatusOk(), Highs_setBoolOptionValue(highsSeg, arena.allocateFrom("output_flag"), 0));
 
-            assertEquals(kHighsStatusOk(), Highs_passLp(highsSeg, numCol, numRow, numNz, aFormat, sense, offset,
-                    colCostSeg, colLowerSeg, colUpperSeg, rowLowerSeg, rowUpperSeg, aStartSeg, aIndexSeg, aValueSeg));
+            assertEquals(kHighsStatusOk(), Highs_passModel(highsSeg, numCol, numRow, numNz, 0, aFormat, 0, sense,
+                    offset, colCostSeg, colLowerSeg, colUpperSeg, rowLowerSeg, rowUpperSeg, aStartSeg, aIndexSeg,
+                    aValueSeg, NULL, NULL, NULL, NULL));
 
             assertEquals(kHighsStatusOk(), Highs_run(highsSeg));
 
